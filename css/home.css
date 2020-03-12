@@ -1,3 +1,7 @@
+html{
+    margin: 0 3% 0 3%;
+}
+
 .logo img{
     width: 10%;
     height: 5%;
@@ -24,4 +28,37 @@ nav{
 #nav-2 a:hover{
     background-color: orange;
     color: #ffffff;
+}
+
+footer{
+    display: grid;
+    grid-template-row: auto auto;
+    grid-gap: 20px;
+}
+
+.footer1{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.footer1 div{
+    display: grid;
+    grid-template-row: 1fr auto;
+    grid-gap: 10px;
+    align-self: start;
+}
+
+.footer2{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+}
+
+.fright{
+    grid-column: 4;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    justify-content: center;
 }

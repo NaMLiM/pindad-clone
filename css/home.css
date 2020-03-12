@@ -7,6 +7,7 @@ html{
     height: 5%;
     overflow: hidden;
 }
+
 nav{
     list-style-type: none;
     margin: 0;
@@ -14,10 +15,12 @@ nav{
     overflow: hidden;
     background-color: #333;
 }
-#nav-2 li{
+
+.nav-2 li{
     display: inline;
 }
-#nav-2 a{
+
+.nav-2 a{
     display: block;
     padding: 8px;
     background-color: #ffffff;
@@ -25,7 +28,8 @@ nav{
     transition: 300ms;
     float: right;
 }
-#nav-2 a:hover{
+
+.nav-2 a:hover{
     background-color: orange;
     color: #ffffff;
 }

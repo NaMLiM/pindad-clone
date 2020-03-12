@@ -1,5 +1,7 @@
-html{
-    margin: 0 3% 0 3%;
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 .nav-1{
@@ -47,6 +49,25 @@ html{
 .navlink a:hover{
     background-color: orange;
     color: #ffffff;
+}
+
+.sambutan{
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10%;
+    background-color: lightgray;
+}
+
+.kata-sambutan{
+    display: inline;
+}
+
+#sambutan{
+    display: inline-block;
+    color: #ffffff;
+    background-color: orange;
+    padding: 8px;
+    border-radius: 2px;
 }
 
 footer{

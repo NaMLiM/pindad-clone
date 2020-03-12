@@ -2,34 +2,49 @@ html{
     margin: 0 3% 0 3%;
 }
 
-.logo img{
-    width: 10%;
-    height: 5%;
+.nav-1{
+    display: grid;
+    justify-content: end;
+    align-content: center;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+}
+
+.nav-1 a{
+    text-decoration: none;
+}
+
+.nav-2{
+    display: grid;
+    min-height: 100px;
+    grid-auto-flow: column;
+    grid-gap: 20px;   
+}
+
+.logo{
+    display: grid;
+    justify-content: start;
+    align-content: center;
     overflow: hidden;
 }
 
-nav{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+.navlink{
+    display: grid;
+    justify-content: end;
+    align-content: center;
+    grid-auto-flow: column;
+    grid-gap: 10px;
 }
 
-.nav-2 li{
-    display: inline;
-}
-
-.nav-2 a{
-    display: block;
+.navlink a{
     padding: 8px;
     background-color: #ffffff;
     text-decoration: none;
     transition: 300ms;
-    float: right;
+    border-radius: 2px;
 }
 
-.nav-2 a:hover{
+.navlink a:hover{
     background-color: orange;
     color: #ffffff;
 }

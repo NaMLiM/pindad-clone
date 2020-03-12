@@ -3,3 +3,25 @@
     height: 5%;
     overflow: hidden;
 }
+nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+#nav-2 li{
+    display: inline;
+}
+#nav-2 a{
+    display: block;
+    padding: 8px;
+    background-color: #ffffff;
+    text-decoration: none;
+    transition: 300ms;
+    float: right;
+}
+#nav-2 a:hover{
+    background-color: orange;
+    color: #ffffff;
+}

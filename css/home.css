@@ -86,9 +86,47 @@ header{
     border-radius: 2px;
 }
 
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.artitle{
+    grid-column: 1 / 3;
+}
+
+.list_berita{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+}
+.berita{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
+    grid-gap: 10px;
+}
+
+.berita .b_gambar{
+    grid-row: 1 / 3;
+}
+
+.berita .b_gambar img{
+    height: 100px;
+    width: 180px;
+    object-fit: cover;
+}
+
+.berita .b_isi{
+    align-self: start;
+}
+
+
+/*Footer*/
 footer{
     display: grid;
-    grid-template-row: auto auto;
+    grid-template-rows: auto auto;
     grid-gap: 20px;
     background-color: #03153e;
     color: white;
@@ -111,11 +149,24 @@ footer{
     padding: 30px;
 }
 
+.footer1 .profil{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.footer1 .profil div img{
+    width: 180px;
+}
+
 .footer1 div{
     display: grid;
-    grid-template-row: 1fr auto;
+    grid-template-rows: 1fr auto;
     grid-gap: 10px;
     align-self: start;
+}
+
+.footer1 div .link a img{
+    width: 220px;
 }
 
 .footer2{

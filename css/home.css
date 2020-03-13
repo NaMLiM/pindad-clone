@@ -67,6 +67,10 @@ header{
     color: #ffffff;
 }
 
+.ceo{
+    padding-left: 20%;
+}
+
 .sambutan{
     display: grid;
     grid-auto-flow: column;
@@ -76,6 +80,7 @@ header{
 
 .kata-sambutan{
     display: inline;
+    padding: 45px;
 }
 
 #sambutan{

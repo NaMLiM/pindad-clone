@@ -63,7 +63,7 @@ header{
 }
 
 .navlink a:hover{
-    background-color: orange;
+    background-color: #eaba3a;
     color: #ffffff;
 }
 
@@ -86,7 +86,7 @@ header{
 #sambutan{
     display: inline-block;
     color: #ffffff;
-    background-color: orange;
+    background-color: #eaba3a;
     padding: 8px;
     border-radius: 2px;
 }

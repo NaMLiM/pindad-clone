@@ -54,6 +54,20 @@ header{
     grid-gap: 10px;
 }
 
+.dropdown-content{
+    display: grid;
+    position: absolute;
+    grid-template-columns: 1fr;
+    margin-top: 5px;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: all 300ms;
+}
+
+.dropdown:hover .dropdown-content{
+    transform: scaleY(1);
+}
+
 .navlink a{
     padding: 8px;
     background-color: #ffffff;
@@ -99,6 +113,9 @@ article{
 
 .artitle{
     grid-column: 1 / 3;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #03153e;
 }
 
 .list_berita{

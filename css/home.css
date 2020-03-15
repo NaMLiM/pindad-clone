@@ -55,6 +55,10 @@ header{
 }
 
 .dropdown-content{
+    font-size: small;
+    text-align: center;
+    width: 200px;
+    text-overflow: clip;
     display: grid;
     position: absolute;
     grid-template-columns: 1fr;

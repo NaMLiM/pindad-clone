@@ -195,6 +195,11 @@ footer{
     width: 220px;
 }
 
+.sosmed{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .footer2{
     display: grid;
     grid-template-columns: auto auto auto auto;

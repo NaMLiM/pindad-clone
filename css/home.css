@@ -74,7 +74,7 @@ header {
 
 .navlink a {
   padding: 8px;
-  background-color: #ffffff;
+  background-color: #fff;
   text-decoration: none;
   transition: 300ms;
   border-radius: 2px;
@@ -82,7 +82,7 @@ header {
 
 .navlink a:hover {
   background-color: #eaba3a;
-  color: #ffffff;
+  color: #fff;
 }
 
 .ceo {
@@ -97,13 +97,13 @@ header {
 }
 
 .kata-sambutan {
- display: inline;
- padding: 45px;
+  display: inline;
+  padding: 45px;
 }
 
 #sambutan {
   display: inline-block;
-  color: #ffffff;
+  color: #fff;
   background-color: #eaba3a;
   padding: 8px;
   border-radius: 2px;
@@ -149,8 +149,7 @@ article {
   align-self: start;
 }
 
-
-/*Footer*/
+/* Footer */
 footer {
   display: grid;
   grid-template-rows: auto auto;
@@ -164,7 +163,8 @@ footer {
   font-size: medium;
 }
 
-.fcolor2, footer a {
+footer a,
+.fcolor2 {
   text-decoration: none;
   color: #b7b7b7;
 }

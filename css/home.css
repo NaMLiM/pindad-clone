@@ -11,6 +11,17 @@ header {
   grid-template-rows: auto auto;
 }
 
+.logo {
+  display: grid;
+  grid-row: 1 / 3;
+  overflow: hidden;
+}
+
+.logo a {
+  justify-self: center;
+  align-self: center;
+}
+
 .nav-1 {
   display: grid;
   justify-content: end;
@@ -33,17 +44,6 @@ header {
   min-height: 50px;
   grid-auto-flow: column;
   grid-gap: 20px;
-}
-
-.logo {
-  display: grid;
-  grid-row: 1 / 3;
-  overflow: hidden;
-}
-
-.logo a {
-  justify-self: center;
-  align-self: center;
 }
 
 .navlink {
@@ -155,7 +155,7 @@ footer {
   grid-template-rows: auto auto;
   grid-gap: 20px;
   background-color: #03153e;
-  color:  white;
+  color: white;
 }
 
 .fcolor1 {

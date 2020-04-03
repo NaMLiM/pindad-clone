@@ -1,4 +1,16 @@
+.footer1 {
+  background-color:  #03153e;
+}
+
+.footer2 {
+  background-color: #020e28;
+}
+
 .grayLink a, .grayLink a:visited {
   text-decoration:  none;
-  color:  gainsboro;
+  color:  gray;
+}
+
+.grayColor {
+  color:  gray;
 }

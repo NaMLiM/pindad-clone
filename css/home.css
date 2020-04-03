@@ -37,7 +37,7 @@ header {
 
 .logo {
     display:  grid;
-    grid-row:  1/ 3;
+    grid-row:  1 / 3;
     overflow:  hidden;
 }
 
@@ -127,6 +127,7 @@ article {
     grid-template-columns:  auto;
     grid-gap:  10px;
 }
+
 .berita {
     display:  grid;
     grid-template-columns:  1fr 3fr;

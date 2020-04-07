@@ -1,7 +1,25 @@
-body {
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden;
+body, html {
+  height: 100%;
+}
+
+/* Carrousel */
+.bg1, .bg2, .bg3{
+  background-image: url("../img/banner/BANNER_1.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carr {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+}
+
+#carr {
+  height: 100%;
 }
 
 .ceo {

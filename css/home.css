@@ -1,8 +1,9 @@
-html, body {
-  height: 100%;
-  width: 100%;
-  padding: 0;
-
+body, html {
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+  overflow: auto;
 }
 
 /* Carrousel */
@@ -33,7 +34,6 @@ html, body {
 #sambutan {
   background-color: #eaba3a;
   display: inline-block;
-  padding: 5px;
   color: #fff;
   font-size: 18px;
 }

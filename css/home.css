@@ -1,25 +1,29 @@
-body, html {
+html, body {
   height: 100%;
+  width: 100%;
+  padding: 0;
+
 }
 
 /* Carrousel */
-.bg1, .bg2, .bg3{
-  background-image: url("../img/banner/BANNER_1.jpg");
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.carr {
-  position: fixed;
+#bgCarousel {
   z-index: -1;
-  width: 100%;
 }
 
-#carr {
-  height: 100%;
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: -1;
+}
+
+.carousel-indicators li {
+  border-radius: 50%;
 }
 
 .ceo {

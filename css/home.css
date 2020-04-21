@@ -1,5 +1,9 @@
 body, html {
-  height: 100%;
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+  overflow: auto;
 }
 
 /* Carrousel */
@@ -12,24 +16,9 @@ body, html {
   background-size: cover;
 }
 
-.carr {
-  position: fixed;
-  z-index: -1;
-  width: 100%;
-}
-
-#carr {
-  height: 100%;
-}
-
-.ceo {
-  padding: 45px 0;
-}
-
 #sambutan {
   background-color: #eaba3a;
   display: inline-block;
-  padding: 5px;
   color: #fff;
   font-size: 18px;
 }

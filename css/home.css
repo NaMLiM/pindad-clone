@@ -7,6 +7,10 @@ html {
   overflow-x: hidden;
 }
 
+.bg-white{
+  background-color: white;
+}
+
 .bgCarousel {
   height: 100vh;
   min-height: 350px;
@@ -16,10 +20,27 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  z-index: -2;
 }
 
 .bgCarousel:hover {
   cursor: w-resize;
+}
+
+.parallax-text {
+  position: fixed;
+  color: white;
+  z-index: -1;
+  top: 150px;
+  left: 100px;
+  width: 500px;
+}
+
+.custom-btn {
+  text-decoration: none;
+  padding: 15px;
+  color: white;
+  display: inline-block;
 }
 
 /* .swiper-container {
@@ -80,6 +101,11 @@ html {
 .grayLink a:visited {
   text-decoration: none;
   color: gray;
+}
+
+.grayLink a:hover {
+  color: #bcbcbc;
+  text-decoration: none;
 }
 
 .grayColor {

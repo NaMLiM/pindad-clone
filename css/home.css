@@ -40,11 +40,11 @@ body, html {
 }
 
 .flyText {
-  background-color: rgba(255, 255, 255, 0.685);
+  background-color: rgba(255, 255, 255, 0.514);
   width: 400px;
   padding: 20px;
-  right: 180px;
-  bottom: 100px;
+  right: 150px;
+  bottom: 80px;
   position: absolute;
 }
 

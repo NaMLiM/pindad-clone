@@ -11,11 +11,13 @@ html {
 }
 
 .bg-custom {
+  transform: translateY(20px);
   background: transparent !important;
-  transition: 500ms;
+  transition: all 700ms;
 }
 
 .bg-custom.scrolled {
+  transform: translateY(0px);
   background: white !important;
 }
 

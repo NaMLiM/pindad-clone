@@ -86,7 +86,7 @@ html {
   display: inline-block;
   color: #fff;
   font-size: 18px;
-  z-index: 1;
+  padding: 10px;
 }
 
 .footer1 {

@@ -59,8 +59,7 @@ body, html {
   background-color: #020e28;
 }
 
-.grayLink a,
-.grayLink a:visited {
+.grayLink a, .grayLink a:visited {
   text-decoration: none;
   color: gray;
 }

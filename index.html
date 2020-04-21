@@ -7,9 +7,11 @@
         <script src="js/home.js"></script>
         <!--JQuery and Bootstrap lib-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
         <script src="https://kit.fontawesome.com/7b59756246.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -74,60 +76,68 @@
                 </li>
             </div>
         </nav>
-        <div id="bgCarousel" class="carousel slide" data-ride="carousel">
+        <!-- <div id="bgCarousel" class="carousel slide" data-ride="carousel" data-touch="true">
             <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+              <li data-target="#bgCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#bgCarousel" data-slide-to="1"></li>
+              <li data-target="#bgCarousel" data-slide-to="2"></li>
+              <li data-target="#bgCarousel" data-slide-to="3"></li>
+              <li data-target="#bgCarousel" data-slide-to="4"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
-              <!-- Slide 1 -->
-              <div class="carousel-item active" style="background-image: url('img/banner/BANNER_1.jpg')">
-                <div class="carousel-caption d-none d-md-block">
-                  <h2 class="display-4">First Slide</h2>
-                  <p class="lead">This is a description for the first slide.</p>
+                <div class="carousel-item active" style="background-image: url('img/banner/BANNER_1.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4">First Slide</h2>
+                        <p class="lead">This is a description for the first slide.</p>
+                    </div>
                 </div>
-              </div>
-              <!-- Slide 2 -->
-              <div class="carousel-item" style="background-image: url('img/banner/BANNER_2.jpg')">
-                <div class="carousel-caption d-none d-md-block">
-                  <h2 class="display-4">Second Slide</h2>
-                  <p class="lead">This is a description for the second slide.</p>
+                <div class="carousel-item" style="background-image: url('img/banner/BANNER_2.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4">Second Slide</h2>
+                        <p class="lead">This is a description for the second slide.</p>
+                    </div>
                 </div>
-              </div>
-              <!-- Slide 3 -->
-              <div class="carousel-item" style="background-image: url('img/banner/BANNER_3.jpg')">
-                <div class="carousel-caption d-none d-md-block">
-                  <h2 class="display-4">First Slide</h2>
-                  <p class="lead">This is a description for the first slide.</p>
+                <div class="carousel-item" style="background-image: url('img/banner/BANNER_3.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4">First Slide</h2>
+                        <p class="lead">This is a description for the first slide.</p>
+                    </div>
                 </div>
-              </div>
-              <!-- Slide 4 -->
-              <div class="carousel-item" style="background-image: url('img/banner/BANNER_41.jpg')">
-                <div class="carousel-caption d-none d-md-block">
-                  <h2 class="display-4">First Slide</h2>
-                  <p class="lead">This is a description for the first slide.</p>
+                <div class="carousel-item" style="background-image: url('img/banner/BANNER_41.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4">First Slide</h2>
+                        <p class="lead">This is a description for the first slide.</p>
+                    </div>
                 </div>
-              </div>
-              <!-- Slide 5 -->
-              <div class="carousel-item" style="background-image: url('img/banner/OR-Dirut-Covid_resize.jpg')">
-                <div class="carousel-caption d-none d-md-block">
-                  <h2 class="display-4">Third Slide</h2>
-                  <p class="lead">This is a description for the third slide.</p>
+                <div class="carousel-item" style="background-image: url('img/banner/OR-Dirut-Covid_resize.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4">Third Slide</h2>
+                        <p class="lead">This is a description for the third slide.</p>
+                    </div>
                 </div>
-              </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-          </div>
+            <a class="carousel-control-prev" href="#bgCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#bgCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div> -->
+        <div class="swiper-container" data-swiper-parallax-y="80%">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    ::before
+                    <img src="img/banner/BANNER_1.jpg" alt="" srcset="">
+                </div>
+                <div class="swiper-slide" style="background-image: url('img/banner/BANNER_2.jpg')"></div>
+                <div class="swiper-slide" style="background-image: url('img/banner/BANNER_3.jpg')"></div>
+                <div class="swiper-slide" style="background-image: url('img/banner/BANNER_41.jpg')"></div>
+                <div class="swiper-slide" style="background-image: url('img/banner/OR-Dirut-Covid_resize.jpg')"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
         <div class="container-fluid bg-light">
             <div>
                 <div>
@@ -166,7 +176,6 @@
                 <a href="">PELAJARI</a>
             </div>
         </div>
-
         <div class="container-fluid">
             <div>
                 <h1 class="text-primary"><dt>Produk Pertahanan Dan Keamanan</dt></h1>
@@ -199,6 +208,21 @@
                     </a>
                 </div>
             </div>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+              <div class="swiper-slide">Slide 10</div>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
         <div class="container-fluid bg-light">
             <div class="row">
@@ -338,5 +362,13 @@
                 </div>
             </div>
         </footer>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                parallax: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+            });
+        </script>
     </body>
 </html>

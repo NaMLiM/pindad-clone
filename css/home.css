@@ -24,8 +24,21 @@ html {
   transition: 500ms;
 }
 
+.nav-link:hover {
+  background: #eaba3a;
+  color: white;
+}
+
 .nav-link.scrolled {
-  color: rgb(63, 63, 63);
+  color: rgb(75, 75, 75);
+}
+
+.dropdown-menu {
+  transform: translate(-30%, -5px);
+}
+
+.dropdown-menu a:hover {
+  background: #eaba3a;
 }
 
 .dropdown:hover>.dropdown-menu {

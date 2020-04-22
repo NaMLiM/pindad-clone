@@ -1,3 +1,9 @@
+<?php
+    if(!$_GET["page"]){
+        
+    }
+?>
+
 <!DOCTYPE html>
 <html>
     <head>

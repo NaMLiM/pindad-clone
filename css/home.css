@@ -1,218 +1,170 @@
-body {
+body,
+html {
   margin: 0;
   padding: 0;
+  width: 100%;
   overflow-x: hidden;
-  font-family: fantasy;
 }
 
-header {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-}
-
-.logo {
-  display: grid;
-  grid-row: 1 / 3;
-  overflow: hidden;
-}
-
-.logo a {
-  justify-self: center;
-  align-self: center;
-}
-
-.nav-1 {
-  display: grid;
-  justify-content: end;
-  align-content: center;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 15px;
-  min-height: 50px;
-}
-
-.nav-1 a {
-  text-decoration: none;
-}
-
-.nav-1 a img {
-  width: 20px;
-}
-
-.nav-2 {
-  display: grid;
-  min-height: 50px;
-  grid-auto-flow: column;
-  grid-gap: 20px;
-}
-
-.navlink {
-  display: grid;
-  justify-content: end;
-  align-content: center;
-  grid-auto-flow: column;
-  grid-gap: 10px;
-}
-
-.dropdown-content {
-  font-size: small;
-  text-align: center;
-  width: 200px;
-  text-overflow: clip;
-  display: grid;
+.head {
   position: absolute;
-  grid-template-columns: 1fr;
-  margin-top: 5px;
-  transform-origin: top;
-  transform: scaleY(0);
-  transition: all 300ms;
 }
 
-.dropdown:hover .dropdown-content {
-  transform: scaleY(1);
+.top-layer {
+  z-index: 2;
 }
 
-.navlink a {
-  padding: 8px;
-  background-color: #fff;
-  text-decoration: none;
-  transition: 300ms;
-  border-radius: 2px;
+.dropdown-menu.head {
+  transform: translateY(-5px);
 }
 
-.navlink a:hover {
-  background-color: #eaba3a;
-  color: #fff;
+.flag-icon {
+  height: 20px;
 }
 
-.ceo {
-  padding-left: 20%;
+.bg-custom {
+  transform: translateY(20px);
+  background: transparent;
+  transition: all 700ms;
 }
 
-.sambutan {
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 10%;
-  background-color: lightgray;
+.bg-custom.scrolled {
+  transform: translateY(0);
+  background: white;
 }
 
-.kata-sambutan {
-  display: inline;
-  padding: 45px;
+.nav-link {
+  color: white;
+  transition: 500ms;
 }
 
-#sambutan {
-  display: inline-block;
-  color: #fff;
-  background-color: #eaba3a;
-  padding: 8px;
-  border-radius: 2px;
-}
-
-article {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-}
-
-.artitle {
-  grid-column: 1 / 3;
-  font-size: xx-large;
-  font-weight: bold;
-  color: #03153e;
-}
-
-.list_berita {
-  display: grid;
-  grid-template-columns: auto;
-  grid-gap: 10px;
-}
-
-.berita {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 4fr;
-  grid-gap: 10px;
-}
-
-.berita .b_gambar {
-  grid-row: 1 / 3;
-}
-
-.berita .b_gambar img {
-  height: 100px;
-  width: 180px;
-  object-fit: cover;
-}
-
-.berita .b_isi {
-  align-self: start;
-}
-
-/* Footer */
-footer {
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-gap: 20px;
-  background-color: #03153e;
+.nav-link:hover {
+  background: #eaba3a;
   color: white;
 }
 
-.fcolor1 {
-  font-weight: bold;
-  font-size: medium;
+.nav-link.scrolled {
+  color: rgb(75, 75, 75);
 }
 
-footer a,
-.fcolor2 {
+.dropdown-menu {
+  transform: translate(-30%, -5px);
+}
+
+.dropdown-menu a:hover {
+  background: #eaba3a;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+  /* Without this, clicking will make it sticky */
+  pointer-events: none;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bgCarousel {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: -2;
+}
+
+.bgCarousel:hover {
+  cursor: w-resize;
+}
+
+.parallax-text {
+  position: fixed;
+  color: white;
+  z-index: -1;
+  top: 150px;
+  left: 100px;
+  width: 500px;
+}
+
+.custom-btn {
   text-decoration: none;
-  color: #b7b7b7;
+  padding: 15px;
+  color: white;
+  display: inline-block;
+}
+
+/* .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.swiper-slide:hover {
+  cursor: w-resize;
+} */
+
+.flyText {
+  background-color: rgba(255, 255, 255, 0.514);
+  width: 400px;
+  padding: 20px;
+  right: 150px;
+  bottom: 80px;
+  position: absolute;
+}
+
+.text-primary {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.ceo {
+  padding: 45px 0;
+}
+
+#sambutan {
+  background-color: #eaba3a;
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
 }
 
 .footer1 {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  grid-gap: 10px;
-  padding: 30px;
-}
-
-.footer1 .profil {
-  display: grid;
-  grid-template-columns: auto;
-}
-
-.footer1 .profil div img {
-  width: 180px;
-}
-
-.footer1 div {
-  display: grid;
-  grid-template-rows: 1fr auto;
-  grid-gap: 10px;
-  align-self: start;
-}
-
-.footer1 div .link a img {
-  width: 220px;
-}
-
-.sosmed {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: #03153e;
 }
 
 .footer2 {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 10px;
   background-color: #020e28;
-  padding: 30px;
 }
 
-.fright {
-  grid-column: 4;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 10px;
-  justify-content: center;
+.grayLink a,
+.grayLink a:visited {
+  text-decoration: none;
+  color: gray;
+}
+
+.grayLink a:hover {
+  color: #bcbcbc;
+  text-decoration: none;
+}
+
+.grayColor {
+  color: gray;
 }

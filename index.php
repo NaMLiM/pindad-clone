@@ -49,56 +49,72 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li class="nav-item active mx-1">
-                        <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+                        <a class="nav-link nav-singgle" href="index.php?page=home">HOME<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown mx-1">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">RUANG PUBLIK</a>
+                        <a class="nav-link text-center" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="dropdown-link">RUANG PUBLIK</span> 
+                            <br>
+                            <i class="fa fa-caret-down text-warning caret-link" aria-hidden="true"></i>
+                        </a>
                         <div class="dropdown-menu text-center" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="index.php?page=berita">BERITA</a>
-                            <a class="dropdown-item" href="index.php?page=siaran pers">SIARAN PERS</a>
-                            <a class="dropdown-item" href="index.php?page=pindad dalam berita">PINDAD DALAM BERITA</a>
+                            <a class="dropdown-item" href="index.php?page=siaran_pers">SIARAN PERS</a>
+                            <a class="dropdown-item" href="index.php?page=pindad_dalam_berita">PINDAD DALAM BERITA</a>
                             <a class="dropdown-item" href="index.php?page=majalah">MAJALAH</a>
-                            <a class="dropdown-item" href="index.php?page=katalog dan brosur">KATALOG DAN BROSUR</a>
+                            <a class="dropdown-item" href="index.php?page=katalog_dan_brosur">KATALOG DAN BROSUR</a>
                             <a class="dropdown-item" href="index.php?page=gallery">GALLERY</a>
                             <a class="dropdown-item" href="index.php?page=video">VIDEO</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown mx-1">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRODUK & JASA</a>
+                        <a class="nav-link text-center" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="dropdown-link">PRODUK & JASA</span> 
+                            <br>
+                            <i class="fa fa-caret-down text-warning caret-link" aria-hidden="true"></i>
+                        </a>
                         <div class="dropdown-menu text-center" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="index.php?page=senjata">SENJATA</a>
                             <a class="dropdown-item" href="index.php?page=munisi">MUNISI</a>
-                            <a class="dropdown-item" href="index.php?page=kendaraan khusus">KENDARAAN KHUSUS</a>
-                            <a class="dropdown-item" href="index.php?page=tempa cor & alat perkeretaapian">TEMPA COR & ALAT PERKERETAAPIAN</a>
-                            <a class="dropdown-item" href="index.php?page=alat peledak">ALAT PELEDAK</a>
-                            <a class="dropdown-item" href="index.php?page=bahan peledak">BAHAN PELEDAK KOMERSIAL</a>
-                            <a class="dropdown-item" href="index.php?page=cyber security">CYBER SECURITY</a>
-                            <a class="dropdown-item" href="index.php?page=anak perusahaan">ANAK PERUSAHAAN</a>
-                            <a class="dropdown-item" href="index.php?page=prosedur pemesanan produk industrial">PROSEDUR PEMESANAN PRODUK INDUSTRIAL</a>
+                            <a class="dropdown-item" href="index.php?page=kendaraan_khusus">KENDARAAN KHUSUS</a>
+                            <a class="dropdown-item" href="index.php?page=tempa_cor_&_alat perkeretaapian">TEMPA COR & ALAT PERKERETAAPIAN</a>
+                            <a class="dropdown-item" href="index.php?page=alat_peledak">ALAT PELEDAK</a>
+                            <a class="dropdown-item" href="index.php?page=bahan_peledak_komersial">BAHAN PELEDAK KOMERSIAL</a>
+                            <a class="dropdown-item" href="index.php?page=cyber_security">CYBER SECURITY</a>
+                            <a class="dropdown-item" href="index.php?page=anak_perusahaan">ANAK PERUSAHAAN</a>
+                            <a class="dropdown-item" href="index.php?page=prosedur_pemesanan_produk industrial">PROSEDUR PEMESANAN PRODUK INDUSTRIAL</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown mx-1">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">KIP</a>
+                        <a class="nav-link text-center" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="dropdown-link">KIP</span> 
+                            <br>
+                            <i class="fa fa-caret-down text-warning caret-link" aria-hidden="true"></i>
+                        </a>
                         <div class="dropdown-menu text-center" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="index.php?page=regulasi keterbukaan informasi publik">REGULASI KETERBUKAAN INFORMASI PUBLIK</a>
-                            <a class="dropdown-item" href="index.php?page=informasi berkala">INFORMASI BERKALA</a>
-                            <a class="dropdown-item" href="index.php?page=informasi serta merta">INFORMASI SERTA MERTA</a>
-                            <a class="dropdown-item" href="index.php?page=informasi setiap saat">INFORMASI SETIAP SAAT</a>
-                            <a class="dropdown-item" href="index.php?page=prosedur permohonan informasi">PROSEDUR PERMOHONAN INFORMASI</a>
-                            <a class="dropdown-item" href="index.php?page=prosedur pengajuan keberatan">PROSEDUR PENGAJUAN KEBERATAN</a>
-                            <a class="dropdown-item" href="index.php?page=prosedur penyelesaian sengketa informasi">PROSEDUR PENYELESAIAN SENGKETA INFORMASI</a>
-                            <a class="dropdown-item" href="index.php?page=laporan layanan informasi publik">LAPORAN LAYANAN INFORMASI PUBLIK</a>
+                            <a class="dropdown-item" href="index.php?page=regulasi keterbukaan informasi publik">REGULASI KETERBUKAAN INFORMASI PUBLIK                            </a>
+                            <a class="dropdown-item" href="index.php?page=informasi_berkala">INFORMASI BERKALA</a>
+                            <a class="dropdown-item" href="index.php?page=informasi_serta_merta">INFORMASI SERTA MERTA</a>
+                            <a class="dropdown-item" href="index.php?page=informasi_setiap_saat">INFORMASI SETIAP SAAT</a>
+                            <a class="dropdown-item" href="index.php?page=prosedur_permohonan_informasi">PROSEDUR PERMOHONAN INFORMASI</a>
+                            <a class="dropdown-item" href="index.php?page=prosedur_pengajuan_keberatan">PROSEDUR PENGAJUAN KEBERATAN</a>
+                            <a class="dropdown-item" href="index.php?page=prosedur_penyelesaian_sengketa informasi">PROSEDUR PENYELESAIAN SENGKETA INFORMASI</a>
+                            <a class="dropdown-item" href="index.php?page=laporan_layanan_informasi_publik">LAPORAN LAYANAN INFORMASI PUBLIK</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown mx-1">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PENGADAAN</a>
+                        <a class="nav-link text-center" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="dropdown-link">PENGADAAN</span> 
+                            <br>
+                            <i class="fa fa-caret-down text-warning caret-link" aria-hidden="true"></i>
+                        </a>
                         <div class="dropdown-menu text-center" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="#">E_PROCUREMENT</a>
-                            <a class="dropdown-item" href="index.php?page=informasi pengadaan">INFORMASI PENGADAAN</a>
+                            <a class="dropdown-item" href="index.php?page=informasi_pengadaan">INFORMASI PENGADAAN</a>
                         </div>
                     </li>
                     <li class="nav-item mx-1">
-                        <a class="nav-link" href="index.php?page=hubungi">HUBUNGI</a>
+                        <a class="nav-link nav-singgle" href="index.php?page=hubungi">HUBUNGI</a>
                     </li>
                 </ul>
             </div>

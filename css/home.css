@@ -38,9 +38,23 @@ html {
   transition: 500ms;
 }
 
-.nav-link:hover {
+.dropdown-link {
+  padding: 8px;
+  transition: all 300ms;
+}
+
+.nav-singgle.nav-link:hover {
   background: #eaba3a;
   color: white;
+}
+
+.nav-link:hover  > .dropdown-link {
+  background: #eaba3a;
+  color: white;
+}
+
+.nav-link:hover  > .caret-link {
+  transform: translateY(-50px);
 }
 
 .nav-link.scrolled {
@@ -48,7 +62,7 @@ html {
 }
 
 .dropdown-menu {
-  transform: translate(-30%, -5px);
+  transform: translate(-25%, -18px);
 }
 
 .dropdown-menu a:hover {

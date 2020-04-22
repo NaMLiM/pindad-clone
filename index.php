@@ -216,6 +216,7 @@
                $("nav").toggleClass("scrolled shadow-sm", $(this).scrollTop() > 50);
                $(".nav-link").toggleClass("scrolled", $(this).scrollTop() > 50);
                $(".caret-link").toggleClass("scrolled", $(this).scrollTop() > 50);
+               $(".to-top").toggleClass("scrolled", $(this).scrollTop() > 500);
             });
 
             $(".dropdown").hover(function(){

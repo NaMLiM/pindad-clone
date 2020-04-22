@@ -12,3 +12,30 @@
     position: absolute;
     transform: translate(-50%, -10px);
 }
+
+
+/* List Ruang Publik */
+.list-aside li{
+    transform: translateX(-35px);
+    border-bottom: 1px solid  #808080;
+    padding: 10px;
+}
+
+.list-aside li a {
+    font-size: small;
+    text-decoration: none;
+    color: #808080;
+    transition: all 100ms;
+    margin-left: 15px;
+}
+
+.list-aside li span {
+    color: #808080;
+    transition: all 100ms;
+    transform: translateX(20px);
+}
+
+.list-aside li:hover > span,
+.list-aside li:hover > a{
+    color: #eaba3a;
+}

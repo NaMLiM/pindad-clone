@@ -122,7 +122,7 @@
 
         <!-- Include DIsini -->
         <?php
-            include("page/".$_GET["page"].".html");
+            include("page/".$_GET["page"].".php");
         ?>
         <!-- -------------- -->
 

@@ -16,10 +16,14 @@
 }
 
 .breadcrumb-item a {
-text-decoration: none;
+  text-decoration: none;
   color: black;
 }
 
 .breadcrumb-item + .breadcrumb-item::before{
   content: ">";
+}
+
+.active{
+  color: #eaba3a;
 }

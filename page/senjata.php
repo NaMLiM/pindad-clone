@@ -53,14 +53,38 @@
                 <li><a href="">Submachine Guns</a></li>
             </ul>
         </div>
-        <div class="col-md-9">
-            <div class="card" style="width: 12rem;">
+        <div class="col-md-9 row">
+            <div class="card col-md-3">
                 <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
                 <div class="card-body">
                     <p class="card-title">SPR-4</p>
                 </div>
             </div>
-            <div class="card" style="width: 12rem;">
+            <div class="card col-md-3">
+                <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
+                <div class="card-body">
+                    <p class="card-title">SPR-4</p>
+                </div>
+            </div>
+            <div class="card col-md-3">
+                <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
+                <div class="card-body">
+                    <p class="card-title">SPR-4</p>
+                </div>
+            </div>
+            <div class="card col-md-3">
+                <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
+                <div class="card-body">
+                    <p class="card-title">SPR-4</p>
+                </div>
+            </div>
+            <div class="card col-md-3">
+                <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
+                <div class="card-body">
+                    <p class="card-title">SPR-4</p>
+                </div>
+            </div>
+            <div class="card col-md-3">
                 <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
                 <div class="card-body">
                     <p class="card-title">SPR-4</p>

@@ -212,6 +212,12 @@
                $(".nav-link").toggleClass("scrolled", $(this).scrollTop() > 50);
                $(".caret-link").toggleClass("scrolled", $(this).scrollTop() > 50);
             });
+            
+            $(".dropdown").hover(function(){
+                $(".caret-link").css({
+                    transition : 'all 0ms'
+                });
+            });
 
             // var swiper = new Swiper('.swiper-container', {
             //     parallax: true,

@@ -10,6 +10,18 @@ html {
   position: absolute;
 }
 
+.top-layer {
+  z-index: 2;
+}
+
+.dropdown-menu.head {
+  transform: translateY(-5px);
+}
+
+.flag-icon {
+  height: 20px;
+}
+
 .bg-custom {
   transform: translateY(20px);
   background: transparent !important;

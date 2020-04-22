@@ -36,6 +36,48 @@
 }
 
 .list-aside li:hover > span,
-.list-aside li:hover > a {
-  color: #eaba3a;
+.list-aside li:hover > a{
+    color: #eaba3a;
+}
+
+/* Popular Post */
+.img-berita {
+    height: 100%;
+    object-fit: cover;
+}
+
+.popular-post div .tanggal {
+    font-size: small;
+}
+
+.article-berita div h5 a,
+.popular-post div .judul {
+    text-decoration: none;
+    color: #1e1e1e;
+    transition: all 100ms;
+}
+
+.article-berita div h5 a:hover,
+.popular-post div .judul:hover {
+    color: #eaba3a;
+}
+
+/* article berita */
+.tanggal-group {
+    max-height: 90px;
+    border-right: 2px #eaba3a solid;
+    width: 70px;
+}
+
+.tanggal-group .hari {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.tanggal-group .tanggal {
+    transform: translate(-2px, -10px);
+}
+
+.article-berita .deskripsi {
+    font-size: small;
 }

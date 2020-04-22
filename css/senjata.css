@@ -24,6 +24,25 @@
   content: ">";
 }
 
-.active{
+.active {
   color: #eaba3a;
+}
+
+.p {
+  color: #777777;
+}
+
+.search {
+  padding: 10px;
+  background-color: rgb(240, 240, 240);
+  border: 0;
+  border-radius: 5px;
+}
+
+.search::placeholder {
+  font-size: 14px;
+}
+
+.card-body {
+  background-color: rgb(216, 216, 216);
 }

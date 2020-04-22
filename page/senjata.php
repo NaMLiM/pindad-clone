@@ -30,7 +30,7 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-9 p">
             <p>PT Pindad (Persero) sejak berdiri tahun 1983  telah memproduksi berbagai jenis senjata mulai dari senjata laras panjang, senjata genggam, pistol, dan lainnya. Setiap produksi diutamakan untuk menyuplai kebutuhan peralatan pertahanan dan keamanan nasional serta untuk memenuhi pemesanan dari pihak lain.</p>
             <p>Produksi senjata terus ditingkatkan kualitasnya berdasarkan penelitian dan pengembangan dari tenaga-tenaga ahli Pindad bersama dengan pengguna produk untuk menetapkan spesifikasi yang dibutuhkan. Dalam setiap produksi, proses optimasi kami lakukan untuk memperoleh unjuk kerja dari senjata yang maksimal. Pemeriksaan dilakukan pada setiap proses manufaktur mulai dari penerimaan material sampai proses akhir pembuatan produk. Seluruh produk telah diuji dan memenuhi standar internasional salah satunya Mil STD. Sistem mutu selalu dipelihara dengan menerapkan sistem mutu ISO 9000-2008 yang disertifikasi oleh LRQA.</p>
             <p>Senjata Pindad memiliki akurasi  yang baik dan ketahanan di medan peperangan sesuai dengan kebutuhan pertahanan dan keamanan. Beberapa senjata telah berhasil meraih prestasi lomba tembak antar angkatan darat se-Asia Tenggara (AARM) dan lomba tembak Angkatan Darat se-Asia Pasifik (ASAM), serta Lomba Tembak tahunan yang diselenggarakan oleh Angkatan Bersenjata Diraja Brunei (BISAM).</p>
@@ -40,7 +40,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-3">
-            <input type="text" name="search" placeholder="Quick Search">
+            <input type="text" class="search" name="search" placeholder="Quick Search">
             <ul class="fa-ul list-aside my-3">
                 <li><a href="">All</a></li>
                 <li><a href="">Rifles</a></li>
@@ -58,7 +58,7 @@
                 <div class="card">
                     <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
                     <div class="card-body">
-                        <p class="card-title">SPR-4</p>
+                        <p class="card-title font-weight-bold">SPR-4</p>
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@
                 <div class="card">
                     <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
                     <div class="card-body">
-                        <p class="card-title">SPR-4</p>
+                        <p class="card-title font-weight-bold">SPR-4</p>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@
                 <div class="card">
                     <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
                     <div class="card-body">
-                        <p class="card-title">SPR-4</p>
+                        <p class="card-title font-weight-bold">SPR-4</p>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@
                 <div class="card">
                     <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
                     <div class="card-body">
-                        <p class="card-title">SPR-4</p>
+                        <p class="card-title font-weight-bold">SPR-4</p>
                     </div>
                 </div>
             </div>
@@ -90,7 +90,7 @@
                 <div class="card">
                     <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
                     <div class="card-body">
-                        <p class="card-title">SPR-4</p>
+                        <p class="card-title font-weight-bold">SPR-4</p>
                     </div>
                 </div>
             </div>

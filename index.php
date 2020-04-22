@@ -208,16 +208,19 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
         <script>
             $(window).scroll(function() {
+                $(".caret-link").css({
+                    transition : "all 700ms"
+                });
                $("nav").toggleClass("scrolled shadow-sm", $(this).scrollTop() > 50);
                $(".nav-link").toggleClass("scrolled", $(this).scrollTop() > 50);
                $(".caret-link").toggleClass("scrolled", $(this).scrollTop() > 50);
             });
-            
+
             $(".dropdown").hover(function(){
                 $(".caret-link").css({
-                    transition : 'all 0ms'
+                    transition : "all 0ms"
                 });
-            });
+            });          
 
             // var swiper = new Swiper('.swiper-container', {
             //     parallax: true,

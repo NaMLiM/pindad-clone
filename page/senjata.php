@@ -37,3 +37,35 @@
         </div>
     </div>
 </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <input type="text" name="search" placeholder="Quick Search">
+            <ul class="fa-ul list-aside my-3">
+                <li><a href="">All</a></li>
+                <li><a href="">Rifles</a></li>
+                <li><a href="">Sniper Rifles</a></li>
+                <li><a href="">Machine Guns</a></li>
+                <li><a href="">Grenade Launcher</a></li>
+                <li><a href="">Mortir</a></li>
+                <li><a href="">Pistols</a></li>
+                <li><a href="">Shotguns</a></li>
+                <li><a href="">Submachine Guns</a></li>
+            </ul>
+        </div>
+        <div class="col-md-9">
+            <div class="card" style="width: 12rem;">
+                <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
+                <div class="card-body">
+                    <p class="card-title">SPR-4</p>
+                </div>
+            </div>
+            <div class="card" style="width: 12rem;">
+                <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
+                <div class="card-body">
+                    <p class="card-title">SPR-4</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

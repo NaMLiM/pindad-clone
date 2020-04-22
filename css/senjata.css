@@ -1,25 +1,25 @@
 .header-blog {
-    width: 100%;
-    padding-top: 170px;
-    padding-bottom: 170px;
-    background-attachment: fixed;
-    background: no-repeat center center scroll;
-    background-size: cover;
+  width: 100%;
+  padding-top: 170px;
+  padding-bottom: 170px;
+  background-attachment: fixed;
+  background: no-repeat center center scroll;
+  background-size: cover;
 }
 
 .garis {
-    background-color: #eaba3a;
-    width: 40px;
-    height: 5px;
-    position: absolute;
-    transform: translate(-50%, -10px);
+  background-color: #eaba3a;
+  width: 40px;
+  height: 5px;
+  position: absolute;
+  transform: translate(-50%, -10px);
 }
 
 .breadcrumb-item a {
-    text-decoration: none;
-    color: black;
+text-decoration: none;
+  color: black;
 }
 
 .breadcrumb-item + .breadcrumb-item::before{
-    content: ">";
+  content: ">";
 }

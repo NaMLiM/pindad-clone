@@ -57,40 +57,40 @@
             <div class="col-md-3 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
-                    <div class="card-body">
-                        <p class="card-title font-weight-bold">SPR-4</p>
+                    <div class="card-body font-weight-bold">
+                        <p>SPR-4</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
-                    <div class="card-body">
-                        <p class="card-title font-weight-bold">SPR-4</p>
+                    <div class="card-body font-weight-bold">
+                        <p>SPR-4</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
-                    <div class="card-body">
-                        <p class="card-title font-weight-bold">SPR-4</p>
+                    <div class="card-body font-weight-bold">
+                        <p>SPR-4</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
-                    <div class="card-body">
-                        <p class="card-title font-weight-bold">SPR-4</p>
+                    <div class="card-body font-weight-bold">
+                        <p>SPR-4</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
-                    <div class="card-body">
-                        <p class="card-title font-weight-bold">SPR-4</p>
+                    <div class="card-body font-weight-bold">
+                        <p>SPR-4</p>
                     </div>
                 </div>
             </div>

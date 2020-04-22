@@ -56,4 +56,14 @@
 
 .card-body {
   background-color: rgb(216, 216, 216);
+  height: 40px;
+}
+
+.card-body p {
+  transform: translateY(-12px);
+}
+
+.card-img-top {
+  height: 120px;
+  object-fit: cover;
 }

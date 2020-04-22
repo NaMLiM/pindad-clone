@@ -1,6 +1,6 @@
 <?php
     if(!$_GET["page"]){
-        
+        header("location:index.php?page=home");
     }
 ?>
 
@@ -105,7 +105,11 @@
         </nav>
 
         <!-- Include DIsini -->
-        <div id="includeDiv"></div>
+        <div id="includeDiv">
+            <?php
+                include("page/".$_GET["page"].".html");
+            ?>
+        </div>
         <!-- -------------- -->
 
         <footer class="container-fluid grayLink footer1 p-2">

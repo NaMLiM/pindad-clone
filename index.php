@@ -10,8 +10,6 @@
         <meta charset="UTF-8">
         <title>PT. Pindad (Persero) - Home</title>
         <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="css/home.css">
-        <link rel="stylesheet" href="css/berita.css">
         <!--JQuery and Bootstrap lib-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>

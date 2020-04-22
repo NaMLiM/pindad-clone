@@ -210,7 +210,9 @@
             $(window).scroll(function() {
                $("nav").toggleClass("scrolled shadow-sm", $(this).scrollTop() > 50);
                $(".nav-link").toggleClass("scrolled", $(this).scrollTop() > 50);
+               $(".caret-link").toggleClass("scrolled", $(this).scrollTop() > 50);
             });
+
             // var swiper = new Swiper('.swiper-container', {
             //     parallax: true,
             //     pagination: {

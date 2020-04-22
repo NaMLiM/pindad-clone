@@ -35,7 +35,13 @@ html {
 
 .nav-link {
   color: white;
-  transition: 500ms;
+  transform: translateY(10px);
+  transition: all 500ms;
+}
+
+.nav-link.scrolled {
+  transform: translateY(0px);
+  color: rgb(75, 75, 75);
 }
 
 .dropdown-link {
@@ -48,17 +54,23 @@ html {
   color: white;
 }
 
-.nav-link:hover  > .dropdown-link {
+.dropdown:hover .nav-link > .dropdown-link {
   background: #eaba3a;
   color: white;
 }
 
-.nav-link:hover  > .caret-link {
-  transform: translateY(-50px);
+.caret-link {
+  transform: translateY(-10px);
+  transition: all 700ms;
 }
 
-.nav-link.scrolled {
-  color: rgb(75, 75, 75);
+.caret-link.scrolled {
+  transform: translateY(10px);
+}
+
+.dropdown:hover .nav-link > .caret-link {
+  transform: translateY(-50px);
+  transition: all 0ms;
 }
 
 .dropdown-menu {

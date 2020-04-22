@@ -16,17 +16,17 @@
     <div class="row">
         <div class="col-md-3">
             <div class="pb-5">
-                <h5 class="font-weight-bold">Produk & Jasa</h5>
+                <h5 class="font-weight-bold text-dark">Produk & Jasa</h5>
                 <ul class="fa-ul list-aside my-3">
-                    <li><a href="index.php?page=senjata" class="active">Senjata</a></li>
-                    <li><a href="">Munisi</a></li>
-                    <li><a href="">Kendaraan Khusus</a></li>
-                    <li><a href="">Tempa Cor & Alat Perkeretaapian</a></li>
-                    <li><a href="">Alat Berat</a></li>
-                    <li><a href="">Bahan Peledak Komersial</a></li>
-                    <li><a href="">Cyber Security</a></li>
-                    <li><a href="">Anak Perusahaan</a></li>
-                    <li><a href="">Prosedur Pemesanan Produk Industrial</a></li>
+                    <li class="py-1"><a href="index.php?page=senjata" class="active">Senjata</a></li>
+                    <li class="py-1"><a href="">Munisi</a></li>
+                    <li class="py-1"><a href="">Kendaraan Khusus</a></li>
+                    <li class="py-1"><a href="">Tempa Cor & Alat Perkeretaapian</a></li>
+                    <li class="py-1"><a href="">Alat Berat</a></li>
+                    <li class="py-1"><a href="">Bahan Peledak Komersial</a></li>
+                    <li class="py-1"><a href="">Cyber Security</a></li>
+                    <li class="py-1"><a href="">Anak Perusahaan</a></li>
+                    <li class="py-1"><a href="">Prosedur Pemesanan Produk Industrial</a></li>
                 </ul>
             </div>
         </div>
@@ -42,15 +42,15 @@
         <div class="col-md-3">
             <input type="text" name="search" placeholder="Quick Search">
             <ul class="fa-ul list-aside my-3">
-                <li><a href="">All</a></li>
-                <li><a href="">Rifles</a></li>
-                <li><a href="">Sniper Rifles</a></li>
-                <li><a href="">Machine Guns</a></li>
-                <li><a href="">Grenade Launcher</a></li>
-                <li><a href="">Mortir</a></li>
-                <li><a href="">Pistols</a></li>
-                <li><a href="">Shotguns</a></li>
-                <li><a href="">Submachine Guns</a></li>
+                <li class="py-1"><a href="">All</a></li>
+                <li class="py-1"><a href="">Rifles</a></li>
+                <li class="py-1"><a href="">Sniper Rifles</a></li>
+                <li class="py-1"><a href="">Machine Guns</a></li>
+                <li class="py-1"><a href="">Grenade Launcher</a></li>
+                <li class="py-1"><a href="">Mortir</a></li>
+                <li class="py-1"><a href="">Pistols</a></li>
+                <li class="py-1"><a href="">Shotguns</a></li>
+                <li class="py-1"><a href="">Submachine Guns</a></li>
             </ul>
         </div>
         <div class="col-md-9 row">

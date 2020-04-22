@@ -24,6 +24,17 @@
   content: ">";
 }
 
-.active{
+.list-aside {
+  transform: translateX(-40px);
+}
+
+.list-aside li a {
+  text-decoration: none;
+  color: #808080;
+  transition: all 100ms;
+}
+
+.list-aside li a:hover,
+.list-aside li a.active{
   color: #eaba3a;
 }

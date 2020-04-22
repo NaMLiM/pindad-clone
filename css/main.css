@@ -118,3 +118,15 @@ html {
   color: gray;
 }
   
+.to-top {
+  padding: 15px 20px 15px 20px;
+  position: fixed;
+  z-index: 2;
+  right: 40px;
+  bottom: 40px;
+  display: block;
+}
+
+.to-top:hover {
+  background-color: #1c8596;
+}

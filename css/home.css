@@ -24,13 +24,13 @@ html {
 
 .bg-custom {
   transform: translateY(20px);
-  background: transparent !important;
+  background: transparent;
   transition: all 700ms;
 }
 
 .bg-custom.scrolled {
-  transform: translateY(0px);
-  background: white !important;
+  transform: translateY(0);
+  background: white;
 }
 
 .nav-link {
@@ -55,16 +55,16 @@ html {
   background: #eaba3a;
 }
 
-.dropdown:hover>.dropdown-menu {
+.dropdown:hover > .dropdown-menu {
   display: block;
 }
 
-.dropdown>.dropdown-toggle:active {
-  /*Without this, clicking will make it sticky*/
+.dropdown > .dropdown-toggle:active {
+  /* Without this, clicking will make it sticky */
     pointer-events: none;
 }
 
-.bg-white{
+.bg-white {
   background-color: white;
 }
 

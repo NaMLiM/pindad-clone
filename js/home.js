@@ -1,4 +1,4 @@
-var $a = document.getElementById("nav");
+/* var $a = document.getElementById("nav");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -7,4 +7,4 @@ function scrollFunction() {
     } else {
         $a.classList.remove("scrolled");
     }
-}
+} */

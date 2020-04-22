@@ -40,7 +40,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-3">
-            <input type="text" name="search" placeholder="Quick Search">
+            <input type="text" class="search" name="search" placeholder="Quick Search">
             <ul class="fa-ul list-aside my-3">
                 <li class="py-1"><a href="">All</a></li>
                 <li class="py-1"><a href="">Rifles</a></li>
@@ -58,7 +58,7 @@
                 <div class="card">
                     <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
                     <div class="card-body">
-                        <p class="card-title">SPR-4</p>
+                        <p class="card-title font-weight-bold">SPR-4</p>
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@
                 <div class="card">
                     <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
                     <div class="card-body">
-                        <p class="card-title">SPR-4</p>
+                        <p class="card-title font-weight-bold">SPR-4</p>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@
                 <div class="card">
                     <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
                     <div class="card-body">
-                        <p class="card-title">SPR-4</p>
+                        <p class="card-title font-weight-bold">SPR-4</p>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@
                 <div class="card">
                     <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
                     <div class="card-body">
-                        <p class="card-title">SPR-4</p>
+                        <p class="card-title font-weight-bold">SPR-4</p>
                     </div>
                 </div>
             </div>
@@ -90,7 +90,7 @@
                 <div class="card">
                     <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
                     <div class="card-body">
-                        <p class="card-title">SPR-4</p>
+                        <p class="card-title font-weight-bold">SPR-4</p>
                     </div>
                 </div>
             </div>

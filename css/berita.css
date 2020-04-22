@@ -1,41 +1,41 @@
 .full {
-    width: 100%;
-    padding-top: 170px;
-    padding-bottom: 170px;
-    background-color: #1e1e1e;
+  width: 100%;
+  padding-top: 170px;
+  padding-bottom: 170px;
+  background-color: #1e1e1e;
 }
 
 .garis {
-    background-color: #eaba3a;
-    width: 40px;
-    height: 5px;
-    position: absolute;
-    transform: translate(-50%, -10px);
+  background-color: #eaba3a;
+  width: 40px;
+  height: 5px;
+  position: absolute;
+  transform: translate(-50%, -10px);
 }
 
 
 /* List Ruang Publik */
-.list-aside li{
-    transform: translateX(-35px);
-    border-bottom: 1px solid  #808080;
-    padding: 10px;
+.list-aside li {
+  transform: translateX(-35px);
+  border-bottom: 1px solid  #808080;
+  padding: 10px;
 }
 
 .list-aside li a {
-    font-size: small;
-    text-decoration: none;
-    color: #808080;
-    transition: all 100ms;
-    margin-left: 15px;
+  font-size: small;
+  text-decoration: none;
+  color: #808080;
+  transition: all 100ms;
+  margin-left: 15px;
 }
 
 .list-aside li span {
-    color: #808080;
-    transition: all 100ms;
-    transform: translateX(20px);
+  color: #808080;
+  transition: all 100ms;
+  transform: translateX(20px);
 }
 
 .list-aside li:hover > span,
-.list-aside li:hover > a{
-    color: #eaba3a;
+.list-aside li:hover > a {
+  color: #eaba3a;
 }

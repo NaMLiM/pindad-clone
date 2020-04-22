@@ -74,7 +74,7 @@ html {
 }
 
 .dropdown > .dropdown-toggle:active {
-  /* Without this, clicking will make it sticky */
+  /* Agar Dropdown tidak sticky */
   pointer-events: none;
 }
 

@@ -1,5 +1,4 @@
-<div class="container-fluid header-blog">
-    <div class="text-center">
-        <h1>BERITA</h1>
-    </div>
+<div class="full text-center">
+    <span class="garis"></span>
+    <h1 class="display-5 text-light"><dt><b>BERITA</b></dt></h1>
 </div>

@@ -30,7 +30,7 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-9 text-dark">
+        <div class="col-md-9 text-dark isi">
             
         </div>
     </div>

@@ -30,7 +30,7 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-9 text-dark">
+        <div class="col-md-9 text-dark isi">
             <p>
                 Terhitung sejak tanggal 30 April 2010, pemerintah memberlakukan Undang-Undang no.14 tahun 2008 dengan nama Undang-undang Keterbukaan Informasi Publik (UU KIP). UU KIP mengamanatkan agar badan publik memberikan akses kepada masyarakat untuk dapat memperoleh informasi seputar badan publik yang dituju melalui skema/mekanisme tertentu. Hal ini ditujukan untuk menjamin hak warga negara dalam mengetahui pengambilan dan proses pembuatan kebijakan publik serta meningkatkan peran aktif masyarakat dalam pengelolaan badan publik yang baik.
             </p>

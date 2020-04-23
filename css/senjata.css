@@ -78,3 +78,20 @@
   height: 120px;
   object-fit: cover;
 }
+
+.isi p {
+  color: #777777;
+}
+
+.isi-judul {
+  width: 100%;
+  background-color: #f5f5f5;
+  color: black;
+  padding: 4px 0 4px 0;
+  margin: 2px 0 2px 0;
+}
+
+.isi a,
+.isi p a {
+  color: #eaba3a;
+}

@@ -20,25 +20,89 @@
     <body>
         <div class="container-fluid row head">
             <div class="dropdown open top-layer ml-auto py-1 mx-2">
-                <a class="dropdown-toggle text-light" id="dropdown-perusahaan" data-toggle="dropdown" aria-haspopup="true"
+                <a class="text-light" id="dropdown-perusahaan" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
                             PERUSAHAAN
-            </a>
+                </a>
                 <div class="dropdown-menu head top-layer" aria-labelledby="dropdown-perusahaan">
-                    <button class="dropdown-item top-layer" href="#">Action</button>
-                    <button class="dropdown-item top-layer" href="#">Action</button>
-                    <button class="dropdown-item top-layer" href="#">Action</button>
+                    <div class="dropdown">
+                        <a class="dropdown-item top-layer" type="button" id="dropdown-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                    <i class="fa fa-caret-left" aria-hidden="true"></i>
+                                    Tentang Perusahaan
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-dropdown">
+                            <a class="dropdown-item" href="#">Visi Dan Misi</a>
+                            <a class="dropdown-item" href="#">Tujuan Dan Sasaran Perusahaan</a>
+                            <a class="dropdown-item" href="#">Budaya Perusahaan</a>
+                            <a class="dropdown-item" href="#">Bidang Usaha Dan Perkembangan Usaha</a>
+                            <a class="dropdown-item" href="#">Legalitas</a>
+                            <a class="dropdown-item" href="#">Peraturan Dan Ketentuan Perusahaan</a>
+                            <a class="dropdown-item" href="#">Sistem Managemen Mutu Dan Komitmen Terhadap Lingkungan</a>
+                            <a class="dropdown-item" href="#">Keuangan</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class="dropdown-item top-layer" type="button" id="dropdown-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="fa fa-caret-left" aria-hidden="true"></i>
+                                Sejarah
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-dropdown">
+                            <a class="dropdown-item" href="#">Masa Kolonial Belanda Dan Pendudukan Jepang</a>
+                            <a class="dropdown-item" href="#">Pindad Sebagai Bagian Dari TNI AD</a>
+                            <a class="dropdown-item" href="#">Pindad Sebagai Perseroan</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class="dropdown-item top-layer" type="button" id="dropdown-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="fa fa-caret-left" aria-hidden="true"></i>
+                                Managemen
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-dropdown">
+                            <a class="dropdown-item" href="#">Struktur Organisasi</a>
+                            <a class="dropdown-item" href="#">Dewan Komisaris</a>
+                            <a class="dropdown-item" href="#">Komite Audit</a>
+                            <a class="dropdown-item" href="#">Direksi</a>
+                            <a class="dropdown-item" href="#">Sesper Dan Kepala SPI</a>
+                            <a class="dropdown-item" href="#">Anak Perusahaan</a>
+                        </div>
+                    </div>
+                    <a href="" class="dropdown-item top-layer">Tata Kelola Perusahaan & Managemen Risiko</a>
+                    <div class="dropdown">
+                        <a class="dropdown-item top-layer" type="button" id="dropdown-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="fa fa-caret-left" aria-hidden="true"></i>
+                                Corporate Communication
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-dropdown">
+                            <a class="dropdown-item" href="#">Achievement</a>
+                            <a class="dropdown-item" href="#">Annual Report</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class="dropdown-item top-layer" type="button" id="dropdown-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="fa fa-caret-left" aria-hidden="true"></i>
+                                Inovasi
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-dropdown">
+                            <a class="dropdown-item" href="#">Inovasi Baru</a>
+                        </div>
+                    </div>
+                    <a href="" class="dropdown-item top-layer">E-LHKPN</a>
                 </div>
             </div>
             <div class="dropdown open top-layer py-1 mx-2">
-                <a class="dropdown-toggle text-light" id="dropdown-perusahaan" data-toggle="dropdown" aria-haspopup="true"
+                <a class="text-light" id="dropdown-perusahaan" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
                             KARIR
-            </a>
+                </a>
                 <div class="dropdown-menu head top-layer" aria-labelledby="dropdown-perusahaan">
-                    <button class="dropdown-item top-layer" href="#">Action</button>
-                    <button class="dropdown-item top-layer" href="#">Action</button>
-                    <button class="dropdown-item top-layer" href="#">Action</button>
+                    <div class="dropdown">
+                        <a href="" class="dropdown-item top-layer">Informasi Karir</a>
+                    </div>
                 </div>
             </div>
             <a class="py-1 mx-2" href=""><img src="img/flag-id.png" class="flag-icon" alt=""></a>

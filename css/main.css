@@ -15,6 +15,15 @@ html {
   z-index: 1040;
 }
 
+.top-layer .dropdown-menu {
+  transform: translate(-100%, -45px);
+  text-overflow: inherit;
+}
+
+.top-layer .dropdown-menu a p{
+  width: 300px;
+}
+
 .dropdown-menu.head {
   transform: translateY(-5px);
 }

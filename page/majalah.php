@@ -29,7 +29,7 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-9 text-dark">
+        <div class="col-md-9 text-dark isi">
             <p>Informasi dan kegiatan dari PT Pindad (Persero) dalam 1 bulan Kami sajikan secara tematik dalam Pindad Update.</p>
         </div>
     </div>

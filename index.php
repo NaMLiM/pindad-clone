@@ -159,7 +159,7 @@
                             <i class="fa fa-caret-down text-warning caret-link" aria-hidden="true"></i>
                         </a>
                         <div class="dropdown-menu text-center" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="index.php?page=regulasi keterbukaan informasi publik">REGULASI KETERBUKAAN INFORMASI PUBLIK                            </a>
+                            <a class="dropdown-item" href="index.php?page=regulasi_keterbukaan_informasi_publik">REGULASI KETERBUKAAN INFORMASI PUBLIK                            </a>
                             <a class="dropdown-item" href="index.php?page=informasi_berkala">INFORMASI BERKALA</a>
                             <a class="dropdown-item" href="index.php?page=informasi_serta_merta">INFORMASI SERTA MERTA</a>
                             <a class="dropdown-item" href="index.php?page=informasi_setiap_saat">INFORMASI SETIAP SAAT</a>

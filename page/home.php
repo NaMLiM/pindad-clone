@@ -63,56 +63,56 @@
                     <p>Kendaraan tempur roda 6 dengan kemampuan untuk beroperasi di segala medan dan kondisi. Sempurna untuk segala kebutuhan yang didukung oleh berbagai varian, yang dibuktikan dengan penggunaan pada Misi Penjaga Perdamaian Dunia PBB</p>
                     <a class="btn btn-warning rounded-pill" href="#" role="button"><dt>More</dt></a>
                 </div>
-                <img class="img-fluid w-100" src="img/produk pertahanan/AnoaBanner.jpg" alt="First slide">
+                <img class="img-fluid w-100" src="img/banner/pertahanan/AnoaBanner.jpg" alt="First slide">
             </div>
             <div class="carousel-item">
                 <div class="flyText">
                     <p>Kendaraan tempur 6 roda yang lincah dan dapat bermanuver bebas dengan membawa persenjataan berat. Dilengkapi dengan senapan mesin pengoperasian 2 orang kaliber 90mm, amunisi jarak jauh dan proteksi balistik, Badak menunjukkan dirinya sebagai kekuatan tempur andalan</p>
                     <a class="btn btn-warning rounded-pill" href="#" role="button"><dt>More</dt></a>
                 </div>
-                <img class="img-fluid w-100" src="img/produk pertahanan/BadakBanner.jpg" alt="Second slide">
+                <img class="img-fluid w-100" src="img/banner/pertahanan/BadakBanner.jpg" alt="Second slide">
             </div>
             <div class="carousel-item">
                 <div class="flyText">
                     <p>Produk tank ukuran sedang pertama di Asia Tenggara sebagai hasil dari kerjasama kolaboratif dengan manufaktur FNSS Turki. Dilengkapi dengan proteksi level 5, sistem pertahanan anti-balistik dan anti-ranjau, Harimau cocok untuk melibas berbagai situasi tempur dan memperkuat armada utama militer</p>
                     <a class="btn btn-warning rounded-pill" href="#" role="button"><dt>More</dt></a>
                 </div>
-                <img class="img-fluid w-100" src="img/produk pertahanan/HarimauBanner.jpg" alt="Third slide">
+                <img class="img-fluid w-100" src="img/banner/pertahanan/HarimauBanner.jpg" alt="Third slide">
             </div>
             <div class="carousel-item">
                 <div class="flyText">
                     <p>Kendaraan taktis roda 4 dengan kemampuan manuver luar biasa yang telah teruji dan dapat diandalkan di berbagai medan operasi. Mesin diesel 4 silinder yang diusung dapat menghasilkan 215 tenaga kuda untuk memastikan kelincahannya</p>
                     <a class="btn btn-warning rounded-pill" href="#" role="button"><dt>More</dt></a>
                 </div>
-                <img class="img-fluid w-100" src="img/produk pertahanan/KomodoBanner.jpg" alt="Four slide">
+                <img class="img-fluid w-100" src="img/banner/pertahanan/KomodoBanner.jpg" alt="Four slide">
             </div>
             <div class="carousel-item">
                 <div class="flyText">
                     <p>Pistol keluaran terbaru ini memiliki laras sepanjang 4 inci - lebih pendek dari sang pendahulu yang terkenal, pistol G2 - untuk mencapai jarak tembak efektif dalam penggunaan area jarak dekat. MAG4 ideal untuk dibawa kemana saja berkat bahan material yang lebih ringan dan mekanisme kokang yang lebih mudah</p>
                     <a class="btn btn-warning rounded-pill" href="#" role="button"><dt>More</dt></a>
                 </div>
-                <img class="img-fluid w-100" src="img/produk pertahanan/Mag4Banner.jpg" alt="Five slide">
+                <img class="img-fluid w-100" src="img/banner/pertahanan/Mag4Banner.jpg" alt="Five slide">
             </div>
             <div class="carousel-item">
                 <div class="flyText">
                     <p>Amunisi kaliber kecil yang akurat dan teruji dalam pertempuran telah mendukung berbagai operasi militer di Indonesia dalam mempertahankan kedaulatan negara serta memenangkan berbagai kompetisi menembak internasional</p>
                     <a class="btn btn-warning rounded-pill" href="#" role="button"><dt>More</dt></a>
                 </div>
-                <img class="img-fluid w-100" src="img/produk pertahanan/MunisiBanner.jpg" alt="Six slide">
+                <img class="img-fluid w-100" src="img/banner/pertahanan/MunisiBanner.jpg" alt="Six slide">
             </div>
             <div class="carousel-item">
                 <div class="flyText">
                     <p>Senapan sniper jarak jauh dengan desain ramping dan bodi yang lebih ringan untuk pergerakan. Dibangun dengan presisi dan peningkatan pada komponen penglihatan optik, memburu target pada jarak 900m tidak pernah semudah ini</p>
                     <a class="btn btn-warning rounded-pill" href="#" role="button"><dt>More</dt></a>
                 </div>
-                <img class="img-fluid w-100" src="img/produk pertahanan/SPR3Banner.jpg" alt="Seven slide">
+                <img class="img-fluid w-100" src="img/banner/pertahanan/SPR3Banner.jpg" alt="Seven slide">
             </div>
             <div class="carousel-item">
                 <div class="flyText">
                     <p>Senapan serbu terbaik kebanggaan Indonesia yang telah 11 kali memenangkan kompetisi menembak AASAM & AARM membawa pengalaman baru dalam akurasi tembakan. Mewariskan keunggulan dari pendahulunya, SS2-V4 hadir dengan rangka yang lebih ringkas serta fitur keamanan yang diperbaharui</p>
                     <a class="btn btn-warning rounded-pill" href="#" role="button"><dt>More</dt></a>
                 </div>
-                <img class="img-fluid w-100" src="img/produk pertahanan/SS2V4Banner.jpg" alt="Eight slide">
+                <img class="img-fluid w-100" src="img/banner/pertahanan/SS2V4Banner.jpg" alt="Eight slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#produkPertahanan" role="button" data-slide="prev">

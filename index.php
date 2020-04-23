@@ -125,11 +125,11 @@
                             <i class="fa fa-caret-down text-warning caret-link" aria-hidden="true"></i>
                         </a>
                         <div class="dropdown-menu text-center" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="index.php?page=berita">BERITA</a>
-                            <a class="dropdown-item" href="index.php?page=siaran_pers">SIARAN PERS</a>
-                            <a class="dropdown-item" href="index.php?page=pindad_dalam_berita">PINDAD DALAM BERITA</a>
+                            <a class="dropdown-item" href="index.php?page=news">BERITA</a>
+                            <a class="dropdown-item" href="index.php?page=press-release">SIARAN PERS</a>
+                            <a class="dropdown-item" href="index.php?page=pindad-in-news">PINDAD DALAM BERITA</a>
                             <a class="dropdown-item" href="index.php?page=majalah">MAJALAH</a>
-                            <a class="dropdown-item" href="index.php?page=katalog_dan_brosur">KATALOG DAN BROSUR</a>
+                            <a class="dropdown-item" href="index.php?page=catalog-and-brochures">KATALOG DAN BROSUR</a>
                             <a class="dropdown-item" href="index.php?page=gallery">GALLERY</a>
                             <a class="dropdown-item" href="index.php?page=video">VIDEO</a>
                         </div>
@@ -141,15 +141,15 @@
                             <i class="fa fa-caret-down text-warning caret-link" aria-hidden="true"></i>
                         </a>
                         <div class="dropdown-menu text-center" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="index.php?page=senjata">SENJATA</a>
-                            <a class="dropdown-item" href="index.php?page=munisi">MUNISI</a>
-                            <a class="dropdown-item" href="index.php?page=kendaraan_khusus">KENDARAAN KHUSUS</a>
-                            <a class="dropdown-item" href="index.php?page=tempa_cor_&_alat perkeretaapian">TEMPA COR & ALAT PERKERETAAPIAN</a>
-                            <a class="dropdown-item" href="index.php?page=alat_peledak">ALAT PELEDAK</a>
-                            <a class="dropdown-item" href="index.php?page=bahan_peledak_komersial">BAHAN PELEDAK KOMERSIAL</a>
-                            <a class="dropdown-item" href="index.php?page=cyber_security">CYBER SECURITY</a>
-                            <a class="dropdown-item" href="index.php?page=anak_perusahaan">ANAK PERUSAHAAN</a>
-                            <a class="dropdown-item" href="index.php?page=prosedur_pemesanan_produk industrial">PROSEDUR PEMESANAN PRODUK INDUSTRIAL</a>
+                            <a class="dropdown-item" href="index.php?page=weapon">SENJATA</a>
+                            <a class="dropdown-item" href="index.php?page=ammunition">MUNISI</a>
+                            <a class="dropdown-item" href="index.php?page=special-vehicles">KENDARAAN KHUSUS</a>
+                            <a class="dropdown-item" href="index.php?page=forging-and-casting">TEMPA COR & ALAT PERKERETAAPIAN</a>
+                            <a class="dropdown-item" href="index.php?page=alat-berat">ALAT BERAT</a>
+                            <a class="dropdown-item" href="index.php?page=handakom">BAHAN PELEDAK KOMERSIAL</a>
+                            <a class="dropdown-item" href="index.php?page=cyber-security">CYBER SECURITY</a>
+                            <a class="dropdown-item" href="index.php?page=anak-perusahaan">ANAK PERUSAHAAN</a>
+                            <a class="dropdown-item" href="index.php?page=inquiry-process">PROSEDUR PEMESANAN PRODUK INDUSTRIAL</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown mx-1">
@@ -159,14 +159,14 @@
                             <i class="fa fa-caret-down text-warning caret-link" aria-hidden="true"></i>
                         </a>
                         <div class="dropdown-menu text-center" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="index.php?page=regulasi_keterbukaan_informasi_publik">REGULASI KETERBUKAAN INFORMASI PUBLIK                            </a>
-                            <a class="dropdown-item" href="index.php?page=informasi_berkala">INFORMASI BERKALA</a>
-                            <a class="dropdown-item" href="index.php?page=informasi_serta_merta">INFORMASI SERTA MERTA</a>
-                            <a class="dropdown-item" href="index.php?page=informasi_setiap_saat">INFORMASI SETIAP SAAT</a>
-                            <a class="dropdown-item" href="index.php?page=prosedur_permohonan_informasi">PROSEDUR PERMOHONAN INFORMASI</a>
-                            <a class="dropdown-item" href="index.php?page=prosedur_pengajuan_keberatan">PROSEDUR PENGAJUAN KEBERATAN</a>
-                            <a class="dropdown-item" href="index.php?page=prosedur_penyelesaian_sengketa informasi">PROSEDUR PENYELESAIAN SENGKETA INFORMASI</a>
-                            <a class="dropdown-item" href="index.php?page=laporan_layanan_informasi_publik">LAPORAN LAYANAN INFORMASI PUBLIK</a>
+                            <a class="dropdown-item" href="index.php?page=regulasi-keterbukaan-informasi-publik">REGULASI KETERBUKAAN INFORMASI PUBLIK                            </a>
+                            <a class="dropdown-item" href="index.php?page=informasi-berkala">INFORMASI BERKALA</a>
+                            <a class="dropdown-item" href="index.php?page=informasi-serta-merta">INFORMASI SERTA MERTA</a>
+                            <a class="dropdown-item" href="index.php?page=informasi-setiap-saat">INFORMASI SETIAP SAAT</a>
+                            <a class="dropdown-item" href="index.php?page=prosedur-permohonan-informasi">PROSEDUR PERMOHONAN INFORMASI</a>
+                            <a class="dropdown-item" href="index.php?page=prosedur-pengajuan-keberatan">PROSEDUR PENGAJUAN KEBERATAN</a>
+                            <a class="dropdown-item" href="index.php?page=prosedur-penyelesaian-sengketa informasi">PROSEDUR PENYELESAIAN SENGKETA INFORMASI</a>
+                            <a class="dropdown-item" href="index.php?page=laporan-layanan-informasi-publik">LAPORAN LAYANAN INFORMASI PUBLIK</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown mx-1">
@@ -177,11 +177,11 @@
                         </a>
                         <div class="dropdown-menu text-center" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="#">E_PROCUREMENT</a>
-                            <a class="dropdown-item" href="index.php?page=informasi_pengadaan">INFORMASI PENGADAAN</a>
+                            <a class="dropdown-item" href="index.php?page=procurement-info">INFORMASI PENGADAAN</a>
                         </div>
                     </li>
                     <li class="nav-item mx-1">
-                        <a class="nav-link nav-singgle" href="index.php?page=hubungi">HUBUNGI</a>
+                        <a class="nav-link nav-singgle" href="index.php?page=contact-us">HUBUNGI</a>
                     </li>
                 </ul>
             </div>
@@ -209,11 +209,11 @@
                             <h5 class=" font-weight-bold">QUICK LINKS</h5>
                         </div>
                         <div class="row">
-                            <a href="" class="col-md-12 p-2">Careers</a>
-                            <a href="" class="col-md-12 p-2">Contact</a>
-                            <a href="" class="col-md-12 p-2">Services</a>
-                            <a href="" class="col-md-12 p-2">Technology</a>
-                            <a href="" class="col-md-12 p-2">Latest News</a>
+                            <a href="#" class="col-md-12 p-2">Careers</a>
+                            <a href="#" class="col-md-12 p-2">Contact</a>
+                            <a href="#" class="col-md-12 p-2">Services</a>
+                            <a href="#" class="col-md-12 p-2">Technology</a>
+                            <a href="#" class="col-md-12 p-2">Latest News</a>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -221,14 +221,14 @@
                             <h5 class=" font-weight-bold">PRODUCT & SERVICES</h5>
                         </div>
                         <div class="row">
-                            <a href="" class="col-md-12 p-2">Senjata</a>
-                            <a href="" class="col-md-12 p-2">Munisi</a>
-                            <a href="" class="col-md-12 p-2">Kendaraan Khusus</a>
-                            <a href="" class="col-md-12 p-2">Tempa Cor & Alat Perkeretaapian</a>
-                            <a href="" class="col-md-12 p-2">Alat Berat</a>
-                            <a href="" class="col-md-12 p-2">Bahan Peledak Komersial</a>
-                            <a href="" class="col-md-12 p-2">Cyber Security</a>
-                            <a href="" class="col-md-12 p-2">Anak Perusahaan</a>
+                            <a href="index.php?page=weapon" class="col-md-12 p-2">Senjata</a>
+                            <a href="index.php?page=ammunition" class="col-md-12 p-2">Munisi</a>
+                            <a href="index.php?page=special-vehicles" class="col-md-12 p-2">Kendaraan Khusus</a>
+                            <a href="index.php?page=forging-and-casting" class="col-md-12 p-2">Tempa Cor & Alat Perkeretaapian</a>
+                            <a href="index.php?page=alat-berat" class="col-md-12 p-2">Alat Berat</a>
+                            <a href="index.php?page=handakom" class="col-md-12 p-2">Bahan Peledak Komersial</a>
+                            <a href="index.php?page=cyber-security" class="col-md-12 p-2">Cyber Security</a>
+                            <a href="index.php?page=anak-perusahaan" class="col-md-12 p-2">Anak Perusahaan</a>
                         </div>
                     </div>
                     <div class="col-md-3">

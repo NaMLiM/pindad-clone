@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/senjata.css">
+<link rel="stylesheet" href="css/template-2.css">
 
 <div class="full text-center">
     <span class="garis"></span>

@@ -32,7 +32,7 @@
                                     Tentang Perusahaan
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdown-dropdown">
-                            <a class="dropdown-item" href="#">Visi Dan Misi</a>
+                            <a class="dropdown-item" href="index.php?page=vision-and-mission">Visi Dan Misi</a>
                             <a class="dropdown-item" href="#">Tujuan Dan Sasaran Perusahaan</a>
                             <a class="dropdown-item" href="#">Budaya Perusahaan</a>
                             <a class="dropdown-item" href="#">Bidang Usaha Dan Perkembangan Usaha</a>

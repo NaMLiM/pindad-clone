@@ -49,9 +49,9 @@
                                 Sejarah
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdown-dropdown">
-                            <a class="dropdown-item" href="#">Masa Kolonial Belanda Dan Pendudukan Jepang</a>
-                            <a class="dropdown-item" href="#">Pindad Sebagai Bagian Dari TNI AD</a>
-                            <a class="dropdown-item" href="#">Pindad Sebagai Perseroan</a>
+                            <a class="dropdown-item" href="index.php?page=masa-kolonial-belanda-dan-pendudukan-jepang">Masa Kolonial Belanda Dan Pendudukan Jepang</a>
+                            <a class="dropdown-item" href="index.php?page=bagian-dari-tni-ad">Pindad Sebagai Bagian Dari TNI AD</a>
+                            <a class="dropdown-item" href="index.php?page=pindad-sebagai-perseroan">Pindad Sebagai Perseroan</a>
                         </div>
                     </div>
                     <div class="dropdown">

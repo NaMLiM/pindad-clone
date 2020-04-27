@@ -61,12 +61,12 @@
                                 Managemen
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdown-dropdown">
-                            <a class="dropdown-item" href="#">Struktur Organisasi</a>
-                            <a class="dropdown-item" href="#">Dewan Komisaris</a>
-                            <a class="dropdown-item" href="#">Komite Audit</a>
-                            <a class="dropdown-item" href="#">Direksi</a>
-                            <a class="dropdown-item" href="#">Sesper Dan Kepala SPI</a>
-                            <a class="dropdown-item" href="#">Anak Perusahaan</a>
+                            <a class="dropdown-item" href="index.php?page=organization-structure">Struktur Organisasi</a>
+                            <a class="dropdown-item" href="index.php?page=dewan-komisaris">Dewan Komisaris</a>
+                            <a class="dropdown-item" href="index.php?page=komite-audit">Komite Audit</a>
+                            <a class="dropdown-item" href="index.php?page=direksi">Direksi</a>
+                            <a class="dropdown-item" href="index.php?page=sesper-dan-kepala-spi">Sesper Dan Kepala SPI</a>
+                            <a class="dropdown-item" href="index.php?page=subsidiaries">Anak Perusahaan</a>
                         </div>
                     </div>
                     <a href="" class="dropdown-item top-layer">Tata Kelola Perusahaan & Managemen Risiko</a>

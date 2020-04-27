@@ -33,13 +33,13 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdown-dropdown">
                             <a class="dropdown-item" href="index.php?page=vision-and-mission">Visi Dan Misi</a>
-                            <a class="dropdown-item" href="#">Tujuan Dan Sasaran Perusahaan</a>
-                            <a class="dropdown-item" href="#">Budaya Perusahaan</a>
-                            <a class="dropdown-item" href="#">Bidang Usaha Dan Perkembangan Usaha</a>
-                            <a class="dropdown-item" href="#">Legalitas</a>
-                            <a class="dropdown-item" href="#">Peraturan Dan Ketentuan Perusahaan</a>
-                            <a class="dropdown-item" href="#">Sistem Managemen Mutu Dan Komitmen Terhadap Lingkungan</a>
-                            <a class="dropdown-item" href="#">Keuangan</a>
+                            <a class="dropdown-item" href="index.php?page=company-objective-and-target">Tujuan Dan Sasaran Perusahaan</a>
+                            <a class="dropdown-item" href="index.php?page=corporate-culture">Budaya Perusahaan</a>
+                            <a class="dropdown-item" href="index.php?page=business-field-and-business-development">Bidang Usaha Dan Perkembangan Usaha</a>
+                            <a class="dropdown-item" href="index.php?page=legality">Legalitas</a>
+                            <a class="dropdown-item" href="index.php?page=law-and-regulation">Peraturan Dan Ketentuan Perusahaan</a>
+                            <a class="dropdown-item" href="index.php?page=quality-and-environment">Sistem Managemen Mutu Dan Komitmen Terhadap Lingkungan</a>
+                            <a class="dropdown-item" href="index.php?page=finance">Keuangan</a>
                         </div>
                     </div>
                     <div class="dropdown">
@@ -165,7 +165,7 @@
                             <a class="dropdown-item" href="index.php?page=informasi-setiap-saat">INFORMASI SETIAP SAAT</a>
                             <a class="dropdown-item" href="index.php?page=prosedur-permohonan-informasi">PROSEDUR PERMOHONAN INFORMASI</a>
                             <a class="dropdown-item" href="index.php?page=prosedur-pengajuan-keberatan">PROSEDUR PENGAJUAN KEBERATAN</a>
-                            <a class="dropdown-item" href="index.php?page=prosedur-penyelesaian-sengketa informasi">PROSEDUR PENYELESAIAN SENGKETA INFORMASI</a>
+                            <a class="dropdown-item" href="index.php?page=prosedur-penyelesaian-sengketa-informasi">PROSEDUR PENYELESAIAN SENGKETA INFORMASI</a>
                             <a class="dropdown-item" href="index.php?page=laporan-layanan-informasi-publik">LAPORAN LAYANAN INFORMASI PUBLIK</a>
                         </div>
                     </li>

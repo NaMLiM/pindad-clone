@@ -23,7 +23,7 @@
                     <li class="py-1"><a href="index.php?page=siaran_pers">Siaran Pers</a></li>
                     <li class="py-1"><a href="index.php?page=pindad_dalam_berita">Pindad Dalam Berita</a></li>
                     <li class="py-1"><a href="index.php?page=majalah" class="active">Majalah</a></li>
-                    <li class="py-1"><a href="index.php?page=katalog_dan_brosur">Katalog Dan Brosur</a></li>
+                    <li class="py-1"><a href="index.php?page=catalog-and-brochures">Katalog Dan Brosur</a></li>
                     <li class="py-1"><a href="index.php?page=gallery">Gallery</a></li>
                     <li class="py-1"><a href="index.php?page=video">Video</a></li>
                 </ul>

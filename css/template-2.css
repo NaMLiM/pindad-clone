@@ -3,6 +3,16 @@
   padding-top: 170px;
   padding-bottom: 170px;
   background-color: #1e1e1e;
+  text-align: center;
+}
+
+.full h1 {
+  width: 50%;
+  margin-left: 25%;
+}
+
+.full h1 dt b {
+  text-align: center;
 }
 
 .header-blog {

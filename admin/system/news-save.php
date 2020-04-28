@@ -8,11 +8,11 @@
     $url = "../../news/".$_POST['judul'].".html";
     $url = str_replace($url_edit,"-",$url);
     $gambar = "Placeholder";
-    $add = mysqli_query($connection, "insert into berita values (NULL,'$judul',NOW(),'$url','$gambar','$kategori)");
-    if($add){
-        if($open=fopen($url, "w")){
-            if(fwrite($open,$berita))
-            fclose($open);
+    $query = mysqli_query($connection, "insert into berita values (NULL,'$judul','2020-04-28','$url','$gambar','$kategori')");
+    if($query){
+        if($file=fopen($url, "w")){
+            if(fwrite($file,$berita))
+            fclose($file);
         }
         else{?>
             <script language="javascript">

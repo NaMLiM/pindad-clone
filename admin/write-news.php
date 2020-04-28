@@ -38,26 +38,60 @@
                 selector: '.editor',
                 images_upload_url: 'system/upload-images.php',
                 height: '100%',
-                entity_encoding: 'raw',
-                plugins: '',
+                automatic_uploads: true,
+                plugins: 'code image',
                 toolbar: '',
                 toolbar_mode: 'floating',
+                images_upload_handler: function (blobInfo, success, failure) {
+                    var xhr, formData;
+                    xhr = new XMLHttpRequest();
+                    xhr.withCredentials = false;
+                    xhr.open('POST', 'system/upload-images.php');
+                    xhr.onload = function() {
+                    var json;
+
+                    if (xhr.status != 200) {
+                        failure('HTTP Error: ' + xhr.status);
+                        return;
+                    }
+                    json = JSON.parse(xhr.responseText);
+
+                    if (!json || typeof json.location != 'string') {
+                        failure('Invalid JSON: ' + xhr.responseText);
+                        return;
+                    }
+                    success(json.location);
+                    };
+                    formData = new FormData();
+                    if( typeof(blobInfo.blob().name) !== undefined )
+                        fileName = blobInfo.blob().name;
+                    else
+                        fileName = blobInfo.filename();
+                    formData.append('file', blobInfo.blob(), fileName);
+                    xhr.send(formData);
+                }
             })
         });
         $(".submit").click(function(){
-        var judul = $(".judul").val();
-        var kategori = $(".kategori").val();
-        //var berita = tinymce.activeEditor.getContent();
-        var berita = $(".editor").html(tinymce.activeEditor.getContent());
-        var dataTosend='judul='+judul+'&kategori='+kategori+'&berita='+berita;
-        $.ajax({
-            type: 'POST',
-            url: 'system/news-save.php',
-            data: dataTosend
-        })
-        .done(function(){
-            alert("Berita Berhasil Dipublish");
-        })
+            tinymce.triggerSave();
+            var title = $(".judul").val();
+            var category = $(".kategori").val();
+            var news = tinymce.activeEditor.getContent();
+            var dataTosend= {
+                judul: title,
+                kategori: category,
+                berita: news
+            };
+            $.ajax({
+                type: 'POST',
+                url: 'system/news-save.php',
+                encode: true,
+                data: dataTosend
+            })
+            .done(function(){
+                alert("Berita Berhasil Dipublish");
+                document.location="dashboard.php";
+            })
       });
     </script>
 </body>

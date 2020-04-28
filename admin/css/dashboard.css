@@ -9,38 +9,44 @@ html, body {
 .sidebar {
   background-color: #2d2d2dff;
   height: 100%;
+  padding: 0;
 }
 
 .user {
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 10px;
+  width: 80%;
   background-color: gainsboro;
   border-radius: 5px;
 }
 
-.user-image {
-  background-color: #2d2d2dff;
-  color: white;
-  border-radius: 100%;
-  margin-left: 45px;
-  margin-right: 45px;
+.user i {
   font-size: 75px;
-  text-align: center;
 }
 
 .user-info {
   padding: 10px;
 }
 
-.page {
-  color: white;
+.list-group-item {
+  border: none;
+  background-color: #2d2d2dff;
+  color: lightgray;
+  text-decoration: none;
+  padding-right: 0;
 }
 
-.page-btn {
-  transform: translateX(-40px);
+.list-group-item:hover {
+  background-color: rgb(80, 80, 80);
+  color: white;
   text-decoration: none;
-  color: #2d2d2dff; 
+}
+
+.list-group-item.active {
+  background-color: orange;
 }
 
 .search {

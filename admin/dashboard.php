@@ -18,28 +18,26 @@
     <div class="container-fluid h-100">
         <div class="row h-100">
             <div class="col-md-2 sidebar">
-                <div class="user">
-                    <div class="user-image">
-                        <i class="fas fa-user"></i>
-                    </div>
+                <div class="user text-center">
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
                     <div class="user-info text-center">
                         <p><?php echo $_SESSION["nama_admin"]; ?></p>
                         <a href="system/logout.php" class="btn btn-danger">Logout</a>
                     </div>
                 </div>
                 <div class="page">
-                    <h2>Page</h2>
-                    <ul>
-                        <li class="page-btn"><a href="#">Berita</a></li>
-                        <li class="page-btn"><a href="#">Produk</a></li>
-                    </ul>   
+                    <h2 class="text-light">Page</h2>
+                    <div class="list-group w-100">
+                        <a href="#" class="list-group-item rounded-0 active">Berita</a>
+                        <a href="#" class="list-group-item rounded-0 ">Produk</a>
+                    </div>   
                 </div>
-                <div class="action">
+                <div class="action mt-4">
                     <input type="search" placeholder="Search" name="search" class="search">
-                    <ul>
-                        <li class="page-btn"><a href="#">View</a></li>
-                        <li class="page-btn"><a href="#">Create</a></li>
-                    </ul>   
+                    <div class="list-group w-100">
+                        <a href="#" class="list-group-item rounded-0 active">View</a>
+                        <a href="#" class="list-group-item rounded-0 ">Create</a>
+                    </div>   
                 </div>
             </div>
             <div class="col-md-10 content">

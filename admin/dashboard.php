@@ -28,6 +28,20 @@
                         <a href="system/logout.php" class="btn btn-danger">Logout</a>
                     </div>
                 </div>
+                <div class="page">
+                    <h2>Page</h2>
+                    <ul>
+                        <li class="page-btn"><a href="#">Berita</a></li>
+                        <li class="page-btn"><a href="#">Produk</a></li>
+                    </ul>   
+                </div>
+                <div class="action">
+                    <input type="search" placeholder="Search" name="search" class="search">
+                    <ul>
+                        <li class="page-btn"><a href="#">View</a></li>
+                        <li class="page-btn"><a href="#">Create</a></li>
+                    </ul>   
+                </div>
             </div>
             <div class="col-md-10">
                 Test
@@ -39,5 +53,10 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7b59756246.js" crossorigin="anonymous"></script>
+    <script>
+        $(".page-btn").click(function(){
+            $(".page-btn").toggleClass("active");
+        });
+    </script>
 </body>
 </html>

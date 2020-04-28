@@ -33,14 +33,6 @@ html, body {
   padding: 10px;
 }
 
-.logout-btn {
-  padding-left: 20px;
-  padding-right: 20px;
-  color: white;
-  background-color: red;
-  border: 0;
-}
-
 .page {
   color: white;
 }

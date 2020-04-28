@@ -1,0 +1,21 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #eaba3a;
+}
+
+.bg-cont {
+    background-color: #eaba3a;
+}
+
+.cont {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2d2d2dff;
+}

@@ -1,0 +1,147 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.head {
+  position: absolute;
+}
+
+.top-layer {
+  z-index: 1040;
+}
+
+.top-layer .dropdown-menu {
+  transform: translate(-100%, -45px);
+  text-overflow: inherit;
+}
+
+.top-layer .dropdown-menu a p {
+  width: 300px;
+}
+
+.dropdown-menu.head {
+  transform: translateY(-5px);
+}
+
+.flag-icon {
+  height: 20px;
+}
+
+.bg-custom {
+  transform: translateY(20px);
+  background: transparent;
+  transition: all 700ms;
+}
+
+.bg-custom.scrolled {
+  transform: translateY(0);
+  background: white;
+}
+
+.nav-link {
+  color: white;
+  transform: translateY(10px);
+  transition: all 500ms;
+}
+
+.nav-link.scrolled {
+  transform: translateY(0);
+  color: rgb(75, 75, 75);
+}
+
+.dropdown-link {
+  padding: 8px;
+  transition: all 500ms;
+}
+
+.nav-singgle.nav-link:hover {
+  background: #eaba3a;
+  color: white;
+}
+
+.dropdown:hover .nav-link > .dropdown-link {
+  background: #eaba3a;
+  color: white;
+}
+
+.caret-link {
+  transform: translateY(-10px);
+  transition: all 700ms;
+}
+
+.caret-link.scrolled {
+  transform: translateY(10px);
+}
+
+.dropdown:hover .nav-link > .caret-link {
+  transform: translateY(-50px);
+  transition: all 0ms;
+}
+
+.dropdown-menu {
+  transform: translate(-25%, -18px);
+  transition: all 300ms;
+}
+
+.dropdown-menu a:hover {
+  background: #eaba3a;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+  /* Agar Dropdown tidak sticky */
+  pointer-events: none;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.footer1 {
+  background-color: #03153e;
+}
+  
+.footer2 {
+  background-color: #020e28;
+}
+  
+.grayLink a,
+.grayLink a:visited {
+  text-decoration: none;
+  color: gray;
+}
+  
+.grayLink a:hover {
+  color: #bcbcbc;
+  text-decoration: none;
+}
+  
+.grayColor {
+  color: gray;
+}
+
+.to-top {
+  padding: 15px 20px;
+  position: fixed;
+  z-index: 2;
+  right: 40px;
+  bottom: 40px;
+  display: none;
+  transition: all 300ms;
+}
+
+.to-top.scrolled {
+  display: block;
+}
+
+.to-top:hover {
+  background-color: #1c8596;
+}

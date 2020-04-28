@@ -39,19 +39,21 @@
                         <a href="dashboard.php?page=produk" class="list-group-item rounded-0 <?php if($page=='produk'){echo 'active';} ?>">Produk</a>
                     </div>   
                 </div>
-                <div class="action mt-4">
+                <!-- <div class="action mt-4">
                     <input type="search" placeholder="Search" name="search" class="search ml-3">
                     <div class="list-group w-100">
                         <a href="#" class="list-group-item rounded-0 active">View</a>
                         <a href="#" class="list-group-item rounded-0 ">Create</a>
                     </div>   
-                </div>
+                </div> -->
             </div>
             <div class="col-md-10 content">
                 <?php include("page/".$page.".php"); ?>
             </div>
         </div>
     </div>
+
+    <a href="write-news.php" class="create"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
 
     <!-- Javascript Lib -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

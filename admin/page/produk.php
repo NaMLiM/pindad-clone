@@ -1,3 +1,7 @@
+<div class="mt-4 w-100">
+    <input type="search" placeholder="Search" name="search" class="search ml-auto float-right">
+</div>
+
 <table class="table" id="tabel">
     <th style="background-color: orange; text-align: center;">ID</th>
     <th style="background-color: orange; text-align: center;">Nama Produk</th>

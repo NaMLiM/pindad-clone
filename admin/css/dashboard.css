@@ -50,7 +50,7 @@ html, body {
 }
 
 .search {
-  border: 0;
+  border: 1px solid rgb(172, 172, 172);
   border-radius: 5px;
   margin-bottom: 10px;
 }
@@ -64,10 +64,6 @@ html, body {
   background-repeat: no-repeat;
   background-size: 60%, 60%;
   background-position: center;
-}
-
-.table {
-  margin-top: 50px;
 }
 
 .table tr {
@@ -95,4 +91,11 @@ html, body {
   width: 500px;
   margin: auto;
   margin-top: 50px;
+}
+
+.create {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 50px;
 }

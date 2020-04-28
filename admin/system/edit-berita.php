@@ -3,16 +3,21 @@
     include("connection.php");
     session_start();
 
-    $tabel = $_GET["page"];
-    $id = $_GET["id"];
+    $page = $_GET["page"];
+    $id_berita = $_POST["id"];
+    $judul_berita = $_POST["judul_berita"];
+    $tanggal = $_POST["tanggal_berita"];
+    $isi = $_POST["isi_berita"];
+    $gambar = $_POST["gambar_berita"];
+    $kategori = $_POST["kategori"];
 
-    $delete = mysqli_query($connection, "delete from $tabel where id_$tabel='$id'");
+    $edit = mysqli_query($connection, "update berita set judul_berita='$judul_berita', tanggal='$tanggal', isi='$isi', gambar='$gambar', kategori='$kategori' where id_berita=$id_berita");
 
-    if($delete){
+    if($edit){
         echo "
             <script>
-                alert('Hapus Data Berhasil');
-                document.location = '../dashboard.php?page=$tabel';
+                alert('Update Data Berhasil');
+                document.location = '../dashboard.php?page=$page';
             </script>
         ";
     }

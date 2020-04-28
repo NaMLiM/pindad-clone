@@ -1,13 +1,14 @@
 <?php
-    include_once("system/connection.php");
+    include_once("connection.php");
 
     $judul = $_POST['judul'];
+    $kategori = $_POST['kategori'];
     $berita = $_POST['berita'];
-    $date = date('Y-m-d H:i:s');
     $url_edit = array('%20',' ',"!","?");
-    $url = "berita/".$_POST['judul'].".html";
+    $url = "../../news/".$_POST['judul'].".html";
     $url = str_replace($url_edit,"-",$url);
-    $add = mysqli_query($koneksi, "insert into berita values (NULL,'$judul',NOW(),'$url','$gambar')");
+    $gambar = "Placeholder";
+    $add = mysqli_query($connection, "insert into berita values (NULL,'$judul',NOW(),'$url','$gambar','$kategori)");
     if($add){
         if($open=fopen($url, "w")){
             if(fwrite($open,$berita))

@@ -70,6 +70,29 @@ html, body {
   margin-top: 50px;
 }
 
+.table tr {
+  cursor: pointer;
+}
+
 .table tr:hover {
   background-color: rgba(255, 166, 0, 0.329);
+}
+
+.pop {
+  background-color: rgba(0, 0, 0, 0.199);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  transition: all 200ms;
+}
+
+#pop-up {
+  background-color: white;
+  padding: 20px;
+  width: 500px;
+  margin: auto;
+  margin-top: 50px;
 }

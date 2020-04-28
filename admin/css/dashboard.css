@@ -69,3 +69,7 @@ html, body {
 .table {
   margin-top: 50px;
 }
+
+.table tr:hover {
+  background-color: rgba(255, 166, 0, 0.329);
+}

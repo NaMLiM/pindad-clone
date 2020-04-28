@@ -1,9 +1,16 @@
 <?php
-    include "system/connection.php";
+    include ("system/connection.php");
     session_start();
 
     if(!$_SESSION["nama_admin"]){
         header("location:login.php");
+    }
+
+    if(!$_GET["page"]){
+        header("location:dashboard.php?page=berita");
+    }
+    else{
+        $page = $_GET["page"];
     }
 ?>
 <!DOCTYPE html>
@@ -26,14 +33,14 @@
                     </div>
                 </div>
                 <div class="page">
-                    <h2 class="text-light">Page</h2>
+                    <h2 class="text-light ml-3">Page</h2>
                     <div class="list-group w-100">
-                        <a href="#" class="list-group-item rounded-0 active">Berita</a>
-                        <a href="#" class="list-group-item rounded-0 ">Produk</a>
+                        <a href="dashboard.php?page=berita" class="list-group-item rounded-0 <?php if($page=='berita'){echo 'active';} ?>">Berita</a>
+                        <a href="dashboard.php?page=produk" class="list-group-item rounded-0 <?php if($page=='produk'){echo 'active';} ?>">Produk</a>
                     </div>   
                 </div>
                 <div class="action mt-4">
-                    <input type="search" placeholder="Search" name="search" class="search">
+                    <input type="search" placeholder="Search" name="search" class="search ml-3">
                     <div class="list-group w-100">
                         <a href="#" class="list-group-item rounded-0 active">View</a>
                         <a href="#" class="list-group-item rounded-0 ">Create</a>
@@ -41,17 +48,7 @@
                 </div>
             </div>
             <div class="col-md-10 content">
-                <table class="table">
-                    <th style="background-color: orange; text-align: center;">ID</th>
-                    <th style="background-color: orange; text-align: center;">Judul Berita</th>
-                    <th style="background-color: orange; text-align: center;">Tanggal Berita</th>
-                    <th style="background-color: orange; text-align: center;">Isi Berita</th>
-                    <th style="background-color: orange; text-align: center;">Gambar Berita</th>
-                    <th style="background-color: orange; text-align: center;">Kategori Berita</th>
-                    <tr>
-                        <td>Test</td>
-                    </tr>
-                </table>
+                <?php include("page/".$page.".php"); ?>
             </div>
         </div>
     </div>
@@ -60,10 +57,5 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7b59756246.js" crossorigin="anonymous"></script>
-    <script>
-        $(".page-btn").click(function(){
-            $(".page-btn").toggleClass("active");
-        });
-    </script>
 </body>
 </html>

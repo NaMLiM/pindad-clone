@@ -1,5 +1,10 @@
 <?php
     include "system/connection.php";
+    session_start();
+
+    if(!$_SESSION["nama_admin"]){
+        header("location:login.php");
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,8 +24,8 @@
                         <i class="fas fa-user"></i>
                     </div>
                     <div class="user-info text-center">
-                        <p>nama_admin</p>
-                        <input type="button" value="Logout" class="logout-btn">
+                        <p><? echo $_SESSION["nama_admin"]; ?></p>
+                        <a href="system/logout.php" class="btn btn-danger">Logout</a>
                     </div>
                 </div>
             </div>

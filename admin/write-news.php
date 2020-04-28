@@ -13,7 +13,14 @@
                 Back
             </a>
             <input type="text" placeholder="Judul" name="filename" class="judul" size="100">
-            <input type="button" value="Submit" name="submit">
+            <select name="kategori" class="kategori">
+                <option value="press-release">Siaran Press</option>
+                <option value="pindad-in-news">Pindad Dalam Berita</option>
+                <option value="procurement-info">Informasi Pengadaan</option>
+                <option value="informasi-serta-merta">Informasi Serta Merta</option>
+                <option value="new-innovation">Inovasi Baru</option>
+            </select>
+            <input type="button" value="Submit" name="submit" class="submit">
         </nav>
     </header>
     <textarea class="editor">
@@ -26,12 +33,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
     <script src="https://cdn.tiny.cloud/1/3oaj8v7pg3vxf0ezdpkje5mb6zhi9uyicn04nqok4vxmdazx/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <script>
-        tinymce.init({
-            selector: '.editor',
-            plugins: '',
-            toolbar: '',
-            toolbar_mode: 'floating',
-            });
+        $(function(){
+            tinymce.init({
+                selector: '.editor',
+                plugins: '',
+                toolbar: '',
+                toolbar_mode: 'floating',
+            })
+        });
+        $(".submit").click(function(){
+        var judul = $(".judul").val();
+        var kategori = $(".kategori").val();
+        var berita = tinymce.activeEditor.getContent();
+        var dataTosend='judul='+judul+'&kategori='+kategori+'&berita='+berita;
+        $.ajax({
+          type: 'POST',
+          url: 'system/news-save.php',
+          data: dataTosend
+        })
+        .done(function(){
+          alert("Berita Berhasil Dipublish");
+		      document.location("user.php");
+        })
+      });
     </script>
 </body>
 </html>

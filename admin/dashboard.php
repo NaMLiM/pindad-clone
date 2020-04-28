@@ -7,13 +7,12 @@
     }
 ?>
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/dashboard.css">
-    <title>Dashboard - nama_admin</title>
+    <title>Dashboard - <?php echo $_SESSION["nama_admin"]; ?></title>
 </head>
 <body>
     <div class="container-fluid h-100">
@@ -24,8 +23,8 @@
                         <i class="fas fa-user"></i>
                     </div>
                     <div class="user-info text-center">
-                        <p><? echo $_SESSION["nama_admin"]; ?></p>
-                        <a href="system/logout.php" class="btn btn-danger w-100">Logout</a>
+                        <p><?php echo $_SESSION["nama_admin"]; ?></p>
+                        <a href="system/logout.php" class="btn btn-danger">Logout</a>
                     </div>
                 </div>
                 <div class="page">

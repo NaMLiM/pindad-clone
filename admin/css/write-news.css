@@ -6,9 +6,9 @@ html, body {
   overflow-x: hidden;
 }
 
-az.navbar-brand:hover > .fa-arrow-circle-left {
-  transform: rotate(360);
-  transition-duration: 200ms;
+a.navbar-brand:hover > i {
+  transform: rotate(360deg);
+  transition-duration: 500ms;
 }
 
 .navbar-brand:hover > .navbar-brand {

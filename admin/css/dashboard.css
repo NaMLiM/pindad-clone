@@ -99,3 +99,9 @@ html, body {
   right: 30px;
   font-size: 50px;
 }
+
+.create:hover > i {
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: all 300ms ease-in-out;
+}

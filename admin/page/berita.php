@@ -1,4 +1,4 @@
-<table class="table">
+<table class="table" id="tabel">
     <th style="background-color: orange; text-align: center;">ID</th>
     <th style="background-color: orange; text-align: center;">Judul Berita</th>
     <th style="background-color: orange; text-align: center;">Tanggal Berita</th>

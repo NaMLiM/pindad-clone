@@ -69,7 +69,8 @@
                             <a class="dropdown-item" href="index.php?page=subsidiaries">Anak Perusahaan</a>
                         </div>
                     </div>
-                    <a href="" class="dropdown-item top-layer">Tata Kelola Perusahaan & Managemen Risiko</a>
+                    <a href="index.php?page=good-corporate-governance-and-risk-management" class="dropdown-item top-layer">Tata Kelola Perusahaan & Managemen Risiko</a>
+                    <a href="index.php?page=csr-dan-pkbl" class="dropdown-item top-layer">CSR dan PKBL</a>
                     <div class="dropdown">
                         <a class="dropdown-item top-layer" type="button" id="dropdown-dropdown" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
@@ -77,8 +78,8 @@
                                 Corporate Communication
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdown-dropdown">
-                            <a class="dropdown-item" href="#">Achievement</a>
-                            <a class="dropdown-item" href="#">Annual Report</a>
+                            <a class="dropdown-item" href="index.php?page=annual-report">Annual Report</a>
+                            <a class="dropdown-item" href="index.php?page=achievement">Achievement</a>
                         </div>
                     </div>
                     <div class="dropdown">
@@ -88,10 +89,10 @@
                                 Inovasi
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdown-dropdown">
-                            <a class="dropdown-item" href="#">Inovasi Baru</a>
+                            <a class="dropdown-item" href="index.php?page=new-innovations">Inovasi Baru</a>
                         </div>
                     </div>
-                    <a href="" class="dropdown-item top-layer">E-LHKPN</a>
+                    <a href="index.php?page=elhkpn" class="dropdown-item top-layer">E-LHKPN</a>
                 </div>
             </div>
             <div class="dropdown open top-layer py-1 mx-2">
@@ -101,7 +102,7 @@
                 </a>
                 <div class="dropdown-menu head top-layer" aria-labelledby="dropdown-perusahaan">
                     <div class="dropdown">
-                        <a href="" class="dropdown-item top-layer">Informasi Karir</a>
+                        <a href="index.php?page=career-info" class="dropdown-item top-layer">Informasi Karir</a>
                     </div>
                 </div>
             </div>

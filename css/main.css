@@ -20,7 +20,7 @@ html {
   text-overflow: inherit;
 }
 
-.top-layer .dropdown-menu a p{
+.top-layer .dropdown-menu a p {
   width: 300px;
 }
 
@@ -127,7 +127,7 @@ html {
 .grayColor {
   color: gray;
 }
-  
+
 .to-top {
   padding: 15px 20px;
   position: fixed;

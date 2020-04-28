@@ -53,9 +53,9 @@
         </div>
     </div>
 
-    <div class="pop">
+    <!-- <div class="pop">
         <div id="pop-up">
-            <div class="form-group">
+            <form class="form-group">
                 <label for="id">ID</label>
                 <input type="text"
                 class="form-control" name="id" id="id" aria-describedby="helpId" placeholder="ID" readonly>
@@ -70,6 +70,42 @@
                 <input type="text" class="form-control" name="gambar_berita" id="gambar_berita" aria-describedby="helpId" placeholder="Gambar">
                 <label for="kategori">Kategori</label>
                 <input type="text" class="form-control" name="kategori" id="kategori" aria-describedby="helpId" placeholder="Kategori">
+            </form>
+        </div>
+    </div> -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Data</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group">
+                        <label for="id">ID</label>
+                        <input type="text"
+                        class="form-control" name="id" id="id" aria-describedby="helpId" placeholder="ID" readonly>
+                        <label for="judul_berita">Judul Berita</label>
+                        <input type="text"
+                          class="form-control" name="judul_berita" id="judul_berita" aria-describedby="helpId" placeholder="Judul">
+                        <label for="tanggal_berita">Tanggal</label>
+                        <input type="text" class="form-control" name="tanggal_berita" id="tanggal_berita" aria-describedby="helpId" placeholder="Tanggal">
+                        <label for="isi_berita">Isi Berita</label>
+                        <input type="text" class="form-control" name="isi_berita" id="isi_berita" aria-describedby="helpId" placeholder="Isi Berita">
+                        <label for="gambar_berita">Gambar</label>
+                        <input type="text" class="form-control" name="gambar_berita" id="gambar_berita" aria-describedby="helpId" placeholder="Gambar">
+                        <label for="kategori">Kategori</label>
+                        <input type="text" class="form-control" name="kategori" id="kategori" aria-describedby="helpId" placeholder="Kategori">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
             </div>
         </div>
     </div>
@@ -97,13 +133,8 @@
                 $("#isi_berita").val(this.cells[3].innerHTML);
                 $("#gambar_berita").val(this.cells[4].innerHTML);
                 $("#kategori").val(this.cells[5].innerHTML);
-                $(".pop").show();
             });
         }
-
-        $(".pop").click(function () {
-            $(".pop").hide();            
-        });
     </script>
 </body>
 </html>

@@ -10,7 +10,7 @@
         $select = mysqli_query($connection, "select * from berita");
         while($data = mysqli_fetch_array($select)){
             echo "
-                <tr>
+                <tr data-toggle='modal' data-target='#modelId'>
                     <td class='text-center'>".$data["id_berita"]."</td>
                     <td class='text-center'>".$data["judul_berita"]."</td>
                     <td class='text-center'>".$data["tanggal"]."</td>

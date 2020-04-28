@@ -29,7 +29,7 @@
                     <i class="fa fa-user-circle" aria-hidden="true"></i>
                     <div class="user-info text-center">
                         <p><?php echo $_SESSION["nama_admin"]; ?></p>
-                        <a href="system/logout.php" class="btn btn-danger">Logout</a>
+                        <a href="system/logout.php" class="btn btn-danger w-100">Logout</a>
                     </div>
                 </div>
                 <div class="page">

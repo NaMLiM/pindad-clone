@@ -26,7 +26,7 @@
     <textarea class="editor">
     </textarea>
     <!-- JS library -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7b59756246.js" crossorigin="anonymous"></script>
@@ -36,6 +36,9 @@
         $(function(){
             tinymce.init({
                 selector: '.editor',
+                images_upload_url: 'system/upload-images.php',
+                height: '100%',
+                entity_encoding: 'raw',
                 plugins: '',
                 toolbar: '',
                 toolbar_mode: 'floating',
@@ -44,16 +47,16 @@
         $(".submit").click(function(){
         var judul = $(".judul").val();
         var kategori = $(".kategori").val();
-        var berita = tinymce.activeEditor.getContent();
+        //var berita = tinymce.activeEditor.getContent();
+        var berita = $(".editor").html(tinymce.activeEditor.getContent());
         var dataTosend='judul='+judul+'&kategori='+kategori+'&berita='+berita;
         $.ajax({
-          type: 'POST',
-          url: 'system/news-save.php',
-          data: dataTosend
+            type: 'POST',
+            url: 'system/news-save.php',
+            data: dataTosend
         })
         .done(function(){
-          alert("Berita Berhasil Dipublish");
-		      document.location("user.php");
+            alert("Berita Berhasil Dipublish");
         })
       });
     </script>

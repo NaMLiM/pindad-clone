@@ -13,8 +13,8 @@
             <div class="cont justify-content-center align-self-center p-4">
                 <img src="img/logo_gray.png" class="img-fluid" alt="">
                 <form class="form-group" action="system/login-proses.php" method="POST">
-                  <input type="text" class="form-control my-3" name="" id="" aria-describedby="helpId" placeholder="Username">
-                  <input type="password" class="form-control my-3" name="" id="" aria-describedby="helpId" placeholder="Password">
+                  <input type="text" class="form-control my-3" name="username" id="" aria-describedby="helpId" placeholder="Username" required>
+                  <input type="password" class="form-control my-3" name="password" id="" aria-describedby="helpId" placeholder="Password" required>
 
                   <input type="submit" value="Login" name="submit" class="form-control btn-primary">
                 </form>

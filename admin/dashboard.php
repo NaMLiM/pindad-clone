@@ -84,28 +84,29 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                 </div>
-                <div class="modal-body">
-                    <form class="form-group">
-                        <label for="id">ID</label>
-                        <input type="text"
-                        class="form-control" name="id" id="id" aria-describedby="helpId" placeholder="ID" readonly>
-                        <label for="judul_berita">Judul Berita</label>
-                        <input type="text"
-                          class="form-control" name="judul_berita" id="judul_berita" aria-describedby="helpId" placeholder="Judul">
-                        <label for="tanggal_berita">Tanggal</label>
-                        <input type="text" class="form-control" name="tanggal_berita" id="tanggal_berita" aria-describedby="helpId" placeholder="Tanggal">
-                        <label for="isi_berita">Isi Berita</label>
-                        <input type="text" class="form-control" name="isi_berita" id="isi_berita" aria-describedby="helpId" placeholder="Isi Berita">
-                        <label for="gambar_berita">Gambar</label>
-                        <input type="text" class="form-control" name="gambar_berita" id="gambar_berita" aria-describedby="helpId" placeholder="Gambar">
-                        <label for="kategori">Kategori</label>
-                        <input type="text" class="form-control" name="kategori" id="kategori" aria-describedby="helpId" placeholder="Kategori">
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save</button>
-                </div>
+                <form class="form-group" action="" method="POST" id="form">
+                    <div class="modal-body">
+                            <label for="id">ID</label>
+                            <input type="text"
+                            class="form-control" name="id" id="id" aria-describedby="helpId" placeholder="ID" readonly>
+                            <label for="judul_berita">Judul Berita</label>
+                            <input type="text"
+                            class="form-control" name="judul_berita" id="judul_berita" aria-describedby="helpId" placeholder="Judul">
+                            <label for="tanggal_berita">Tanggal</label>
+                            <input type="text" class="form-control" name="tanggal_berita" id="tanggal_berita" aria-describedby="helpId" placeholder="Tanggal">
+                            <label for="isi_berita">Isi Berita</label>
+                            <input type="text" class="form-control" name="isi_berita" id="isi_berita" aria-describedby="helpId" placeholder="Isi Berita">
+                            <label for="gambar_berita">Gambar</label>
+                            <input type="text" class="form-control" name="gambar_berita" id="gambar_berita" aria-describedby="helpId" placeholder="Gambar">
+                            <label for="kategori">Kategori</label>
+                            <input type="text" class="form-control" name="kategori" id="kategori" aria-describedby="helpId" placeholder="Kategori">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary mr-auto" data-dismiss="modal">Close</button>
+                        <a href="#" class="btn btn-danger" id="delete">Delete</a>
+                        <input type="submit" value="Edit" class="btn btn-primary">
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -133,6 +134,8 @@
                 $("#isi_berita").val(this.cells[3].innerHTML);
                 $("#gambar_berita").val(this.cells[4].innerHTML);
                 $("#kategori").val(this.cells[5].innerHTML);
+                $("#form").attr("action","system/edit-berita.php?page=berita");
+                $("#delete").attr("href","system/delete.php?page=berita&id="+this.cells[0].innerHTML);
             });
         }
     </script>

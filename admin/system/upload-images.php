@@ -2,12 +2,12 @@
 /***************************************************
  * Only these origins are allowed to upload images *
  ***************************************************/
-$accepted_origins = array("http://localhost", "http://192.168.1.1", "http://example.com");
+$accepted_origins = array("http://localhost:8000", "http://192.168.1.1", "http://localhost/pindad-clone", "localhost/pindad-clone");
 
 /*********************************************
  * Change this line to set the upload folder *
  *********************************************/
-$imageFolder = $_SERVER['DOCUMENT_ROOT']."/pindad-clone/news/images/";
+$imageFolder = "../../news/images/";
 
 reset ($_FILES);
 $temp = current($_FILES);
@@ -53,27 +53,4 @@ if (is_uploaded_file($temp['tmp_name'])){
   // Notify editor that the upload failed
   header("HTTP/1.1 500 Server Error");
 }
-
-/*$allowedExts = array("gif", "jpeg", "jpg", "png");
-
-$temp = explode(".", $_FILES["image"]["name"]);
-
-$extension = end($temp);
-
-$finfo = finfo_open(FILEINFO_MIME_TYPE);
-$mime = finfo_file($finfo, $_FILES["image"]["tmp_name"]);
-
-if ((($mime == "image/gif")
-|| ($mime == "image/jpeg")
-|| ($mime == "image/x-png")
-|| ($mime == "image/png"))
-&& in_array(strtolower($extension), $allowedExts)) {
-    $name = sha1(microtime()) . "." . $extension;
-
-    move_uploaded_file($_FILES["image"]["tmp_name"], getcwd() . "../../news/images/" . $name);
-
-    $response = new StdClass;
-    $response->link = "http://localhost/pindad-clone/news/images/" . $name;
-    echo stripslashes(json_encode($response));
-}*/
-   ?>
+?>

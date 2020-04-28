@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if(!$_SESSION["nama_admin"]){
+        header("location:login.php");
+    }
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -42,6 +48,7 @@
                 plugins: 'code image',
                 toolbar: '',
                 toolbar_mode: 'floating',
+                paste_data_images: true,
                 images_upload_handler: function (blobInfo, success, failure) {
                     var xhr, formData;
                     xhr = new XMLHttpRequest();
@@ -55,7 +62,6 @@
                         return;
                     }
                     json = JSON.parse(xhr.responseText);
-
                     if (!json || typeof json.location != 'string') {
                         failure('Invalid JSON: ' + xhr.responseText);
                         return;

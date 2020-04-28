@@ -11,8 +11,8 @@
     <title>Dashboard - nama_admin</title>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
+    <div class="container-fluid h-100">
+        <div class="row h-100">
             <div class="col-md-2 sidebar">
                 <div class="user">
                     <div class="user-image">
@@ -38,8 +38,13 @@
                     </ul>   
                 </div>
             </div>
-            <div class="col-md-10">
-                Test
+            <div class="col-md-10 content">
+                <table class="table">
+                    <th style="background-color: orange; text-align: center;">Berita</th>
+                    <tr><td>Test</td></tr>
+                    <tr><td>Test</td></tr>
+                    <tr><td>Test</td></tr>
+                </table>
             </div>
         </div>
     </div>

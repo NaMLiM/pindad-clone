@@ -44,10 +44,15 @@
             </div>
             <div class="col-md-10 content">
                 <table class="table">
-                    <th style="background-color: orange; text-align: center;">Berita</th>
-                    <tr><td>Test</td></tr>
-                    <tr><td>Test</td></tr>
-                    <tr><td>Test</td></tr>
+                    <th style="background-color: orange; text-align: center;">ID</th>
+                    <th style="background-color: orange; text-align: center;">Judul Berita</th>
+                    <th style="background-color: orange; text-align: center;">Tanggal Berita</th>
+                    <th style="background-color: orange; text-align: center;">Isi Berita</th>
+                    <th style="background-color: orange; text-align: center;">Gambar Berita</th>
+                    <th style="background-color: orange; text-align: center;">Kategori Berita</th>
+                    <tr>
+                        <td>Test</td>
+                    </tr>
                 </table>
             </div>
         </div>

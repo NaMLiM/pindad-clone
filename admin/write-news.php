@@ -14,10 +14,12 @@
 <body>
     <header>
         <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="dashboard.php">
-                <i class="fas fa-arrow-circle-left"></i>
-                Back
-            </a>
+            <div class="back-btn">
+                <a class="navbar-brand" href="dashboard.php">
+                    <i class="fas fa-arrow-circle-left"></i>
+                    Back
+                </a>
+            </div>
             <input type="text" placeholder="Judul" name="filename" class="judul" size="100">
             <select name="kategori" class="kategori">
                 <option value="press-release">Siaran Press</option>
@@ -26,7 +28,6 @@
                 <option value="informasi-serta-merta">Informasi Serta Merta</option>
                 <option value="new-innovation">Inovasi Baru</option>
             </select>
-            <input type="file" name="thumbnail" class="thumbnail" value="Thumbnail">
             <input type="button" value="Submit" name="submit" class="submit">
         </nav>
     </header>

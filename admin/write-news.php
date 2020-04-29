@@ -33,7 +33,7 @@
     <textarea class="editor">
     <?php
         if(isset($_GET['news'])){
-            include($_GET["page"].".html");
+            include($_GET["news"]);
         }
     ?>
     </textarea>

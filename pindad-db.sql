@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `berita` (
-  `id_berita` int(99) NOT NULL,
+  `id_berita` int(99) NOT NULL AUTO_INCREMENT,
   `judul_berita` varchar(128) NOT NULL,
   `tanggal` date NOT NULL,
   `isi` text NOT NULL,
@@ -43,7 +43,7 @@ CREATE TABLE `berita` (
 --
 
 CREATE TABLE `produk` (
-  `id_produk` int(99) NOT NULL,
+  `id_produk` int(99) NOT NULL AUTO_INCREMENT,
   `nama_produk` varchar(128) NOT NULL,
   `jenis_produk` varchar(128) NOT NULL,
   `kategori` varchar(128) NOT NULL,

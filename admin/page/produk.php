@@ -1,32 +1,35 @@
 <div class="mt-4 w-100">
-    <input type="search" placeholder="Search" name="search" class="search ml-auto float-right">
+    <input type="search" placeholder="Search" id="search" name="search" class="search ml-auto float-right">
 </div>
 
 <table class="table" id="tabel">
-    <th style="background-color: orange; text-align: center;">ID</th>
-    <th style="background-color: orange; text-align: center;">Nama Produk</th>
-    <th style="background-color: orange; text-align: center;">Jenis Produk</th>
-    <th style="background-color: orange; text-align: center;">Kategori</th>
-    <th style="background-color: orange; text-align: center;">Gambar</th>
-    <th style="background-color: orange; text-align: center;">Video</th>
-    <th style="background-color: orange; text-align: center;">Spek</th>
-    
-    <?php
-        $select = mysqli_query($connection, "select * from produk");
-        while($data = mysqli_fetch_array($select)){
-            echo "
-                <tr data-toggle='modal' data-target='#modelId'>
-                    <td class='text-center'>".$data["id_produk"]."</td>
-                    <td class='text-center'>".$data["nama_produk"]."</td>
-                    <td class='text-center'>".$data["jenis_produk"]."</td>
-                    <td class='text-center'>".$data["kategori"]."</td>
-                    <td class='text-center'>".$data["gambar"]."</td>
-                    <td class='text-center'>".$data["video"]."</td>
-                    <td class='text-center'>".$data["spek"]."</td>
-                </tr>
-            ";
-        }
-    ?>
+    <thead>
+        <th style="background-color: orange; text-align: center;">ID</th>
+        <th style="background-color: orange; text-align: center;">Nama Produk</th>
+        <th style="background-color: orange; text-align: center;">Jenis Produk</th>
+        <th style="background-color: orange; text-align: center;">Kategori</th>
+        <th style="background-color: orange; text-align: center;">Gambar</th>
+        <th style="background-color: orange; text-align: center;">Video</th>
+        <th style="background-color: orange; text-align: center;">Spek</th>
+    </thead>
+    <tbody id="tbody">
+        <?php
+            $select = mysqli_query($connection, "select * from produk");
+            while($data = mysqli_fetch_array($select)){
+                echo "
+                    <tr data-toggle='modal' data-target='#modelId'>
+                        <td class='text-center'>".$data["id_produk"]."</td>
+                        <td class='text-center'>".$data["nama_produk"]."</td>
+                        <td class='text-center'>".$data["jenis_produk"]."</td>
+                        <td class='text-center'>".$data["kategori"]."</td>
+                        <td class='text-center'>".$data["gambar"]."</td>
+                        <td class='text-center'>".$data["video"]."</td>
+                        <td class='text-center'>".$data["spek"]."</td>
+                    </tr>
+                ";
+            }
+        ?>
+    </tbody>
 
 </table>
 

@@ -66,6 +66,10 @@ html, body {
   background-position: center;
 }
 
+.table th {
+  color: white;
+}
+
 .table tr {
   cursor: pointer;
 }

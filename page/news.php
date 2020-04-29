@@ -32,7 +32,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <a href=""><img src="<?php echo str_replace("../../", "", $data[4]) ?>" class="img-fluid" alt=""></a>
+                            <a href="index.php?page=view-news&id=<?php echo $data[0] ?>"><img src="<?php echo str_replace("../../", "", $data[4]) ?>" class="img-fluid" alt=""></a>
                         </div>
                     </div>
 

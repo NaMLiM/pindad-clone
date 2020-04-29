@@ -23,14 +23,14 @@
                         </div>
                         <div class="col-md-4">
                             <h5 class="font-weight-bolder mb-4">
-                                <a href=""><?php echo $data[1] ?></a>
+                                <a href="index.php?page=view-news&id=<?php echo $data[0] ?>"><?php echo $data[1] ?></a>
                             </h5>
                             <div class="deskripsi">
                                 <?php echo $data[6] ?>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <a href=""><img src="<?php echo str_replace("../../", "", $data[4]) ?>" class="img-fluid" alt=""></a>
+                            <a href="index.php?page=view-news&id=<?php echo $data[0] ?>"><img src="<?php echo str_replace("../../", "", $data[4]) ?>" class="img-fluid" alt=""></a>
                         </div>
                     </div>
 

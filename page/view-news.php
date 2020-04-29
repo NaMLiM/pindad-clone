@@ -21,9 +21,7 @@
 
             <h1 class="judul-berita"><b><dt><?php echo $judul ?></dt></b></h1>
             <img src="<?php echo str_replace("../../", "", $gambar) ?>" alt="" class="img-fluid">
-            <div id="get-p">
-                <?php include(str_replace("../../", "", $isi)) ?>
-            </div>
+            <?php include(str_replace("../../", "", $isi)) ?>
             
         </div>
 
@@ -79,8 +77,4 @@
     function goBack() {
         window.history.back();
     }
-
-    var elemt = document.getElementById("get-p");
-    alert(elemt.getElementsByTagName("p")[0].innerHTML);
-
 </script>

@@ -6,7 +6,7 @@
         header("location:login.php");
     }
 
-    if(!$_GET["page"]){
+    if(!isset($_GET["page"])){
         header("location:dashboard.php?page=berita");
     }
     else{
@@ -35,8 +35,8 @@
                 <div class="page">
                     <h2 class="text-light ml-3">Page</h2>
                     <div class="list-group w-100">
-                        <a href="dashboard.php?page=berita" class="list-group-item rounded-0 <?php if($page=='berita'){echo 'active';} ?>">Berita</a>
-                        <a href="dashboard.php?page=produk" class="list-group-item rounded-0 <?php if($page=='produk'){echo 'active';} ?>">Produk</a>
+                        <a href="dashboard.php?page=berita" class="list-group-item rounded-0 <?php if(isset ($_GET['page']) && $page=='berita'){echo 'active';} ?>">Berita</a>
+                        <a href="dashboard.php?page=produk" class="list-group-item rounded-0 <?php if(isset ($_GET['page']) && $page=='produk'){echo 'active';} ?>">Produk</a>
                     </div>   
                 </div>
                 <!-- <div class="action mt-4">
@@ -48,7 +48,7 @@
                 </div> -->
             </div>
             <div class="col-md-10 content">
-                <?php include("page/".$page.".php"); ?>
+                <?php if(isset($_GET['page'])) {include("page/".$page.".php");} ?>
             </div>
         </div>
     </div>

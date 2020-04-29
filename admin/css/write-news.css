@@ -6,14 +6,20 @@ html, body {
   overflow-x: hidden;
 }
 
-a.navbar-brand:hover > i {
-  transform: rotate(360deg);
+.back-btn {
+  margin: -15px;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.navbar-brand i {
+  transform: rotate(-360deg);
   transition-duration: 500ms;
 }
 
-.navbar-brand:hover > .navbar-brand {
-  background-color: orange;
-  transition: 200ms;
+.back-btn:hover > .navbar-brand i {
+  transform: rotate(360deg);
+  transition-duration: 500ms;
 }
 
 .judul {

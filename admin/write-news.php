@@ -104,7 +104,7 @@
             })
             .done(function(){
                 alert("Berita Berhasil Dipublish");
-                alert(thumbnail);
+                //alert(thumbnail);
                 document.location="dashboard.php";
             })
       });

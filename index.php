@@ -1,4 +1,6 @@
 <?php
+    include("admin/system/connection.php");
+
     if(!$_GET["page"]){
         header("location:index.php?page=home");
     }

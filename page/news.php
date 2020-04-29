@@ -7,46 +7,38 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-8">
-            <div class="row article-berita mb-5 pb-5">
-                <div class="col-md-2 text-center">
-                    <div class="tanggal-group float-right">
-                        <div class="hari">21</div>
-                        <div class="tanggal">apr</div>
-                        <div class="tanggal">2017</div>
+
+            <?php
+                $select = mysqli_query($connection, "select * from berita");
+                while($data = mysqli_fetch_array($select)){
+                    ?>
+
+                    <div class="row article-berita mb-5 pb-5">
+                        <div class="col-md-2 text-center">
+                            <div class="tanggal-group float-right">
+                                <div class="hari"><?php echo $data[] ?></div>
+                                <div class="tanggal">apr</div>
+                                <div class="tanggal">2017</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="font-weight-bolder mb-4">
+                                <a href="">Ketua DPD RI Kunjungi Pindad Tinjau Ventilator Dan produk Lainnya Untuk Memerangi Covid-19</a>
+                            </h5>
+                            <div class="deskripsi">
+                                PT Pindad (Persero) memperkenalkan ventilator dan produk-produk lainnya untuk memerangi Covid-19 pada kunjungan kerja Ketua Dewan Perwakilan Daerah RI (DPD), AA La Nyalla Mahmud Mattalitti (20/4). Direktur Utama, Abraham Mose beserta jajaran Direksi menerima kunjungan Ketua DPD dalam rangka menduk...
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <a href=""><img src="img/berita/1._Penandatanganan_Kontrak_Tank_Boat_2_.jpg" class="img-fluid" alt=""></a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <h5 class="font-weight-bolder mb-4">
-                        <a href="">Ketua DPD RI Kunjungi Pindad Tinjau Ventilator Dan produk Lainnya Untuk Memerangi Covid-19</a>
-                    </h5>
-                    <div class="deskripsi">
-                        PT Pindad (Persero) memperkenalkan ventilator dan produk-produk lainnya untuk memerangi Covid-19 pada kunjungan kerja Ketua Dewan Perwakilan Daerah RI (DPD), AA La Nyalla Mahmud Mattalitti (20/4). Direktur Utama, Abraham Mose beserta jajaran Direksi menerima kunjungan Ketua DPD dalam rangka menduk...
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <a href=""><img src="img/berita/1._Penandatanganan_Kontrak_Tank_Boat_2_.jpg" class="img-fluid" alt=""></a>
-                </div>
-            </div>
-            <div class="row article-berita mb-5 pb-5">
-                <div class="col-md-2 text-center">
-                    <div class="tanggal-group float-right">
-                        <div class="hari">21</div>
-                        <div class="tanggal">apr</div>
-                        <div class="tanggal">2017</div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <h5 class="font-weight-bolder mb-4">
-                        <a href="">Ketua DPD RI Kunjungi Pindad Tinjau Ventilator Dan produk Lainnya Untuk Memerangi Covid-19</a>
-                    </h5>
-                    <div class="deskripsi">
-                        PT Pindad (Persero) memperkenalkan ventilator dan produk-produk lainnya untuk memerangi Covid-19 pada kunjungan kerja Ketua Dewan Perwakilan Daerah RI (DPD), AA La Nyalla Mahmud Mattalitti (20/4). Direktur Utama, Abraham Mose beserta jajaran Direksi menerima kunjungan Ketua DPD dalam rangka menduk...
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <a href=""><img src="img/berita/1._Penandatanganan_Kontrak_Tank_Boat_2_.jpg" class="img-fluid" alt=""></a>
-                </div>
-            </div>
+
+                    <?php
+                }
+            ?>
+
+            
         </div>
 
         <div class="col-md-4">

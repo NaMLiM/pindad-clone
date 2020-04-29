@@ -75,7 +75,8 @@
             $("#id").val(this.cells[0].innerHTML);
             $("#judul_berita").val(this.cells[1].innerHTML);
             $("#tanggal_berita").val(this.cells[2].innerHTML);
-            $("#isi_berita").attr("onclick", "window.open('write-news.php?news="+this.cells[3].innerHTML+"')");
+            var lok = "window.open('write-news.php?news="+this.cells[3].innerHTML.replace("../../","../")+"')"
+            $("#isi_berita").attr("onclick", lok);
             $("#isi_berita").val(this.cells[3].innerHTML);
             $("#gambar_berita").val(this.cells[4].innerHTML);
             $("#kategori").val(this.cells[5].innerHTML);

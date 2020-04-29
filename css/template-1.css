@@ -79,4 +79,16 @@
 
 .article-berita .deskripsi {
   font-size: small;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.popular-post div a img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
 }

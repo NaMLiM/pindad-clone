@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="css/template-1.css">
 <div class="full text-center">
     <span class="garis"></span>
-    <h1 class="display-5 text-light"><dt><b>BERITA</b></dt></h1>
+    <h1 class="display-5 text-light"><dt><b>SIARAN PERS</b></dt></h1>
 </div>
 
 <div class="container mt-5">
@@ -9,7 +9,7 @@
         <div class="col-md-8">
 
             <?php
-                $select = mysqli_query($connection, "select * from berita");
+                $select = mysqli_query($connection, "select * from berita where kategori='press-release'");
                 while($data = mysqli_fetch_array($select)){
                     ?>
 

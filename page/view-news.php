@@ -7,37 +7,23 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-8">
+            <a href="#" id="back-btn" class="btn btn-warning text-light mb-5" onclick="goBack()"><i class="fa fa-chevron-left" aria-hidden="true"></i> BACK</a>
 
             <?php
-                $select = mysqli_query($connection, "select * from berita");
-                while($data = mysqli_fetch_array($select)){
-                    ?>
-
-                    <div class="row article-berita mb-5 pb-5">
-                        <div class="col-md-2 text-center">
-                            <div class="tanggal-group float-right">
-                                <div class="hari"><?php echo date("d", strtotime($data[2])) ?></div>
-                                <div class="tanggal"><?php echo date("M", strtotime($data[2])) ?></div>
-                                <div class="tanggal"><?php echo date("Y", strtotime($data[2])) ?></div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <h5 class="font-weight-bolder mb-4">
-                                <a href="index.php?page=view-news&id=<?php echo $data[0] ?>"><?php echo $data[1] ?></a>
-                            </h5>
-                            <div class="deskripsi">
-                                <?php echo $data[6] ?>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <a href=""><img src="<?php echo str_replace("../../", "", $data[4]) ?>" class="img-fluid" alt=""></a>
-                        </div>
-                    </div>
-
-                    <?php
-                }
+            
+            $select = mysqli_query($connection, "select * from berita where id_berita=".$_GET["id"]);
+            while($data = mysqli_fetch_array($select)){
+                $judul = $data[1];
+                $gambar = $data[4];
+                $isi = $data[3];
+            }
             ?>
 
+            <h1 class="judul-berita"><b><dt><?php echo $judul ?></dt></b></h1>
+            <img src="<?php echo str_replace("../../", "", $gambar) ?>" alt="" class="img-fluid">
+            <div id="get-p">
+                <?php include(str_replace("../../", "", $isi)) ?>
+            </div>
             
         </div>
 
@@ -88,3 +74,13 @@
         </div>
     </div>
 </div>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+
+    var elemt = document.getElementById("get-p");
+    alert(elemt.getElementsByTagName("p")[0].innerHTML);
+
+</script>

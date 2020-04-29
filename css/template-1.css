@@ -92,3 +92,8 @@
   height: 70px;
   object-fit: cover;
 }
+
+.judul-berita:hover {
+  color: #eaba3a;
+  transition: 200ms;
+}

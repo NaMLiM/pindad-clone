@@ -94,7 +94,7 @@
             var dataTosend= {
                 judul: title,
                 kategori: category,
-                thumbnail,
+                thumbnail: thumbnail,
                 berita: news
             };
             $.ajax({

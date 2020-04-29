@@ -49,7 +49,7 @@
                         <label for="tanggal_berita">Tanggal</label>
                         <input type="text" class="form-control" name="tanggal_berita" id="tanggal_berita" aria-describedby="helpId" placeholder="Tanggal">
                         <label for="isi_berita">Isi Berita</label>
-                        <input type="text" class="form-control" name="isi_berita" id="isi_berita" aria-describedby="helpId" placeholder="Isi Berita">
+                        <input type="text" class="form-control" name="isi_berita" id="isi_berita" aria-describedby="helpId" placeholder="Isi Berita" onclick="" readonly>
                         <label for="gambar_berita">Gambar</label>
                         <input type="text" class="form-control" name="gambar_berita" id="gambar_berita" aria-describedby="helpId" placeholder="Gambar">
                         <label for="kategori">Kategori</label>
@@ -73,6 +73,7 @@
             $("#id").val(this.cells[0].innerHTML);
             $("#judul_berita").val(this.cells[1].innerHTML);
             $("#tanggal_berita").val(this.cells[2].innerHTML);
+            $("#isi_berita").attr("onclick", "window.open('write-news.php?news="+this.cells[3].innerHTML+"')");
             $("#isi_berita").val(this.cells[3].innerHTML);
             $("#gambar_berita").val(this.cells[4].innerHTML);
             $("#kategori").val(this.cells[5].innerHTML);

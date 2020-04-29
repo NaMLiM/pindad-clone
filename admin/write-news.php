@@ -26,10 +26,16 @@
                 <option value="informasi-serta-merta">Informasi Serta Merta</option>
                 <option value="new-innovation">Inovasi Baru</option>
             </select>
+            <input type="file" name="thumbnail" class="thumbnail" value="Thumbnail">
             <input type="button" value="Submit" name="submit" class="submit">
         </nav>
     </header>
     <textarea class="editor">
+    <?php
+        if(isset($_GET['news'])){
+            include($_GET["page"].".html");
+        }
+    ?>
     </textarea>
     <!-- JS library -->
     <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
@@ -83,9 +89,11 @@
             var title = $(".judul").val();
             var category = $(".kategori").val();
             var news = tinymce.activeEditor.getContent();
+            var thumbnail = $(news).find('img').attr('src');;
             var dataTosend= {
                 judul: title,
                 kategori: category,
+                thumbnail,
                 berita: news
             };
             $.ajax({
@@ -96,6 +104,7 @@
             })
             .done(function(){
                 alert("Berita Berhasil Dipublish");
+                alert(thumbnail);
                 document.location="dashboard.php";
             })
       });

@@ -89,7 +89,7 @@
             var title = $(".judul").val();
             var category = $(".kategori").val();
             var news = tinymce.activeEditor.getContent();
-            var thumbnail = $(news).find('img').attr('src');;
+            var thumbnail = $(news).find('img').attr('src');
             var dataTosend= {
                 judul: title,
                 kategori: category,

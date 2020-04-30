@@ -54,11 +54,11 @@
 
                     <div class="row popular-post my-4">
                         <div class="col-md-3">
-                            <a href=""><img src="<?php echo str_replace("../../", "", $data[4]) ?>" alt=""></a>
+                            <a href="index.php?page=view-news&id=<?php echo $data[0] ?>"><img src="<?php echo str_replace("../../", "", $data[4]) ?>" alt=""></a>
                         </div>
                         <div class="col-md-9">
                             <div class="text-warning font-weight-bold tanggal"><?php echo date("d M, Y", strtotime($data[2])) ?></div>
-                            <a href="" class="font-weight-bold judul"><?php echo $data[1] ?></a>
+                            <a href="index.php?page=view-news&id=<?php echo $data[0] ?>" class="font-weight-bold judul"><?php echo $data[1] ?></a>
                         </div>
                     </div>
 

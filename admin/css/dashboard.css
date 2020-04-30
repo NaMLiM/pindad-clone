@@ -70,8 +70,17 @@ html, body {
   color: white;
 }
 
-.table tr {
+.table tbody tr a,
+.table tbody tr {
   cursor: pointer;
+}
+
+.table th,
+.table tbody tr td {
+  white-space: nowrap;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .table tr:hover {

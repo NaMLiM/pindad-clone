@@ -55,7 +55,13 @@
                         <label for="gambar_berita">Gambar</label>
                         <input type="text" class="form-control" name="gambar_berita" id="gambar_berita" aria-describedby="helpId" placeholder="Gambar">
                         <label for="kategori">Kategori</label>
-                        <input type="text" class="form-control" name="kategori" id="kategori" aria-describedby="helpId" placeholder="Kategori">
+                        <select class="form-control" name="kategori" id="kategori" aria-describedby="helpId" placeholder="Kategori">
+                            <option value="press-release">Siaran Press</option>
+                            <option value="pindad-in-news">Pindad Dalam Berita</option>
+                            <option value="procurement-info">Informasi Pengadaan</option>
+                            <option value="informasi-serta-merta">Informasi Serta Merta</option>
+                            <option value="new-innovation">Inovasi Baru</option>
+                        </select>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary mr-auto" data-dismiss="modal">Close</button>

@@ -26,7 +26,9 @@
                                 <a href="index.php?page=view-news&id=<?php echo $data[0] ?>"><?php echo $data[1] ?></a>
                             </h5>
                             <div class="deskripsi">
-                                <?php echo $data[6] ?>
+                                <div class="hide">
+                                    <?php include(str_replace("../../", "", $data[3])) ?>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -88,3 +90,10 @@
         </div>
     </div>
 </div>
+
+<script>
+    var elemt = document.getElementsByClassName("hide");
+    for(var i=0; i < elemt.length; i++){
+        elemt[i].innerHTML = elemt[i].getElementsByTagName("p")[0].innerHTML;
+    }
+</script>

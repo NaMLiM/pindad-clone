@@ -87,3 +87,13 @@
   font-size: 18px;
   padding: 10px;
 }
+
+.b_gambar {
+  width: 100%;
+}
+
+.b_gambar img {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+}

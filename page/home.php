@@ -224,45 +224,42 @@
         <div class="row">
             <div class="col-md-12 text-primary"><h1><dt>Berita</dt></h1></div>
             <div class="col-md-6 row">
-                <div class="col-md-12 row">
-                    <div class="b_gambar col-md-4 p-2">
-                        <img class="img-fluid" src="img/berita/1._Penandatanganan_Kontrak_Tank_Boat_2_.jpg" alt="">
-                    </div>
-                    <div class="col-md-8 p-2">
-                        <div class="b_judul">
-                            <b>Pindad Tandatangani Kontrak Pengembangan Tank Boat</b>
+
+                <?php
+
+                $popular_post = mysqli_query($connection, "select * from berita order by tanggal desc");
+                $i = 0;
+                while($data = mysqli_fetch_array($popular_post)){
+                    if($i == 3){
+                        break;
+                    }
+
+                    ?>
+                    
+                    <div class="col-md-12 row">
+                        <div class="b_gambar col-md-4 p-2">
+                            <div class="berita-tanggal">
+                                
+                            </div>
+                            <img class="" src="<?php echo str_replace("../../", "", $data[4]) ?>" alt="">
                         </div>
-                        <div class="b_isi">
-                            PT Pindad (Persero) menandatangani kontrak proyek pengembangan...
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 row">
-                    <div class="b_gambar col-md-4 p-2">
-                        <img class="img-fluid" src="img/berita/1._Penandatanganan_Kontrak_Tank_Boat_2_.jpg" alt="">
-                    </div>
-                    <div class="col-md-8 p-2">
-                        <div class="b_judul">
-                            <b>Pindad Tandatangani Kontrak Pengembangan Tank Boat</b>
-                        </div>
-                        <div class="b_isi">
-                            PT Pindad (Persero) menandatangani kontrak proyek pengembangan...
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 row">
-                    <div class="b_gambar col-md-4 p-2">
-                        <img class="img-fluid" src="img/berita/1._Penandatanganan_Kontrak_Tank_Boat_2_.jpg" alt="">
-                    </div>
-                    <div class="col-md-8 p-2">
-                        <div class="b_judul">
-                            <b>Pindad Tandatangani Kontrak Pengembangan Tank Boat</b>
-                        </div>
-                        <div class="b_isi">
-                            PT Pindad (Persero) menandatangani kontrak proyek pengembangan...
+                        <div class="col-md-8 p-2">
+                            <div class="b_judul">
+                                <b><?php echo $data[1] ?></b>
+                            </div>
+                            <div class="b_isi">
+                                PT Pindad (Persero) menandatangani kontrak proyek pengembangan...
+                            </div>
                         </div>
                     </div>
-                </div>
+                    
+                    <?php
+
+                    $i++;
+                }
+                ?>
+
+                
             </div>
             <div class="col-md-6 text-center ">
                 <video class="img-fluid" src="video/a.mp4" controls></video>

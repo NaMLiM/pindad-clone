@@ -4,13 +4,13 @@
 
 <table class="table" id="tabel">
     <thead>
-        <th style="background-color: orange; text-align: center;">ID</th>
-        <th style="background-color: orange; text-align: center;">Nama Produk</th>
-        <th style="background-color: orange; text-align: center;">Jenis Produk</th>
-        <th style="background-color: orange; text-align: center;">Kategori</th>
-        <th style="background-color: orange; text-align: center;">Gambar</th>
-        <th style="background-color: orange; text-align: center;">Video</th>
-        <th style="background-color: orange; text-align: center;">Spek</th>
+        <th style="background-color: #204a87ff; text-align: center;">ID</th>
+        <th style="background-color: #204a87ff; text-align: center;">Nama Produk</th>
+        <th style="background-color: #204a87ff; text-align: center;">Jenis Produk</th>
+        <th style="background-color: #204a87ff; text-align: center;">Kategori</th>
+        <th style="background-color: #204a87ff; text-align: center;">Gambar</th>
+        <th style="background-color: #204a87ff; text-align: center;">Video</th>
+        <th style="background-color: #204a87ff; text-align: center;">Spek</th>
     </thead>
     <tbody id="tbody">
         <?php

@@ -26,17 +26,16 @@
         <div class="row h-100">
             <div class="col-md-2 sidebar">
                 <div class="user text-center">
-                    <i class="fa fa-user-circle" aria-hidden="true"></i>
-                    <div class="user-info text-center">
+                    <i class="fa fa-user-circle text-primary" aria-hidden="true"></i>
+                    <div class="user-info text-center text-primary">
                         <p><?php echo $_SESSION["nama_admin"]; ?></p>
                         <a href="system/logout.php" class="btn btn-danger w-100">Logout</a>
                     </div>
                 </div>
                 <div class="page">
-                    <h2 class="text-light ml-3">Page</h2>
                     <div class="list-group w-100">
-                        <a href="dashboard.php?page=berita" class="list-group-item rounded-0 <?php if(isset ($_GET['page']) && $page=='berita'){echo 'active';} ?>">Berita</a>
-                        <a href="dashboard.php?page=produk" class="list-group-item rounded-0 <?php if(isset ($_GET['page']) && $page=='produk'){echo 'active';} ?>">Produk</a>
+                        <a href="dashboard.php?page=berita" class="list-group-item rounded-0 <?php if(isset ($_GET['page']) && $page=='berita'){echo 'active';} ?>"><i class="fas fa-newspaper"></i> Berita</a>
+                        <a href="dashboard.php?page=produk" class="list-group-item rounded-0 <?php if(isset ($_GET['page']) && $page=='produk'){echo 'active';} ?>"><i class="fas fa-fighter-jet"></i> Produk</a>
                     </div>   
                 </div>
                 <!-- <div class="action mt-4">

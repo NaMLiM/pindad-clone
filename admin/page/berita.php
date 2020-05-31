@@ -4,12 +4,12 @@
 
 <table class="table" id="tabel">
     <thead>
-        <th style="background-color: orange; text-align: center;">ID</th>
-        <th style="background-color: orange; text-align: center;">Judul Berita</th>
-        <th style="background-color: orange; text-align: center;">Tanggal Berita</th>
-        <th style="background-color: orange; text-align: center;">Isi Berita</th>
-        <th style="background-color: orange; text-align: center;">Gambar Berita</th>
-        <th style="background-color: orange; text-align: center;">Kategori Berita</th>
+        <th style="background-color: #204a87ff; text-align: center;">ID</th>
+        <th style="background-color: #204a87ff; text-align: center;">Judul Berita</th>
+        <th style="background-color: #204a87ff; text-align: center;">Tanggal Berita</th>
+        <th style="background-color: #204a87ff; text-align: center;">Isi Berita</th>
+        <th style="background-color: #204a87ff; text-align: center;">Gambar Berita</th>
+        <th style="background-color: #204a87ff; text-align: center;">Kategori Berita</th>
     </thead>
     <tbody id="tbody">
         <?php

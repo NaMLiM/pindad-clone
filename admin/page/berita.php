@@ -73,6 +73,8 @@
     </div>
 </div>
 
+<a href="write-news.php" class="create"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+
 <script>
     var table = document.getElementById("tabel");
     var rows = table.rows;

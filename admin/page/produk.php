@@ -1,3 +1,7 @@
+<script src="https://cdn.ckeditor.com/ckeditor5/19.1.1/decoupled-document/ckeditor.js"></script>
+
+
+
 <div class="mt-4 w-100">
     <input type="search" placeholder="Search" id="search" name="search" class="search ml-auto float-right">
 </div>
@@ -105,6 +109,7 @@
                         <option>Produk Anak Perusahaan</option>
                         <option>Majalah</option>
                         <option>Katalog dan Brosur</option>
+                        <option>Gallery</option>
                         <option>Annual Report</option>
                         <option>Achievement</option>
                       </select>
@@ -112,20 +117,17 @@
                     <div class="form-inline" id="kategori-form">
 
                     </div>
-                    <div class="form-inline" id="gambar-form">
-                        <label for="gambar">Gambar</label>
-                        <input type="file" name="gambar" id="gambar" class="form-control-file ml-auto">
+                    <div id="form-gambar" >
+
                     </div>
-                    <div class="row" id="gambar-form-multi">
-                        <div class="col-md-10">
-                            <label for="gambar-multi">Gambar</label>
-                            <div id="gambar-grup">
-                                <input type="file" name="gambar" id="gambar-multi" class="form-control-file ml-auto">
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <button type="button" class="btn btn-primary" id="tambah-image"><i class="fas fa-plus"></i></button>
-                        </div>
+                    <div id="form-video">
+
+                    </div>
+                    
+                    Specification
+                    <div id="toolbar-container"></div>
+                    <div id="editor">
+                        
                     </div>
                 </form>
             </div>
@@ -206,3 +208,39 @@
 </div>
 
 <!-- Gambar -->
+<!-- <div id="gambar-form-plus">
+    <input type="file" name="gambar" id="gambar-multi1" class=""><button type="button" id="close-btn" data-target="1" class="btn btn-danger btn-sm" onclick="close_btn(this)"><i class="fas fa-minus"></i></button>
+</div> -->
+
+
+<div class="form-inline" id="gambar-form" style="display: none;">
+    <label for="gambar">Gambar</label>
+    <input type="file" name="gambar" id="gambar" class="form-control-file ml-auto">
+</div>
+<div id="video-form" style="display: none;">
+    <label for="video">Video</label>
+    <input type="file" name="video" id="video" class="form-control-file ml-auto">
+</div>
+<!-- <div class="row" id="gambar-form-multi" style="display: none;">
+    <div class="col-md-10">
+        <label for="gambar-multi">Gambar</label>
+        <div id="gambar-grup">
+            <input type="file" name="gambar" id="gambar-multi" class="form-control-file ml-auto">
+        </div>
+    </div>
+    <div class="col-md-2">
+        <button type="button" class="btn btn-primary" id="tambah-image"><i class="fas fa-plus"></i></button>
+    </div>
+</div> -->
+<script>
+    DecoupledEditor
+        .create( document.querySelector( '#editor' ) )
+        .then( editor => {
+            const toolbarContainer = document.querySelector( '#toolbar-container' );
+
+            toolbarContainer.appendChild( editor.ui.view.toolbar.element );
+        } )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>

@@ -90,7 +90,7 @@
                     </button>
             </div>
             <div class="modal-body">
-                <form action="tambah-data.php" method="post" class="form-group">
+                <form action="system/insert-produk.php" method="post" class="form-group" enctype="multipart/form-data">
                     <div class="form-inline">
                         <label for="nama_produk">Nama Produk</label>
                         <input type="text" name="nama_produk" id="nama_produk" placeholder="Nama Produk" class="form-control ml-auto">
@@ -123,17 +123,15 @@
                     <div id="form-video">
 
                     </div>
-                    
-                    Specification
-                    <div id="toolbar-container"></div>
-                    <div id="editor">
-                        
+                    <div id="form-specification">
+
                     </div>
-                </form>
+                
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save</button>
+                <input type="submit" name="submit" value="Save" class="btn btn-primary">
+            </form>
             </div>
         </div>
     </div>
@@ -232,15 +230,3 @@
         <button type="button" class="btn btn-primary" id="tambah-image"><i class="fas fa-plus"></i></button>
     </div>
 </div> -->
-<script>
-    DecoupledEditor
-        .create( document.querySelector( '#editor' ) )
-        .then( editor => {
-            const toolbarContainer = document.querySelector( '#toolbar-container' );
-
-            toolbarContainer.appendChild( editor.ui.view.toolbar.element );
-        } )
-        .catch( error => {
-            console.error( error );
-        } );
-</script>

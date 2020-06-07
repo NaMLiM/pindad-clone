@@ -34,7 +34,7 @@ function add_gambar_multi(){
 }
 
 function add_specification() {
-    $("#form-specification").html("Specification<div id='toolbar-container'></div><div id='editor' class='border-gray'></div><input type='text' name='spek' id='specification'>");
+    $("#form-specification").html("Specification<div id='toolbar-container'></div><div id='editor' class='border-gray'></div><input type='hidden' name='spek' id='specification'>");
     DecoupledEditor
         .create( document.querySelector( '#editor' ) )
         .then( editor => {

@@ -14,21 +14,27 @@ for (var i = 1; i < rows.length; i++) {
     });
 }
 
+var multiple_gambar = 1; //----variabel untuk gambar multi---
 function tambah_image() { 
-    $("#gambar-grup").html($("#gambar-grup").html()+"<input type='file' name='gambar' id='gambar-multi"+($("#gambar-grup").children().length+1)+"' ><button type='button' id='close-btn"+($("#gambar-grup").children().length+1)+"' class='btn btn-danger btn-sm' data-target='"+($("#gambar-grup").children().length+1)+"' onclick='close_btn(this)'><i class='fas fa-minus'></i></button>");
+    multiple_gambar++;
+    $("#jumlah_gambar").val(multiple_gambar);
+    $("#gambar-grup").html($("#gambar-grup").html()+"<input type='file' name='gambar"+multiple_gambar+"' id='gambar-multi"+multiple_gambar+"' ><button type='button' id='close-btn"+multiple_gambar+"' class='btn btn-danger btn-sm' data-target='"+multiple_gambar+"' onclick='close_btn(this)'><i class='fas fa-minus'></i></button>");
 }
 
 function close_btn(elem) { 
+    multiple_gambar--;
+    $("#jumlah_gambar").val(multiple_gambar);
     $("#gambar-multi"+$(elem).attr("data-target")).remove();
     $(elem).remove();
 }
 
 function add_gambar_multi(){
-    $("#form-gambar").html("<div class='row' id='gambar-form-multi'><div class='col-md-10'><label for='gambar-multi'>Gambar</label><div id='gambar-grup'><input type='file' name='gambar' id='gambar-multi' class='form-control-file ml-auto' required></div></div><div class='col-md-2'><button type='button' class='btn btn-primary' id='tambah-image' onclick='tambah_image()'><i class='fas fa-plus'></i></button></div></div>");
+    $("#form-gambar").html("<div class='row' id='gambar-form-multi'><div class='col-md-10'><label for='gambar-multi'>Gambar</label><div id='gambar-grup'><input type='file' name='gambar1' id='gambar-multi' class='form-control-file ml-auto' required></div></div><div class='col-md-2'><button type='button' class='btn btn-primary' id='tambah-image' onclick='tambah_image()'><i class='fas fa-plus'></i></button></div></div><input type='hidden' name='jumlah_gambar' id='jumlah_gambar' value=1>");
+    multiple_gambar = 1;
 }
 
 function add_specification() {
-    $("#form-specification").html("Specification<div id='toolbar-container'></div><div id='editor' class='border-gray'></div><input type='hidden' name='spek' id='specification1'>");
+    $("#form-specification").html("Specification<div id='toolbar-container'></div><div id='editor' class='border-gray'></div><input type='text' name='spek' id='specification'>");
     DecoupledEditor
         .create( document.querySelector( '#editor' ) )
         .then( editor => {
@@ -42,8 +48,9 @@ function add_specification() {
     
     $("#editor").click(function (e) { 
         e.preventDefault();
-        $(this).keypress(function () { 
-            $("#specification1").val($("#editor").html());
+        $("#specification").val($("#editor").html());
+        $(this).keyup(function () { 
+            $("#specification").val($("#editor").html());
         });
     });
 }

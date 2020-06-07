@@ -16,17 +16,35 @@
         $kategori = null;
     }
 
-    if(isset($_FILES["gambar"])){
-        mkdir("../upload/".$id."/gambar");
-        $target = $id.".".strtolower(pathinfo(basename($_FILES["gambar"]["name"]),PATHINFO_EXTENSION));
-        $target_dir = "../upload/".$id."/gambar/";
-        $target_file = $target_dir . $target;
-        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-        
-        if (move_uploaded_file($_FILES["gambar"]["tmp_name"], $target_file)) {
-        $gambar = $target_dir.$target;
-        } else {
-        echo "Sorry, there was an error uploading your file.";
+    if(isset($_FILES["gambar"]) || isset($_POST["jumlah_gambar"])){
+        if(isset($_FILES["gambar"])){
+            mkdir("../upload/".$id."/gambar");
+            $target = "1.".strtolower(pathinfo(basename($_FILES["gambar"]["name"]),PATHINFO_EXTENSION));
+            $target_dir = "../upload/".$id."/gambar/";
+            $target_file = $target_dir . $target;
+            $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+            
+            if (move_uploaded_file($_FILES["gambar"]["tmp_name"], $target_file)) {
+            $gambar = $id."-1";
+            } else {
+            echo "Sorry, there was an error uploading your file.";
+            }
+        }
+        else{
+            mkdir("../upload/".$id."/gambar");
+            for($i=1; $i <= (int)$_POST["jumlah_gambar"]; $i++){
+                $target = $i.".".strtolower(pathinfo(basename($_FILES["gambar".$i]["name"]),PATHINFO_EXTENSION));
+                $target_dir = "../upload/".$id."/gambar/";
+                $target_file = $target_dir . $target;
+                $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+                
+                if (move_uploaded_file($_FILES["gambar".$i]["tmp_name"], $target_file)) {
+                $gambar = $target_dir.$target;
+                } else {
+                echo "Sorry, there was an error uploading your file.";
+                }
+            }
+            $gambar = $id."-".$_POST["jumlah_gambar"];
         }
     }
     else{
@@ -60,6 +78,7 @@
     else{
         $spek = null;
     }
+
 
     $insert = mysqli_query($connection, "insert into produk values (null, '$nama_produk', '$jenis_produk', '$kategori', '$gambar', '$video', '$spek')");
 

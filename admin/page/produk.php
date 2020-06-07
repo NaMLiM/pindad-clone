@@ -39,7 +39,7 @@
 
 <a href="#" class="create" data-toggle="modal" data-target="#addData"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
 
-<!-- Modal -->
+<!-- Modal Edit-->
 <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -79,7 +79,7 @@
 </div>
 
 
-<!-- Modal -->
+<!-- Modal Tambah-->
 <div class="modal fade" id="addData" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">

@@ -8,7 +8,7 @@ html, body {
 }
 
 .border-gray {
-  border : 1px solid rgb(126, 126, 126);
+  border : 1px solid lightgray !important;
 }
 
 .text-primary {

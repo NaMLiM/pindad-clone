@@ -24,11 +24,11 @@ function close_btn(elem) {
 }
 
 function add_gambar_multi(){
-    $("#form-gambar").html("<div class='row' id='gambar-form-multi'><div class='col-md-10'><label for='gambar-multi'>Gambar</label><div id='gambar-grup'><input type='file' name='gambar' id='gambar-multi' class='form-control-file ml-auto'></div></div><div class='col-md-2'><button type='button' class='btn btn-primary' id='tambah-image' onclick='tambah_image()'><i class='fas fa-plus'></i></button></div></div>");
+    $("#form-gambar").html("<div class='row' id='gambar-form-multi'><div class='col-md-10'><label for='gambar-multi'>Gambar</label><div id='gambar-grup'><input type='file' name='gambar' id='gambar-multi' class='form-control-file ml-auto' required></div></div><div class='col-md-2'><button type='button' class='btn btn-primary' id='tambah-image' onclick='tambah_image()'><i class='fas fa-plus'></i></button></div></div>");
 }
 
 function add_specification() {
-    $("#form-specification").html("Specification<div id='toolbar-container'></div><div id='editor'></div><input type='hidden' name='spek' id='specification' value='asdasd'>");
+    $("#form-specification").html("Specification<div id='toolbar-container'></div><div id='editor' class='border-gray'></div><input type='hidden' name='spek' id='specification1'>");
     DecoupledEditor
         .create( document.querySelector( '#editor' ) )
         .then( editor => {
@@ -39,6 +39,13 @@ function add_specification() {
         .catch( error => {
             console.error( error );
         } );
+    
+    $("#editor").click(function (e) { 
+        e.preventDefault();
+        $(this).keypress(function () { 
+            $("#specification1").val($("#editor").html());
+        });
+    });
 }
 
 $("#jenis option").click(function (e) { 
@@ -146,11 +153,4 @@ $("#jenis option").click(function (e) {
             $("#kategori-form").html("");
             break;
     }
-});
-
-$("#editor").click(function (e) { 
-    e.preventDefault();
-    $(this).keypress(function () { 
-        $("#specification").val($("#editor").html());
-    });
 });

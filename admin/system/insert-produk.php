@@ -6,6 +6,8 @@
     //get data
     $nama_produk = $_POST["nama_produk"];
     $jenis_produk = $_POST["jenis_produk"];
+    $id = uniqid();
+    mkdir("../upload/".$id);
 
     if(isset($_POST["kategori"])){
         $kategori = $_POST["kategori"];
@@ -15,38 +17,62 @@
     }
 
     if(isset($_FILES["gambar"])){
-        $target = uniqid();
-        $target_dir = "/../upload/gambar/";
-        $target_file = $target_dir . basename($_FILES["gambar"]["name"]);
-        $uploadOk = 1;
+        mkdir("../upload/".$id."/gambar");
+        $target = $id.".".strtolower(pathinfo(basename($_FILES["gambar"]["name"]),PATHINFO_EXTENSION));
+        $target_dir = "../upload/".$id."/gambar/";
+        $target_file = $target_dir . $target;
         $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-        // Check if image file is a actual image or fake image
-        if(isset($_POST["submit"])) {
-            $check = getimagesize($_FILES["gambar"]["tmp_name"]);
-            if($check !== false) {
-                echo "File is an image - " . $check["mime"] . ".";
-                $uploadOk = 1;
-            } else {
-                echo "File is not an image.";
-                $uploadOk = 0;
-            }
-        }
-        // Check if $uploadOk is set to 0 by an error
-        if ($uploadOk == 0) {
-            echo "Sorry, your file was not uploaded.";
-        // if everything is ok, try to upload file
+        
+        if (move_uploaded_file($_FILES["gambar"]["tmp_name"], $target_file)) {
+        $gambar = $target_dir.$target;
         } else {
-            if (move_uploaded_file($_FILES["gambar"]["tmp_name"], $target_file)) {
-            echo "The file ". basename( $_FILES["gambar"]["name"]). " has been uploaded.";
-            $gambar = $target_dir.basename($_FILES["gambar"]["name"]);
-            } else {
-            echo "Sorry, there was an error uploading your file.";
-            }
+        echo "Sorry, there was an error uploading your file.";
         }
     }
     else{
         $gambar = null;
     }
-    echo $nama_produk."<br>".$kategori."<br>".$gambar
+
+    if(isset($_FILES["video"])){
+        mkdir("../upload/".$id."/video");
+        $target = $id.".".strtolower(pathinfo(basename($_FILES["video"]["name"]),PATHINFO_EXTENSION));
+        $target_dir = "../upload/".$id."/video/";
+        $target_file = $target_dir . $target;
+        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+        
+        if (move_uploaded_file($_FILES["video"]["tmp_name"], $target_file)) {
+        $video = $target_dir.$target;
+        } else {
+        echo "Sorry, there was an error uploading your file.";
+        }
+    }
+    else{
+        $video = null;
+    }
+
+    if(isset($_POST["spek"])){
+        mkdir("../upload/".$id."/spek");
+        $myfile = fopen("../upload/".$id."/spek/".$id.".html", "w") or die("Unable to open file!");
+        fwrite($myfile, $_POST["spek"]);
+        fclose($myfile);
+        $spek = "../upload/".$id."/spek/".$id.".html";
+    }
+    else{
+        $spek = null;
+    }
+
+    $insert = mysqli_query($connection, "insert into produk values (null, '$nama_produk', '$jenis_produk', '$kategori', '$gambar', '$video', '$spek')");
+
+    if($insert){
+        ?>
+        <script>
+            alert("Data Berhasil Ditambahkan");
+            document.location = "../dashboard.php?page=produk";
+        </script>
+        <?php
+    }
+    else{
+        echo $id;
+    }
 
 ?>

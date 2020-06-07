@@ -93,11 +93,12 @@
                 <form action="system/insert-produk.php" method="post" class="form-group" enctype="multipart/form-data">
                     <div class="form-inline">
                         <label for="nama_produk">Nama Produk</label>
-                        <input type="text" name="nama_produk" id="nama_produk" placeholder="Nama Produk" class="form-control ml-auto">
+                        <input type="text" name="nama_produk" id="nama_produk" placeholder="Nama Produk" class="form-control ml-auto" required>
                     </div>
                     <div class="form-inline" id="jenis">
                       <label for="jenis_produk">Jenis Produk</label>
-                      <select class="form-control ml-auto" name="jenis_produk" id="jenis_produk">
+                      <select class="form-control ml-auto" name="jenis_produk" id="jenis_produk"  required>
+                        <option disabled selected>--Pilih--</option>
                         <option>Senjata</option>
                         <option>Munisi</option>
                         <option>Kendaraan Khusus</option>
@@ -140,7 +141,7 @@
 <!-- Kategori -->
 <div class="form-inline" style="display: none;" id="senjata">
     <label for="kategori1">Kategori</label>
-    <select class="form-control ml-auto" name="kategori" id="kategori1">
+    <select class="form-control ml-auto" name="kategori" id="kategori1" required>
         <option>Rifles</option>
         <option>Sniper Rifles</option>
         <option>Machine Guns</option>
@@ -153,7 +154,7 @@
 </div>
 <div class="form-inline" style="display: none;" id="munisi">
     <label for="kategori2">Kategori</label>
-    <select class="form-control ml-auto" name="kategori" id="kategori2">
+    <select class="form-control ml-auto" name="kategori" id="kategori2" required>
         <option>Small Caliber</option>
         <option>Big Caliber</option>
         <option>Special Ammunition</option>
@@ -161,21 +162,21 @@
 </div>
 <div class="form-inline" style="display: none;" id="kendaraan-khusus">
     <label for="kategori3">Kategori</label>
-    <select class="form-control ml-auto" name="kategori" id="kategori3">
+    <select class="form-control ml-auto" name="kategori" id="kategori3" required>
         <option>4 x 4 Komodo</option>
         <option>6 x 6 Anoa</option>
     </select>
 </div>
 <div class="form-inline" style="display: none;" id="peralatan-industri-dan-jasa">
     <label for="kategori4">Kategori</label>
-    <select class="form-control ml-auto" name="kategori" id="kategori4">
+    <select class="form-control ml-auto" name="kategori" id="kategori4" required>
         <option>Electric Machines</option>
         <option>Agricultural Equipments</option>
     </select>
 </div>
 <div class="form-inline" style="display: none;" id="infrastruktur-perhubungan">
     <label for="kategori5">Kategori</label>
-    <select class="form-control ml-auto" name="kategori" id="kategori5">
+    <select class="form-control ml-auto" name="kategori" id="kategori5" required>
         <option>Forging</option>
         <option>Casting</option>
         <option>Railway Equipment</option>
@@ -184,14 +185,14 @@
 </div>
 <div class="form-inline" style="display: none;" id="layanan-pertambangan">
     <label for="kategori6">Kategori</label>
-    <select class="form-control ml-auto" name="kategori" id="kategori6">
+    <select class="form-control ml-auto" name="kategori" id="kategori6" required>
         <option>Explosive</option>
         <option>Explosive Services</option>
     </select>
 </div>
 <div class="form-inline" style="display: none;" id="produk-anak-perusahaan">
     <label for="kategori7">Kategori</label>
-    <select class="form-control ml-auto" name="kategori" id="kategori7">
+    <select class="form-control ml-auto" name="kategori" id="kategori7" required>
         <option>PT.PEI</option>
         <option>PT. PGST</option>
         <option>PT. PMU</option>
@@ -199,7 +200,7 @@
 </div>
 <div class="form-inline" style="display: none;" id="majalah">
     <label for="kategori8">Kategori</label>
-    <select class="form-control ml-auto" name="kategori" id="kategori8">
+    <select class="form-control ml-auto" name="kategori" id="kategori8" required>
         <option>Bulletin</option>
         <option>Newsletter</option>
     </select>
@@ -213,11 +214,11 @@
 
 <div class="form-inline" id="gambar-form" style="display: none;">
     <label for="gambar">Gambar</label>
-    <input type="file" name="gambar" id="gambar" class="form-control-file ml-auto">
+    <input type="file" name="gambar" id="gambar" class="form-control-file ml-auto" required>
 </div>
 <div id="video-form" style="display: none;">
     <label for="video">Video</label>
-    <input type="file" name="video" id="video" class="form-control-file ml-auto">
+    <input type="file" name="video" id="video" class="form-control-file ml-auto" required>
 </div>
 <!-- <div class="row" id="gambar-form-multi" style="display: none;">
     <div class="col-md-10">

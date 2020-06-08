@@ -61,10 +61,9 @@ function add_specification() {
 }
 
 
-$("#jenis select").mouseup(function (e) { 
+$("#jenis select").change(function (e) { 
     e.preventDefault();
-    alert("a");
-    switch ($(this).filter(":selected").val()) {
+    switch ($(this).val()) {
         case "Senjata":
             $("#kategori-form").html($("#senjata").html());
             $("#form-gambar").html($("#gambar-form").html());

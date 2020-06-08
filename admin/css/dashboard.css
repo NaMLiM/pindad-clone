@@ -132,6 +132,20 @@ html, body {
   transition: all 300ms ease-in-out;
 }
 
+/* Edit form */
+.delete-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border: none;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  font-size: larger;
+  background-color: red;
+  color: white;
+}
 
 /* Font Face */
 @font-face {

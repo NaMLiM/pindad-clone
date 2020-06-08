@@ -53,10 +53,10 @@
             <div id="gambar-slide" class="carousel slide w-50 mx-auto border-gray" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                     <?php
-                    for($i=1; $i <= (int)$gambar_array[1]; $i++){
+                    for($i=1; $i <= count($gambar_array)-1; $i++){
                         ?>
-                        <div class="carousel-item active">
-                            <img src="upload/<?php echo $gambar_array[0] ?>/gambar/<?php echo $i ?>.jpeg" class="img-fluid">
+                        <div class="carousel-item <?php if($i==1){echo 'active';} ?>">
+                            <img src="upload/<?php echo $gambar_array[0] ?>/gambar/<?php echo $gambar_array[$i] ?>" class="img-fluid">
                         </div>
                         <?php
                     }
@@ -91,10 +91,10 @@
             <div id="gambar-slide" class="carousel slide w-50 mx-auto border-gray" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                     <?php
-                    for($i=1; $i <= (int)$gambar_array[1]; $i++){
+                    for($i=1; $i <= count($gambar_array)-1; $i++){
                         ?>
-                        <div class="carousel-item active">
-                            <img src="upload/<?php echo $gambar_array[0] ?>/gambar/<?php echo $i ?>.jpeg" class="img-fluid">
+                        <div class="carousel-item <?php if($i==1){echo 'active';} ?>">
+                            <img src="upload/<?php echo $gambar_array[0] ?>/gambar/<?php echo $gambar_array[$i] ?>" class="img-fluid">
                         </div>
                         <?php
                     }
@@ -120,6 +120,31 @@
                     <option <?php if($kategori=="4 x 4 Komodo"){echo "selected";} ?> >4 x 4 Komodo</option>
                     <option <?php if($kategori=="6 x 6 Anoa"){echo "selected";} ?> >6 x 6 Anoa</option>
                 </select>
+            </div>
+            <?php
+            $gambar_array =  explode("-", $gambar);
+            ?>
+            <div id="gambar-slide" class="carousel slide w-50 mx-auto border-gray" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <?php
+                    for($i=1; $i <= count($gambar_array)-1; $i++){
+                        ?>
+                        <div class="carousel-item <?php if($i==1){echo 'active';} ?>">
+                            <img src="upload/<?php echo $gambar_array[0] ?>/gambar/<?php echo $gambar_array[$i] ?>" class="img-fluid">
+                            <button class="delete-image"><i class="fas fa-times"></i></button>
+                        </div>
+                        <?php
+                    }
+                    ?>
+                </div>
+                <a class="carousel-control-prev" href="#gambar-slide" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#gambar-slide" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
             <?php
             break;

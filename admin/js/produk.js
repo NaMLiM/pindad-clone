@@ -167,3 +167,5 @@ $("#jenis select").change(function (e) {
             break;
     }
 });
+
+// Edit Gambar

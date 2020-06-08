@@ -59,7 +59,7 @@
                 while($data = mysqli_fetch_array($select)){
                     echo "<div class='col-md-3 mb-4'>";
                     echo "<div class='card'>";
-                    echo "<img class='card-img-top' src='admin/upload/".str_replace("-1","","$data['gambar']")."/gambar/1.jpeg'>";
+                    echo "<img class='card-img-top' src='admin/upload/".explode("-", $data["gambar"])[0]."/gambar/".explode("-", $data["gambar"])[1]."'>";
                     echo "<div class='ard-body font-weight-bold'>";
                     echo "<p>SPR-4</p>";
                     echo "</div>";

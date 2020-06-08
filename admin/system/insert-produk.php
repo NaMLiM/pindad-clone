@@ -25,13 +25,14 @@
             $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
             
             if (move_uploaded_file($_FILES["gambar"]["tmp_name"], $target_file)) {
-            $gambar = $id."-1";
+            $gambar = $id."-1".".".$imageFileType;
             } else {
             echo "Sorry, there was an error uploading your file.";
             }
         }
         else{
             mkdir("../upload/".$id."/gambar");
+            $gambar = $id;
             for($i=1; $i <= (int)$_POST["jumlah_gambar"]; $i++){
                 $target = $i.".".strtolower(pathinfo(basename($_FILES["gambar".$i]["name"]),PATHINFO_EXTENSION));
                 $target_dir = "../upload/".$id."/gambar/";
@@ -39,12 +40,11 @@
                 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
                 
                 if (move_uploaded_file($_FILES["gambar".$i]["tmp_name"], $target_file)) {
-                $gambar = $target_dir.$target;
+                    $gambar = $gambar."-".$i.".".$imageFileType;
                 } else {
                 echo "Sorry, there was an error uploading your file.";
                 }
             }
-            $gambar = $id."-".$_POST["jumlah_gambar"];
         }
     }
     else{

@@ -24,11 +24,11 @@
         <li class="breadcrumb-item active" aria-current="page"><?php echo $nama_produk ?></li>
     </ol>
 </nav>
-<div class="container mt-6">
+<div class="container mt-5">
     <div class="row">
         <div class="col-md-6">
             <div class="product-img">
-                <img src="" alt="">
+                <img src="admin/upload/<?php echo str_replace("-1","",$gambar);?>/gambar/1.jpeg" alt="">
             </div>
         </div>
         <div class="col-md-4 text-dark">
@@ -45,17 +45,17 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12 row">
-            <div>
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">SPECIFICATION</a> <!--Ngambang???-->
-                    </li>
-                </ul>
-            </div>
-            Test
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">SPECIFICATION</a> <!--Ngambang???-->
+                </li>
+            </ul>
         </div>
     </div>
+    <div class="row mt-5 spec">
+        <?php include(str_replace("../","admin/", $spek));?>
+    </div>
     <div class="row">
-        Related Product
+        <h3>Related Product</h3>
     </div>
 </div>

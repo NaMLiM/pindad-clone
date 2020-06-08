@@ -101,3 +101,18 @@
 .isi p a {
   color: #eaba3a;
 }
+
+.spec {
+  display: block;
+}
+
+.product-img {
+  border: 2px;
+  border-radius: 2px;
+  border: #777;
+}
+
+.product-img img{
+  height: auto;
+  max-width: 100%;
+}

@@ -12,7 +12,7 @@
         <li class="breadcrumb-item active" aria-current="page">Layanan Pertambangan</li>
     </ol>
 </nav>
-<div class="container mt-4">
+<div class="container mt-5">
     <div class="row">
         <div class="col-md-3">
             <div class="pb-5">
@@ -50,7 +50,7 @@
         </div>
         <div class="col-md-9 row">
             <?php
-                $select = mysqli_query($connection, "select * from produk where jenis_produk='Handakom'");
+                $select = mysqli_query($connection, "select * from produk where jenis_produk='Layanan Pertambangan'");
                 while($data = mysqli_fetch_array($select)){
                     echo "<div class='col-md-3 mb-4'>";
                     echo "<div class='card'>";

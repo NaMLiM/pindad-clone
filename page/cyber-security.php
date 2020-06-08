@@ -12,7 +12,7 @@
         <li class="breadcrumb-item active" aria-current="page">Cyber Security</li>
     </ol>
 </nav>
-<div class="container mt-4">
+<div class="container mt-5">
     <div class="row">
         <div class="col-md-3">
             <div class="pb-5">
@@ -48,46 +48,19 @@
             <input type="text" class="search" name="search" placeholder="Quick Search">
         </div>
         <div class="col-md-9 row">
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
-                    <div class="card-body font-weight-bold">
-                        <p>SPR-4</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
-                    <div class="card-body font-weight-bold">
-                        <p>SPR-4</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
-                    <div class="card-body font-weight-bold">
-                        <p>SPR-4</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
-                    <div class="card-body font-weight-bold">
-                        <p>SPR-4</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
-                    <div class="card-body font-weight-bold">
-                        <p>SPR-4</p>
-                    </div>
-                </div>
-            </div>
+            <?php
+                $select = mysqli_query($connection, "select * from produk where jenis_produk='Senjata'");
+                while($data = mysqli_fetch_array($select)){
+                    echo "<div class='col-md-3 mb-4'>";
+                    echo "<div class='card'>";
+                    echo "<img class='card-img-top' src='admin/upload/".explode("-", $data["gambar"])[0]."/gambar/".explode("-", $data["gambar"])[1]."'>";
+                    echo "<div class='card-body font-weight-bold'>";
+                    echo "<p>".$data["nama_produk"]."</p>";
+                    echo "</div>";
+                    echo "</div>";
+                    echo "</div>";
+                }
+            ?>
         </div>
     </div>
 </div>

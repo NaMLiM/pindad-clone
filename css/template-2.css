@@ -103,7 +103,7 @@
 }
 
 .spec {
-  display: block;
+  display: inline-block;
 }
 
 .product-img {

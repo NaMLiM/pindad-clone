@@ -47,7 +47,7 @@
         <div class="col-md-12 row">
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">SPECIFICATION</a> <!--Ngambang???-->
+                    <a class="nav-link active" href="#tab01">SPECIFICATION</a> <!--Ngambang???-->
                 </li>
             </ul>
         </div>

@@ -54,14 +54,19 @@
             </ul>
         </div>
         <div class="col-md-9 row">
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
-                    <div class="card-body font-weight-bold">
-                        <p>SPR-4</p>
-                    </div>
-                </div>
-            </div>
+            <?php
+                $select = mysqli_query($connection, "select * from produk");
+                while($data = mysqli_fetch_array($select)){
+                    echo "<div class='col-md-3 mb-4'>";
+                    echo "<div class='card'>";
+                    echo "<img class='card-img-top' src='admin/upload/".str_replace("-1","","$data['gambar']")."/gambar/1.jpeg'>";
+                    echo "<div class='ard-body font-weight-bold'>";
+                    echo "<p>SPR-4</p>";
+                    echo "</div>";
+                    echo "</div>";
+                    echo "</div>";
+                }
+            ?>            
             <div class="col-md-3 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="img/senjata/SPR_4.jpeg">

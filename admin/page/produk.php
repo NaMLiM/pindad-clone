@@ -54,11 +54,11 @@
                         <label for="id">ID</label>
                         <input type="text"
                         class="form-control" name="id" id="id" aria-describedby="helpId" placeholder="ID" readonly>
-                        <label for="nama_produk">Nama Produk</label>
+                        <label for="nama_produk2">Nama Produk</label>
                         <input type="text"
-                        class="form-control" name="nama_produk" id="nama_produk" aria-describedby="helpId" placeholder="Nama Produk">
-                        <label for="jenis_produk">Jenis Produk</label>
-                        <input type="text" class="form-control" name="jenis_produk" id="jenis_produk" aria-describedby="helpId" placeholder="Jenis Produk">
+                        class="form-control" name="nama_produk" id="nama_produk2" aria-describedby="helpId" placeholder="Nama Produk">
+                        <label for="jenis_produk1">Jenis Produk</label>
+                        <input type="text" class="form-control" name="jenis_produk" id="jenis_produk1" aria-describedby="helpId" placeholder="Jenis Produk">
                         <label for="kategori">Kategori</label>
                         <input type="text" class="form-control" name="kategori" id="kategori" aria-describedby="helpId" placeholder="Kategori">
                         <label for="gambar">Gambar</label>
@@ -92,12 +92,12 @@
             <div class="modal-body">
                 <form action="system/insert-produk.php" method="post" class="form-group" enctype="multipart/form-data">
                     <div class="form-inline">
-                        <label for="nama_produk">Nama Produk</label>
-                        <input type="text" name="nama_produk" id="nama_produk" placeholder="Nama Produk" class="form-control ml-auto" required>
+                        <label for="nama_produk1">Nama Produk</label>
+                        <input type="text" name="nama_produk" id="nama_produk1" placeholder="Nama Produk" class="form-control ml-auto" required>
                     </div>
                     <div class="form-inline" id="jenis">
-                      <label for="jenis_produk">Jenis Produk</label>
-                      <select class="form-control ml-auto" name="jenis_produk" id="jenis_produk"  required>
+                      <label for="jenis_produk2">Jenis Produk</label>
+                      <select class="form-control ml-auto" name="jenis_produk" id="jenis_produk2"  required>
                         <option disabled selected>--Pilih--</option>
                         <option>Senjata</option>
                         <option>Munisi</option>

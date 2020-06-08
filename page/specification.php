@@ -1,5 +1,16 @@
 <?php
     $id_produk = $_GET['id_produk'];
+
+    $select = mysqli_query($connection, "select * from produk where id_produk=$id_produk");
+    while($data = mysqli_fetch_array($select)){
+        $nama_produk = $data["nama_produk"];
+        $jenis_produk = $data["jenis_produk"];
+        $kategori = $data["kategori"];
+        $gambar = $data["gambar"];
+        $video = $data["video"];
+        $spek = $data["spek"];
+    }
+
 ?>
 <link rel="stylesheet" href="css/template-2.css">
 
@@ -12,8 +23,8 @@
     <ol class="breadcrumb">
         <li class="breadcrumb-item font-weight-bold"><a href="index.php">Pindad</a></li>
         <li class="breadcrumb-item font-weight-bold"><a href="">Produk & Jasa</a></li>
-        <li class="breadcrumb-item font-weight-bold"><a href=""><?php mysqli_query($connection, "select jenis_produk from produk where id_produk=$id_produk");?></a></li>
-        <li class="breadcrumb-item active" aria-current="page"><?php mysqli_query($connection, "select nama_produk from produk where id_produk=$id_produk");?></li>
+        <li class="breadcrumb-item font-weight-bold"><a href=""><?php echo $jenis_produk ?></a></li>
+        <li class="breadcrumb-item active" aria-current="page"><?php echo $nama_produk ?></li>
     </ol>
 </nav>
 <div class="container mt-6">
@@ -24,7 +35,7 @@
             </div>
         </div>
         <div class="col-md-4 text-dark">
-            <?php mysqli_query($connection, "select nama_produk from produk where id_produk=$id_produk");?>
+            <?php echo $nama_produk ?>
         </div>
     </div>
 </div>

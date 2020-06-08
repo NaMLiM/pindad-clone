@@ -60,8 +60,10 @@ function add_specification() {
     });
 }
 
-$("#jenis option").click(function (e) { 
+
+$("#jenis select").mouseup(function (e) { 
     e.preventDefault();
+    alert("a");
     switch ($(this).filter(":selected").val()) {
         case "Senjata":
             $("#kategori-form").html($("#senjata").html());

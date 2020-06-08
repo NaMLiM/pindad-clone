@@ -18,12 +18,13 @@
             <div class="pb-5">
                 <h5 class="font-weight-bold text-dark">Produk & Jasa</h5>
                 <ul class="fa-ul list-aside my-3">
-                    <li class="py-1"><a href="index.php?page=weapon">Senjata</a></li>
+                <li class="py-1"><a href="index.php?page=weapon">Senjata</a></li>
                     <li class="py-1"><a href="index.php?page=ammunition">Munisi</a></li>
                     <li class="py-1"><a href="index.php?page=special-vehicles">Kendaraan Khusus</a></li>
-                    <li class="py-1"><a href="index.php?page=forging-and-casting">Tempa Cor & Alat Perkeretaapian</a></li>
                     <li class="py-1"><a href="index.php?page=alat-berat">Alat Berat</a></li>
-                    <li class="py-1"><a href="index.php?page=handakom">Bahan Peledak Komersial</a></li>
+                    <li class="py-1"><a href="index.php?page=peralatan-industri-dan-jasa">Peralatan Industri dan Jasa</a></li>
+                    <li class="py-1"><a href="index.php?page=infrastruktur-perhubungan">Infrastruktur Perhubungan</a></li>
+                    <li class="py-1"><a href="index.php?page=layanan-pertambangan">Layanan Pertambangan</a></li>
                     <li class="py-1"><a href="index.php?page=cyber-security" class="active">Cyber Security</a></li>
                     <li class="py-1"><a href="index.php?page=anak-perusahaan">Anak Perusahaan</a></li>
                     <li class="py-1"><a href="index.php?page=inquiry-process">Prosedur Pemesanan Produk Industrial</a></li>

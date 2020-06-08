@@ -2,14 +2,14 @@
 
 <div class="header-blog text-center" style="background-image: url(img/banner/head-handakom.jpg);">
     <span class="garis"></span>
-    <h1 class="display-5 text-light"><dt><b>BAHAN PELEDAK KOMERSIAL</b></dt></h1>
+    <h1 class="display-5 text-light"><dt><b>LAYANAN PERTAMBANGAN</b></dt></h1>
 </div>
 <!---->
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item font-weight-bold"><a href="index.php">Pindad</a></li>
         <li class="breadcrumb-item font-weight-bold"><a href="">Produk & Jasa</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Bahan Peledak Komersial</li>
+        <li class="breadcrumb-item active" aria-current="page">Layanan Pertambangan</li>
     </ol>
 </nav>
 <div class="container mt-4">
@@ -21,9 +21,10 @@
                     <li class="py-1"><a href="index.php?page=weapon">Senjata</a></li>
                     <li class="py-1"><a href="index.php?page=ammunition">Munisi</a></li>
                     <li class="py-1"><a href="index.php?page=special-vehicles">Kendaraan Khusus</a></li>
-                    <li class="py-1"><a href="index.php?page=forging-and-casting">Tempa Cor & Alat Perkeretaapian</a></li>
                     <li class="py-1"><a href="index.php?page=alat-berat">Alat Berat</a></li>
-                    <li class="py-1"><a href="index.php?page=handakom" class="active">Bahan Peledak Komersial</a></li>
+                    <li class="py-1"><a href="index.php?page=peralatan-industri-dan-jasa">Peralatan Industri dan Jasa</a></li>
+                    <li class="py-1"><a href="index.php?page=infrastruktur-perhubungan">Infrastruktur Perhubungan</a></li>
+                    <li class="py-1"><a href="index.php?page=layanan-pertambangan" class="active">Layanan Pertambangan</a></li>
                     <li class="py-1"><a href="index.php?page=cyber-security">Cyber Security</a></li>
                     <li class="py-1"><a href="index.php?page=anak-perusahaan">Anak Perusahaan</a></li>
                     <li class="py-1"><a href="index.php?page=inquiry-process">Prosedur Pemesanan Produk Industrial</a></li>
@@ -48,46 +49,19 @@
             </ul>
         </div>
         <div class="col-md-9 row">
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
-                    <div class="card-body font-weight-bold">
-                        <p>SPR-4</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
-                    <div class="card-body font-weight-bold">
-                        <p>SPR-4</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
-                    <div class="card-body font-weight-bold">
-                        <p>SPR-4</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
-                    <div class="card-body font-weight-bold">
-                        <p>SPR-4</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
-                    <div class="card-body font-weight-bold">
-                        <p>SPR-4</p>
-                    </div>
-                </div>
-            </div>
+            <?php
+                $select = mysqli_query($connection, "select * from produk where jenis_produk='Handakom'");
+                while($data = mysqli_fetch_array($select)){
+                    echo "<div class='col-md-3 mb-4'>";
+                    echo "<div class='card'>";
+                    echo "<img class='card-img-top' src='admin/upload/".explode("-", $data["gambar"])[0]."/gambar/".explode("-", $data["gambar"])[1]."'>";
+                    echo "<div class='card-body font-weight-bold'>";
+                    echo "<p>".$data["nama_produk"]."</p>";
+                    echo "</div>";
+                    echo "</div>";
+                    echo "</div>";
+                }
+            ?>
         </div>
     </div>
 </div>

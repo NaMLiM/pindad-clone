@@ -50,7 +50,7 @@
                     </button>
             </div>
             <form class="form-group" action="" method="POST" id="form">
-                <div class="modal-body">
+                <div class="modal-body" id="edit-modal">
                         <label for="id">ID</label>
                         <input type="text"
                         class="form-control" name="id" id="id" aria-describedby="helpId" placeholder="ID" readonly>
@@ -180,7 +180,7 @@
         <option>Forging</option>
         <option>Casting</option>
         <option>Railway Equipment</option>
-        <option>Ship Equipmen</option>
+        <option>Ship Equipment</option>
     </select>
 </div>
 <div class="form-inline" style="display: none;" id="layanan-pertambangan">

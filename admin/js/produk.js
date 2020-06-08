@@ -2,17 +2,22 @@ var table = document.getElementById("tabel");
 var rows = table.rows;
 for (var i = 1; i < rows.length; i++) {
     rows[i].onclick = (function (e) {
-        $("#id").val(this.cells[0].innerHTML);
-        $("#nama_produk").val(this.cells[1].innerHTML);
-        $("#jenis_produk").val(this.cells[2].innerHTML);
-        $("#kategori").val(this.cells[3].innerHTML);
-        $("#gambar").val(this.cells[4].innerHTML);
-        $("#video").val(this.cells[5].innerHTML);
-        $("#spek").val(this.cells[6].innerHTML);
-        $("#form").attr("action","system/edit-produk.php?page=produk");
-        $("#delete").attr("href","system/delete.php?page=produk&id="+this.cells[0].innerHTML);
+        // $("#id").val(this.cells[0].innerHTML);
+        // $("#nama_produk").val(this.cells[1].innerHTML);
+        // $("#jenis_produk").val(this.cells[2].innerHTML);
+        // $("#kategori").val(this.cells[3].innerHTML);
+        // $("#gambar").val(this.cells[4].innerHTML);
+        // $("#video").val(this.cells[5].innerHTML);
+        // $("#spek").val(this.cells[6].innerHTML);
+        // $("#form").attr("action","system/edit-produk.php?page=produk");
+        // $("#delete").attr("href","system/delete.php?page=produk&id="+this.cells[0].innerHTML);
+        var id_temp = this.cells[0].innerHTML;
+        $("#edit-modal").load("page/ajax-edit-produk.php", {id:id_temp}, function (response, status, request) {
+            this; // dom element
+        });
     });
 }
+
 
 var multiple_gambar = 1; //----variabel untuk gambar multi---
 function tambah_image() { 

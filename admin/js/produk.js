@@ -156,7 +156,7 @@ $("#jenis select").change(function (e) {
     
         case "Cyber Security":
             $("#kategori-form").html("");
-            $("#form-gambar").html("");
+            $("#form-gambar").html($("#gambar-form").html());
             $("#form-video").html("");
             $("#form-specification").html("");
             add_deskripsi();
@@ -196,7 +196,7 @@ $("#jenis select").change(function (e) {
             $("#form-video").html("");
             $("#form-specification").html("");
             add_deskripsi();
-            add_download();
+            $("#form-download").html("");
             break;
         
         case "Annual Report":
@@ -214,7 +214,7 @@ $("#jenis select").change(function (e) {
             $("#form-video").html("");
             $("#form-specification").html("");
             add_deskripsi();
-            add_download();
+            $("#form-specification").html("");
             break;
     
         default:

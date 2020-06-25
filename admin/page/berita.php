@@ -89,7 +89,7 @@
                             <div class='col-md-10'>
                                 <label for='gambar-multi'>Gambar</label>
                                 <div id='gambar-grup'>
-                                    <input type='file' name='gambar1' id='gambar-multi' class='form-control-file ml-auto' required>
+                                    <input type='file' name='gambar1' id='gambar-multi' class='form-control-file ml-auto'>
                                 </div>
                             </div>
                             <div class='col-md-2'>

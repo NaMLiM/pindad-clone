@@ -9,7 +9,7 @@
     $id = uniqid();
     mkdir("../../news/".$id);
 
-    if(isset($_POST["jumlah_gambar"])){
+    if(isset($_FILES["gambar1"])){
         mkdir("../../news/".$id."/gambar");
         $gambar = $id;
         for($i=1; $i <= (int)$_POST["jumlah_gambar"]; $i++){
@@ -21,7 +21,7 @@
             if (move_uploaded_file($_FILES["gambar".$i]["tmp_name"], $target_file)) {
                 $gambar = $gambar."-".$i.".".$imageFileType;
             } else {
-            echo "Sorry, there was an error uploading your file.";
+                $gambar = null;
             }
         }
     }

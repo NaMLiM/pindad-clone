@@ -233,6 +233,11 @@
                     if($i == 3){
                         break;
                     }
+                    if($data[4]==null || $data[4]==""){
+                        $thumbnail = "#";
+                    }else{
+                        $thumbnail = "news/".explode("-", $data[4])[0]."/gambar/".explode("-", $data[4])[1];
+                    }
 
                     ?>
                     
@@ -241,14 +246,16 @@
                             <div class="berita-tanggal">
                                 
                             </div>
-                            <img class="" src="<?php echo str_replace("../../", "", $data[4]) ?>" alt="">
+                            <img class="" src="<?php echo $thumbnail ?>" alt="">
                         </div>
                         <div class="col-md-8 p-2">
                             <div class="b_judul">
                                 <b><?php echo $data[1] ?></b>
                             </div>
                             <div class="b_isi">
-                                PT Pindad (Persero) menandatangani kontrak proyek pengembangan...
+                                <div>
+                                    <?php include(str_replace("../../", "", $data[3])) ?>
+                                </div>
                             </div>
                         </div>
                     </div>

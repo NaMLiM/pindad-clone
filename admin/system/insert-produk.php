@@ -99,7 +99,6 @@
         
         if (move_uploaded_file($_FILES["download"]["tmp_name"], $target_file)) {
             $download = $target_file;
-            genPdfThumbnail($download, "../upload/".$id."/gambar/1.jpg");
             $gambar = "../upload/".$id."/gambar/1.jpg";
         } else {
             echo "Sorry, there was an error uploading your file.";

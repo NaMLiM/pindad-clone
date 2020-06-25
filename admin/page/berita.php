@@ -1,3 +1,6 @@
+<script src="https://cdn.ckeditor.com/ckeditor5/19.1.1/decoupled-document/ckeditor.js"></script>
+
+
 <div class="mt-4 w-100">
     <input type="search" placeholder="Search" id="search" name="search" class="search ml-auto float-right">
 </div>
@@ -31,7 +34,7 @@
 </table>
 
 <!-- Modal -->
-<div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+<div class="modal fade" id="insert-berita" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -40,22 +43,33 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
             </div>
-            <form class="form-group" action="" method="POST" id="form">
+            <form class="form-group" action="system/insert_berita.php" method="POST" id="form" enctype="multipart/form-data">
                 <div class="modal-body">
-                        <label for="id">ID</label>
-                        <input type="text"
-                        class="form-control" name="id" id="id" aria-describedby="helpId" placeholder="ID" readonly>
                         <label for="judul_berita">Judul Berita</label>
                         <input type="text"
-                        class="form-control" name="judul_berita" id="judul_berita" aria-describedby="helpId" placeholder="Judul">
-                        <label for="tanggal_berita">Tanggal</label>
-                        <input type="text" class="form-control" name="tanggal_berita" id="tanggal_berita" aria-describedby="helpId" placeholder="Tanggal">
-                        <label for="isi_berita">Isi Berita</label>
-                        <input type="text" class="form-control" name="isi_berita" id="isi_berita" aria-describedby="helpId" placeholder="Isi Berita" onclick="" readonly>
-                        <label for="gambar_berita">Gambar</label>
-                        <input type="text" class="form-control" name="gambar_berita" id="gambar_berita" aria-describedby="helpId" placeholder="Gambar">
+                        class="form-control" name="judul_berita" id="judul_berita" aria-describedby="helpId" placeholder="Judul" required>
+
+                        <label for="toolbar-container1">Isi Berita</label>
+                        <div id="toolbar-container1"></div>
+                        <div id="editor1" class="border-gray"></div>
+                        <input type="hidden" name="isi_berita" id="isi_berita">
+                        
+                        <div class='row' id='gambar-form-multi'>
+                            <div class='col-md-10'>
+                                <label for='gambar-multi'>Gambar</label>
+                                <div id='gambar-grup'>
+                                    <input type='file' name='gambar1' id='gambar-multi' class='form-control-file ml-auto' required>
+                                </div>
+                            </div>
+                            <div class='col-md-2'>
+                                <button type='button' class='btn btn-primary' id='tambah-image' onclick='tambah_image()'><i class='fas fa-plus'></i></button>
+                            </div>
+                        </div>
+                        <input type='hidden' name='jumlah_gambar' id='jumlah_gambar' value=1>
+
                         <label for="kategori">Kategori</label>
-                        <select class="form-control" name="kategori" id="kategori" aria-describedby="helpId" placeholder="Kategori">
+                        <select class="form-control" name="kategori" id="kategori" aria-describedby="helpId" placeholder="Kategori" required>
+                            <option disabled selected>-- Pilih --</option>
                             <option value="press-release">Siaran Press</option>
                             <option value="pindad-in-news">Pindad Dalam Berita</option>
                             <option value="procurement-info">Informasi Pengadaan</option>
@@ -65,31 +79,11 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary mr-auto" data-dismiss="modal">Close</button>
-                    <a href="#" class="btn btn-danger" id="delete">Delete</a>
-                    <input type="submit" value="Edit" class="btn btn-primary">
+                    <input type="submit" value="Save" class="btn btn-primary">
                 </div>
             </form>
         </div>
     </div>
 </div>
 
-<a href="write-news.php" class="create"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
-
-<script>
-    var table = document.getElementById("tabel");
-    var rows = table.rows;
-    for (var i = 1; i < rows.length; i++) {
-        rows[i].onclick = (function (e) {
-            $("#id").val(this.cells[0].innerHTML);
-            $("#judul_berita").val(this.cells[1].innerHTML);
-            $("#tanggal_berita").val(this.cells[2].innerHTML);
-            var lok = "window.open('write-news.php?news="+this.cells[3].innerHTML.replace("../../","../")+"')"
-            $("#isi_berita").attr("onclick", lok);
-            $("#isi_berita").val(this.cells[3].innerHTML);
-            $("#gambar_berita").val(this.cells[4].innerHTML);
-            $("#kategori").val(this.cells[5].innerHTML);
-            $("#form").attr("action","system/edit-berita.php?page=berita");
-            $("#delete").attr("href","system/delete.php?page=berita&id="+this.cells[0].innerHTML);
-        });
-    }
-</script>
+<a href="#" class="create"  data-toggle="modal" data-target="#insert-berita"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>

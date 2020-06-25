@@ -12,15 +12,36 @@
             <?php
             
             $select = mysqli_query($connection, "select * from berita where id_berita=".$_GET["id"]);
-            while($data = mysqli_fetch_array($select)){
-                $judul = $data[1];
-                $gambar = $data[4];
-                $isi = $data[3];
-            }
+            $data = mysqli_fetch_array($select);
+            $judul = $data[1];
+            $isi = $data[3];
             ?>
 
             <h1 class="judul-berita"><b><dt><?php echo $judul ?></dt></b></h1>
-            <img src="<?php echo str_replace("../../", "", $gambar) ?>" alt="" class="img-fluid">
+
+            <div id="gambar-berita" class="carousel slide my-4" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <?php
+                        $gambars = explode("-", $data[4]);
+                        for($i=1;$i<count($gambars);$i++){
+                            ?>
+                            <div class="carousel-item <?php if($i==1){echo 'active';} ?>">
+                                <img src="<?php echo "news/".$gambars[0]."/gambar/".$gambars[$i] ?>" class="img-fluid">
+                            </div>
+                            <?php
+                        }
+                    ?>
+                </div>
+                <a class="carousel-control-prev" href="#gambar-berita" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#gambar-berita" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            
             <?php include(str_replace("../../", "", $isi)) ?>
             
         </div>

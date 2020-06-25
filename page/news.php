@@ -9,8 +9,9 @@
         <div class="col-md-8">
 
             <?php
-                $select = mysqli_query($connection, "select * from berita");
+                $select = mysqli_query($connection, "select * from berita ORDER BY tanggal DESC");
                 while($data = mysqli_fetch_array($select)){
+                    $thumbnail = "news/".explode("-", $data[4])[0]."/gambar/".explode("-", $data[4])[1];
                     ?>
 
                     <div class="row article-berita mb-5 pb-5">
@@ -32,7 +33,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <a href="index.php?page=view-news&id=<?php echo $data[0] ?>"><img src="<?php echo str_replace("../../", "", $data[4]) ?>" class="img-fluid" alt=""></a>
+                            <a href="index.php?page=view-news&id=<?php echo $data[0] ?>"><img src="<?php echo $thumbnail ?>" class="img-fluid" alt=""></a>
                         </div>
                     </div>
 

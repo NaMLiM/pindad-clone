@@ -137,14 +137,21 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
-  display: block;
+  display: flex;
   border: none;
   height: 100%;
   width: 100%;
-  opacity: 0.5;
+  opacity: 0;
   font-size: larger;
   background-color: red;
   color: white;
+  transition: 300ms;
+  justify-content: center;
+  align-content: center;
+}
+
+.delete-image:hover {
+  opacity: 0.5;
 }
 
 /* Font Face */

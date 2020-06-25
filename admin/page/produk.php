@@ -15,6 +15,8 @@
         <th style="background-color: #204a87ff; text-align: center;">Gambar</th>
         <th style="background-color: #204a87ff; text-align: center;">Video</th>
         <th style="background-color: #204a87ff; text-align: center;">Spek</th>
+        <th style="background-color: #204a87ff; text-align: center;">Deskripsi</th>
+        <th style="background-color: #204a87ff; text-align: center;">Download</th>
     </thead>
     <tbody id="tbody">
         <?php
@@ -29,6 +31,8 @@
                         <td class='text-center'>".$data["gambar"]."</td>
                         <td class='text-center'>".$data["video"]."</td>
                         <td class='text-center'>".$data["spek"]."</td>
+                        <td class='text-center'>".$data["deskripsi"]."</td>
+                        <td class='text-center'>".$data["download"]."</td>
                     </tr>
                 ";
             }
@@ -49,7 +53,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
             </div>
-            <form class="form-group" action="" method="POST" id="form">
+            <form class="form-group" action="" method="POST" id="form_edit">
                 <div class="modal-body" id="edit-modal">
                         <label for="id">ID</label>
                         <input type="text"
@@ -126,6 +130,12 @@
                     </div>
                     <div id="form-specification">
 
+                    </div>
+                    <div id="form-deskripsi">
+                        
+                    </div>
+                    <div id="form-download">
+                        
                     </div>
                 
             </div>

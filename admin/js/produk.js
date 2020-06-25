@@ -15,6 +15,8 @@ for (var i = 1; i < rows.length; i++) {
         $("#edit-modal").load("page/ajax-edit-produk.php", {id:id_temp}, function (response, status, request) {
             this; // dom element
         });
+        $("#delete").attr("href", "system/delete_produk.php?id="+id_temp);
+        $("#form_edit").attr("action", "system/edit_produk.php?id="+id_temp);
     });
 }
 
@@ -60,15 +62,42 @@ function add_specification() {
     });
 }
 
+function add_deskripsi() {
+    $("#form-deskripsi").html("Deskripsi<div id='toolbar-container3'></div><div id='editor3' class='border-gray'></div><input type='hidden' name='deskripsi' id='deskripsi'>");
+    DecoupledEditor
+        .create( document.querySelector( '#editor3' ) )
+        .then( editor => {
+            const toolbarContainer = document.querySelector( '#toolbar-container3' );
+
+            toolbarContainer.appendChild( editor.ui.view.toolbar.element );
+        } )
+        .catch( error => {
+            console.error( error );
+        } );
+    
+    $("#editor3").click(function (e) { 
+        e.preventDefault();
+        $("#deskripsi").val($("#editor3").html());
+        $(this).keyup(function () { 
+            $("#deskripsi").val($("#editor3").html());
+        });
+    });
+}
+
+function add_download() {
+    $("#form-download").html("<label for='download'>File</label><input type='file' name='download' id='download' class='form-control-file ml-auto' required>");
+}
 
 $("#jenis select").change(function (e) { 
     e.preventDefault();
     switch ($(this).val()) {
         case "Senjata":
             $("#kategori-form").html($("#senjata").html());
-            $("#form-gambar").html($("#gambar-form").html());
+            add_gambar_multi();
             $("#form-video").html("");
             add_specification();
+            add_deskripsi();
+            $("#form-download").html("");
             break;
     
         case "Munisi":
@@ -76,6 +105,8 @@ $("#jenis select").change(function (e) {
             add_gambar_multi();
             $("#form-video").html("");
             add_specification();
+            add_deskripsi();
+            $("#form-download").html("");
             break;
     
         case "Kendaraan Khusus":
@@ -83,6 +114,8 @@ $("#jenis select").change(function (e) {
             add_gambar_multi();
             $("#form-video").html("");
             add_specification();
+            add_deskripsi();
+            $("#form-download").html("");
             break;
         
         case "Alat Berat":
@@ -90,6 +123,8 @@ $("#jenis select").change(function (e) {
             add_gambar_multi();
             $("#form-video").html($("#video-form").html());
             add_specification();
+            add_deskripsi();
+            $("#form-download").html("");
             break;
         
         case "Peralatan Industi dan Jasa":
@@ -97,6 +132,8 @@ $("#jenis select").change(function (e) {
             add_gambar_multi();
             $("#form-video").html("");
             add_specification();
+            add_deskripsi();
+            $("#form-download").html("");
             break;
 
         case "Insfrastruktur Perhubungan":
@@ -104,6 +141,8 @@ $("#jenis select").change(function (e) {
             add_gambar_multi();
             $("#form-video").html("");
             add_specification();
+            add_deskripsi();
+            $("#form-download").html("");
             break;
     
         case "Layanan Pertambangan":
@@ -111,13 +150,17 @@ $("#jenis select").change(function (e) {
             add_gambar_multi();
             $("#form-video").html("");
             add_specification();
+            add_deskripsi();
+            $("#form-download").html("");
             break;
     
         case "Cyber Security":
             $("#kategori-form").html("");
-            $("#form-gambar").html($("#gambar-form").html());
+            $("#form-gambar").html("");
             $("#form-video").html("");
             $("#form-specification").html("");
+            add_deskripsi();
+            add_download();
             break;
     
         case "Produk Anak Perusahaan":
@@ -125,6 +168,8 @@ $("#jenis select").change(function (e) {
             add_gambar_multi();
             $("#form-video").html("");
             add_specification();
+            add_deskripsi();
+            $("#form-download").html("");
             break;
     
         case "Majalah":
@@ -132,6 +177,8 @@ $("#jenis select").change(function (e) {
             $("#form-gambar").html($("#gambar-form").html());
             $("#form-video").html("");
             $("#form-specification").html("");
+            add_deskripsi();
+            add_download();
             break;
     
         case "Katalog dan Brosur":
@@ -139,6 +186,8 @@ $("#jenis select").change(function (e) {
             $("#form-gambar").html($("#gambar-form").html());
             $("#form-video").html("");
             $("#form-specification").html("");
+            add_deskripsi();
+            add_download();
             break;
     
         case "Gallery":
@@ -146,6 +195,8 @@ $("#jenis select").change(function (e) {
             $("#form-gambar").html($("#gambar-form").html());
             $("#form-video").html("");
             $("#form-specification").html("");
+            add_deskripsi();
+            add_download();
             break;
         
         case "Annual Report":
@@ -153,6 +204,8 @@ $("#jenis select").change(function (e) {
             $("#form-gambar").html($("#gambar-form").html());
             $("#form-video").html("");
             $("#form-specification").html("");
+            add_deskripsi();
+            add_download();
             break;
     
         case "Achievement":
@@ -160,6 +213,8 @@ $("#jenis select").change(function (e) {
             $("#form-gambar").html($("#gambar-form").html());
             $("#form-video").html("");
             $("#form-specification").html("");
+            add_deskripsi();
+            add_download();
             break;
     
         default:
@@ -168,4 +223,10 @@ $("#jenis select").change(function (e) {
     }
 });
 
-// Edit Gambar
+// Edit
+function delete_image(ini) {
+    if($("#image-now").val().split("-").length >= 2){
+        $("#"+$(ini).attr("data-target")).remove();
+        $(ini).remove();
+    }
+}

@@ -13,7 +13,85 @@
         $gambar = $data["gambar"];
         $video = $data["video"];
         $spek = $data["spek"];
+        $deskripsi = $data["deskripsi"];
+        $download = $data["download"];
     }
+
+    
+    // Fungsi
+    function add_spesifikasi(){
+        global $spek;
+        ?>
+        Specification
+        <div id='toolbar-container2'>
+        </div>
+        <div id='editor2' class='border-gray'>
+            <?php include($spek) ?>
+        </div>
+        <input type='hidden' name='spek' id='specification2' value="<?php include($spek) ?>">
+        <script>
+            DecoupledEditor
+                .create( document.querySelector( '#editor2' ) )
+                .then( editor => {
+                    const toolbarContainer = document.querySelector( '#toolbar-container2' );
+
+                    toolbarContainer.appendChild( editor.ui.view.toolbar.element );
+                } )
+                .catch( error => {
+                    console.error( error );
+                } );
+            
+            $("#editor2").click(function (e) { 
+                e.preventDefault();
+                $("#specification2").val($("#editor2").html());
+                $(this).keyup(function () { 
+                    $("#specification2").val($("#editor2").html());
+                });
+            });
+        </script>
+        <?php
+    }
+    function add_deskripsi(){
+        global $deskripsi;
+        ?>
+        Deskripsi
+        <div id='toolbar-container4'>
+        </div>
+        <div id='editor4' class='border-gray'>
+            <?php include($deskripsi); ?>
+        </div>
+        <input type='hidden' name='deskripsi' id='deskripsi2' value="<?php include($deskripsi) ?>">
+        <script>
+            DecoupledEditor
+                .create( document.querySelector( '#editor4' ) )
+                .then( editor => {
+                    const toolbarContainer = document.querySelector( '#toolbar-container4' );
+
+                    toolbarContainer.appendChild( editor.ui.view.toolbar.element );
+                } )
+                .catch( error => {
+                    console.error( error );
+                } );
+            
+            $("#editor4").click(function (e) { 
+                e.preventDefault();
+                $("#deskripis2").val($("#editor4").html());
+                $(this).keyup(function () { 
+                    $("#deskripsi2").val($("#editor4").html());
+                });
+            });
+        </script>
+        <?php
+    }
+    function change_file(){
+        ?>
+        <div>
+            <label for='download'>File</label>
+            <input type='file' name='download' id='download' class='form-control-file ml-auto'>
+        </div>
+        <?php
+    }
+
 
     ?>
 
@@ -48,31 +126,8 @@
                 </select>
             </div>
             <?php
-            $gambar_array =  explode("-", $gambar);
-            ?>
-            <div id="gambar-slide" class="carousel slide w-50 mx-auto border-gray" data-ride="carousel">
-                <div class="carousel-inner" role="listbox">
-                    <?php
-                    for($i=1; $i <= count($gambar_array)-1; $i++){
-                        ?>
-                        <div class="carousel-item <?php if($i==1){echo 'active';} ?>">
-                            <img src="upload/<?php echo $gambar_array[0] ?>/gambar/<?php echo $gambar_array[$i] ?>" class="img-fluid">
-                        </div>
-                        <?php
-                    }
-                    ?>
-                </div>
-                <a class="carousel-control-prev" href="#gambar-slide" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#gambar-slide" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-            <?php
-
+            add_spesifikasi();
+            add_deskripsi();
             break;
 
         case 'Munisi':
@@ -86,30 +141,8 @@
                 </select>
             </div>
             <?php
-            $gambar_array =  explode("-", $gambar);
-            ?>
-            <div id="gambar-slide" class="carousel slide w-50 mx-auto border-gray" data-ride="carousel">
-                <div class="carousel-inner" role="listbox">
-                    <?php
-                    for($i=1; $i <= count($gambar_array)-1; $i++){
-                        ?>
-                        <div class="carousel-item <?php if($i==1){echo 'active';} ?>">
-                            <img src="upload/<?php echo $gambar_array[0] ?>/gambar/<?php echo $gambar_array[$i] ?>" class="img-fluid">
-                        </div>
-                        <?php
-                    }
-                    ?>
-                </div>
-                <a class="carousel-control-prev" href="#gambar-slide" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#gambar-slide" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-            <?php
+            add_spesifikasi();
+            add_deskripsi();
             break;
 
         case 'Kendaraan Khusus':
@@ -122,35 +155,13 @@
                 </select>
             </div>
             <?php
-            $gambar_array =  explode("-", $gambar);
-            ?>
-            <div id="gambar-slide" class="carousel slide w-50 mx-auto border-gray" data-ride="carousel">
-                <div class="carousel-inner" role="listbox">
-                    <?php
-                    for($i=1; $i <= count($gambar_array)-1; $i++){
-                        ?>
-                        <div class="carousel-item <?php if($i==1){echo 'active';} ?>">
-                            <img src="upload/<?php echo $gambar_array[0] ?>/gambar/<?php echo $gambar_array[$i] ?>" class="img-fluid">
-                            <button class="delete-image"><i class="fas fa-times"></i></button>
-                        </div>
-                        <?php
-                    }
-                    ?>
-                </div>
-                <a class="carousel-control-prev" href="#gambar-slide" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#gambar-slide" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-            <?php
+            add_spesifikasi();
+            add_deskripsi();
             break;
 
-        case 'Alat Khusus':
-            # code...
+        case 'Alat Berat':
+            add_spesifikasi();
+            add_deskripsi();
             break;
 
         case 'Peralatan Industi dan Jasa':
@@ -163,6 +174,8 @@
                 </select>
             </div>
             <?php
+            add_spesifikasi();
+            add_deskripsi();
             break;
         
         case "Insfrastruktur Perhubungan":
@@ -177,6 +190,8 @@
                 </select>
             </div>
             <?php
+            add_spesifikasi();
+            add_deskripsi();
             break;
     
         case "Layanan Pertambangan":
@@ -189,10 +204,12 @@
                 </select>
             </div>
             <?php
+            add_spesifikasi();
+            add_deskripsi();
             break;
     
         case "Cyber Security":
-            # code...
+            add_deskripsi();
             break;
     
         case "Produk Anak Perusahaan":
@@ -206,6 +223,8 @@
                 </select>
             </div>
             <?php
+            add_spesifikasi();
+            add_deskripsi();
             break;
     
         case "Majalah":
@@ -218,22 +237,23 @@
                 </select>
             </div>
             <?php
+            add_deskripsi();
             break;
     
         case "Katalog dan Brosur":
-            # code...
+            add_deskripsi();
             break;
     
         case "Gallery":
-            # code...
+            add_deskripsi();
             break;
         
         case "Annual Report":
-            # code...
+            add_deskripsi();
             break;
     
         case "Achievement":
-            # code...
+            add_deskripsi();
             break;
     
         default:

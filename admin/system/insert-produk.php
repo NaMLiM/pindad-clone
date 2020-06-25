@@ -79,8 +79,38 @@
         $spek = null;
     }
 
+    if(isset($_POST["deskripsi"])){
+        mkdir("../upload/".$id."/deskripsi");
+        $myfile = fopen("../upload/".$id."/deskripsi/".$id.".html", "w") or die("Unable to open file!");
+        fwrite($myfile, $_POST["deskripsi"]);
+        fclose($myfile);
+        $deskripsi = "../upload/".$id."/deskripsi/".$id.".html";
+    }
+    else{
+        $deskripsi = null;
+    }
 
-    $insert = mysqli_query($connection, "insert into produk values (null, '$nama_produk', '$jenis_produk', '$kategori', '$gambar', '$video', '$spek')");
+    if(isset($_FILES["download"])){
+        mkdir("../upload/".$id."/download");
+        $target = $id.".".strtolower(pathinfo(basename($_FILES["download"]["name"]),PATHINFO_EXTENSION));
+        $target_dir = "../upload/".$id."/download/";
+        $target_file = $target_dir . $target;
+        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+        
+        if (move_uploaded_file($_FILES["download"]["tmp_name"], $target_file)) {
+            $download = $target_file;
+            genPdfThumbnail($download, "../upload/".$id."/gambar/1.jpg");
+            $gambar = "../upload/".$id."/gambar/1.jpg";
+        } else {
+            echo "Sorry, there was an error uploading your file.";
+        }
+    }
+    else{
+        $download = null;
+    }
+
+
+    $insert = mysqli_query($connection, "insert into produk values (null, '$nama_produk', '$jenis_produk', '$kategori', '$gambar', '$video', '$spek', '$deskripsi', '$download')");
 
     if($insert){
         ?>

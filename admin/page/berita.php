@@ -19,7 +19,7 @@
             $select = mysqli_query($connection, "select * from berita");
             while($data = mysqli_fetch_array($select)){
                 echo "
-                    <tr data-toggle='modal' data-target='#modelId'>
+                    <tr data-toggle='modal' data-target='#update-berita'>
                         <td class='text-center'>".$data["id_berita"]."</td>
                         <td class='text-center'>".$data["judul_berita"]."</td>
                         <td class='text-center'>".$data["tanggal"]."</td>
@@ -33,7 +33,33 @@
     </tbody>
 </table>
 
-<!-- Modal -->
+
+<!-- Modal Update -->
+<div class="modal fade" id="update-berita" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Data</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <form class="form-group" action="system/edit-berita.php" method="POST" id="form-edit" enctype="multipart/form-data">
+                <div class="modal-body" id="edit-modal">
+                        
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary mr-auto" data-dismiss="modal">Close</button>
+                    <a href="#" class="btn btn-danger" id="delete">Delete</a>
+                    <input type="submit" value="Update" class="btn btn-primary">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Insert -->
 <div class="modal fade" id="insert-berita" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -49,10 +75,15 @@
                         <input type="text"
                         class="form-control" name="judul_berita" id="judul_berita" aria-describedby="helpId" placeholder="Judul" required>
 
-                        <label for="toolbar-container1">Isi Berita</label>
-                        <div id="toolbar-container1"></div>
-                        <div id="editor1" class="border-gray"></div>
-                        <input type="hidden" name="isi_berita" id="isi_berita">
+                        <label for="kategori">Kategori</label>
+                        <select class="form-control" name="kategori" id="kategori" aria-describedby="helpId" placeholder="Kategori" required>
+                            <option disabled selected>-- Pilih --</option>
+                            <option value="press-release">Siaran Press</option>
+                            <option value="pindad-in-news">Pindad Dalam Berita</option>
+                            <option value="procurement-info">Informasi Pengadaan</option>
+                            <option value="informasi-serta-merta">Informasi Serta Merta</option>
+                            <option value="new-innovation">Inovasi Baru</option>
+                        </select>
                         
                         <div class='row' id='gambar-form-multi'>
                             <div class='col-md-10'>
@@ -67,15 +98,10 @@
                         </div>
                         <input type='hidden' name='jumlah_gambar' id='jumlah_gambar' value=1>
 
-                        <label for="kategori">Kategori</label>
-                        <select class="form-control" name="kategori" id="kategori" aria-describedby="helpId" placeholder="Kategori" required>
-                            <option disabled selected>-- Pilih --</option>
-                            <option value="press-release">Siaran Press</option>
-                            <option value="pindad-in-news">Pindad Dalam Berita</option>
-                            <option value="procurement-info">Informasi Pengadaan</option>
-                            <option value="informasi-serta-merta">Informasi Serta Merta</option>
-                            <option value="new-innovation">Inovasi Baru</option>
-                        </select>
+                        <label for="toolbar-container1">Isi Berita</label>
+                        <div id="toolbar-container1"></div>
+                        <div id="editor1" class="border-gray"></div>
+                        <textarea name="isi_berita" id="isi_berita" style="display: none;"></textarea>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary mr-auto" data-dismiss="modal">Close</button>

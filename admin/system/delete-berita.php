@@ -25,27 +25,26 @@
 
     $id = $_GET["id"];
 
-    $select = mysqli_query($connection, "select * from produk where id_produk=$id");
+    $select = mysqli_query($connection, "select * from berita where id_berita=$id");
     $data = mysqli_fetch_array($select);
 
-    $delete = mysqli_query($connection, "delete from produk where id_produk=$id");
+    $delete = mysqli_query($connection, "delete from berita where id_berita=$id");
 
     if($delete){
-        deleteDir("../upload/".explode("-", $data['gambar'])[0]."/gambar");
-        deleteDir("../upload/".explode("-", $data['gambar'])[0]."/spek");
-        deleteDir("../upload/".explode("-", $data['gambar'])[0]."/deskripsi");
-        deleteDir("../upload/".explode("-", $data['gambar'])[0]);
+        deleteDir("../../news/".explode("-", $data['gambar'])[0]."/gambar");
+        deleteDir("../../news/".explode("-", $data['gambar'])[0]."/isi_berita");
+        deleteDir("../../news/".explode("-", $data['gambar'])[0]);
         ?>
         <script>
             alert("Data berhasil dihapus!");
-            document.location = "../dashboard.php?page=produk";
+            document.location = "../dashboard.php?page=berita";
         </script>
         <?php
     }else{
         ?>
         <script>
             alert("Data gagal dihapus!");
-            document.location = "../dashboard.php?page=produk";
+            document.location = "../dashboard.php?page=berita";
         </script>
         <?php
     }

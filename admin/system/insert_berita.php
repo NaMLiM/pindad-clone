@@ -40,7 +40,7 @@
         $isi_berita = null;
     }
 
-    $insert = mysqli_query($connection, "insert into berita values (null, '$judul_berita', '".date("Y-m-d")."', '$isi_berita', '$gambar', '$kategori')");
+    $insert = mysqli_query($connection, "insert into berita values (null, '$judul_berita', current_date, '$isi_berita', '$gambar', '$kategori')");
 
     if($insert){
         ?>

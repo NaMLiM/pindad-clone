@@ -26,10 +26,27 @@
     // echo $response ? "PDF converted to JPEG!!" : 'PDF to JPEG Conversion failed';
     
     // create Imagick object
-    $imagick = new Imagick();
-    // Reads image from PDF
-    $imagick->readImage($_SERVER['DOCUMENT_ROOT']."/pindad-clone/admin/system/1.pdf[0]");
-    // Writes an image or image sequence Example- converted-0.jpg, converted-1.jpg
-    $imagick->writeImages($_SERVER['DOCUMENT_ROOT']."/pindad-clone/admin/system/1.jpeg", false);
+    // $imagick = new Imagick();
+    // // Reads image from PDF
+    // $imagick->readImage($_SERVER['DOCUMENT_ROOT']."/pindad-clone/admin/system/1.pdf[0]");
+    // // Writes an image or image sequence Example- converted-0.jpg, converted-1.jpg
+    // $imagick->writeImages($_SERVER['DOCUMENT_ROOT']."/pindad-clone/admin/system/1.jpeg", false);
+
+    // Folder path to be flushed 
+    $folder_path = "a"; 
+    
+    // List of name of files inside 
+    // specified folder 
+    $files = glob($folder_path.'/*');  
+    
+    // Deleting all the files in the list 
+    foreach($files as $file) { 
+    
+        if(is_file($file))  
+        
+            // Delete the given file 
+            unlink($file);  
+    } 
+    rmdir($folder_path);
 
 ?>

@@ -58,14 +58,20 @@
             <?php
                 $select = mysqli_query($connection, "select * from produk where jenis_produk='Senjata'");
                 while($data = mysqli_fetch_array($select)){
-                    echo "<div class='col-md-3 mb-2 px-2'>";
-                    echo "<div class='card'>";
-                    echo "<img class='card-img-top' src='admin/upload/".explode("-", $data["gambar"])[0]."/gambar/".explode("-", $data["gambar"])[1]."'>";
-                    echo "<div class='card-body font-weight-bold ' style='letter-spacing : -1px'>";
-                    echo "<p>".$data["nama_produk"]."</p>";
-                    echo "</div>";
-                    echo "</div>";
-                    echo "</div>";
+                    ?>
+                    <div class="col-md-3 mb-2 px-2">
+                        <div class="card">
+                            <div class="card-overlay">
+                                <a href="" class="eye rounded-circle bg-orange text-white"><i class="fas fa-eye"></i></a>
+                                <a href="" class="link rounded-circle bg-orange text-white"><i class="fas fa-link"></i></a>
+                            </div>
+                            <img class="card-img-top" src="admin/upload/<?php echo explode("-", $data["gambar"])[0]; ?>/gambar/<?php echo explode("-", $data["gambar"])[1]; ?>">
+                            <div class="card-body font-weight-bold" style="letter-spacing : -1px">
+                                <p><?php echo $data["nama_produk"]; ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <?php
                 }
             ?>
         </div>

@@ -308,6 +308,6 @@
 
             
         </script>
-        <!-- <script src="js/home.js"></script> -->
+        <!-- <script src="js/weapon.js"></script> -->
     </body>
 </html>

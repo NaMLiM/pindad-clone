@@ -1,3 +1,7 @@
+.bg-orange {
+  background-color: #ff7e00;
+}
+
 .full {
   width: 100%;
   padding-top: 170px;
@@ -83,6 +87,36 @@
 .card-img-top {
   height: 120px;
   object-fit: cover;
+}
+
+.card:hover > .card-overlay {
+  display: flex;
+}
+
+.eye, .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 1em 1.3em 1em 1.3em; */
+  height: 2em;
+  width: 2em;
+  text-decoration: none;
+}
+
+.eye:hover, .link:hover {
+  text-decoration: none;
+  color: #1e1e1e !important;
+}
+
+.card-overlay {
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  background-color: #ffffffa9;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .isi p {

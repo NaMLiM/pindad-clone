@@ -93,17 +93,20 @@
   display: flex;
 }
 
-.eye, .link {
+.eye,
+.link {
   display: flex;
   justify-content: center;
   align-items: center;
+  
   /* padding: 1em 1.3em 1em 1.3em; */
   height: 2em;
   width: 2em;
   text-decoration: none;
 }
 
-.eye:hover, .link:hover {
+.eye:hover,
+.link:hover {
   text-decoration: none;
   color: #1e1e1e !important;
 }

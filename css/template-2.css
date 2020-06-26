@@ -157,7 +157,7 @@
 .product-img {
   border: 2px;
   border-radius: 2px;
-  border: #777;
+  border-color: #777;
 }
 
 .product-img img{

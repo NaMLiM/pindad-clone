@@ -37,8 +37,8 @@ html {
 .container-fluid .row div:nth-child(1) .btns-login button {
   display: block;
   color: white;
-  padding: .5em 1em;
-  margin-top: .5rem;
+  padding: 0.5em 1em;
+  margin-top: 0.5rem;
   text-decoration: none;
   text-align: right;
   float: right;
@@ -92,7 +92,7 @@ html {
 .container-fluid .row div:nth-child(2) .form-row input[type=tel]:focus,
 .container-fluid .row div:nth-child(2) .form-row textarea {
   -webkit-box-shadow: 0 0 0;
-          box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
 }
 
 .container-fluid .row div:nth-child(2) img {

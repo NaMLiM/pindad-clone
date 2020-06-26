@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   font-family: "URW Gothic L" !important;
   margin: 0;
   padding: 0;
@@ -8,7 +9,7 @@ html, body {
 }
 
 .border-gray {
-  border : 1px solid lightgray !important;
+  border: 1px solid lightgray !important;
 }
 
 .text-primary {

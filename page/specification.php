@@ -8,6 +8,7 @@
         $gambar = $data["gambar"];
         $video = $data["video"];
         $spek = $data["spek"];
+        $deskripsi = $data["deskripsi"];
     }
 ?>
 <link rel="stylesheet" href="css/template-2.css">
@@ -26,19 +27,40 @@
 </nav>
 <div class="container mt-5">
     <div class="row">
-        <div class="col-md-6">
-            <div class="product-img">
-                <img src="admin/upload/<?php echo str_replace("-1","",$gambar);?>/gambar/1.jpeg" alt="">
+        <div class="col-md-6 mb-5">
+            <div class="product-img border border-secondary">
+                <div id="gambar-senjata" class="carousel slide my-4" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <?php
+                            $gambars = explode("-", $gambar);
+                            for($i=1;$i<count($gambars);$i++){
+                                ?>
+                                <div class="carousel-item <?php if($i==1){echo 'active';} ?>">
+                                    <img src="<?php echo "admin/upload/".$gambars[0]."/gambar/".$gambars[$i] ?>" class="img-fluid">
+                                </div>
+                                <?php
+                            }
+                        ?>
+                    </div>
+                    <a class="carousel-control-prev" href="#gambar-senjata" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#gambar-senjata" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="col-md-4 text-dark">
-            <h3><?php echo $nama_produk ?></h3>
-            Deskripsi disini
-        </div>
-    </div>
-    <div class="row">
-        <div class="text-dark">
-            <h3>Certification</h3>
+        <div class="col-md-6 text-dark">
+            <div class="mb-5">
+                <h3><?php echo $nama_produk ?></h3>
+                <?php include(str_replace("../","admin/", $deskripsi)) ?>
+            </div>
+            <div class="text-dark mt-5">
+                <h3>Certification</h3>
+            </div>
         </div>
     </div>
 </div>
@@ -52,10 +74,10 @@
             </ul>
         </div>
     </div>
-    <div class="row mt-5 spec">
+    <div class="row mt-4 spec mb-5">
         <?php include(str_replace("../","admin/", $spek));?>
     </div>
-    <div class="row">
+    <div class="row mt-4">
         <h3>Related Product</h3>
     </div>
 </div>

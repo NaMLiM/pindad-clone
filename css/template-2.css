@@ -104,6 +104,11 @@
 
 .spec {
   display: inline-block;
+  color: #515151;
+}
+
+.spec p {
+  margin-bottom: 0.2em;
 }
 
 .product-img {

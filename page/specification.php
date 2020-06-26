@@ -66,16 +66,22 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-md-12 row">
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#tab01">SPECIFICATION</a> <!--Ngambang???-->
-                </li>
+        <div class="col-md-12">
+            <ul class="nav nav-tabs tab-spec border-0">
+                <li><a class="active px-2" data-toggle="tab" href="#specification">SPECIFICATION</a></li>
+                <li><a class="px-2" data-toggle="tab" href="#video">VIDEO</a></li>
             </ul>
         </div>
     </div>
     <div class="row mt-4 spec mb-5">
-        <?php include(str_replace("../","admin/", $spek));?>
+        <div class="tab-content">
+            <div id="specification" class="tab-pane active">
+                <?php include(str_replace("../","admin/", $spek));?>
+            </div>
+            <div id="video" class="tab-pane fade">
+                <h3>VIDEO DI SINI</h3>
+            </div>
+        </div>
     </div>
     <div class="row mt-4">
         <h3>Related Product</h3>

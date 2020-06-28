@@ -63,7 +63,7 @@
                         <div class="card">
                             <div class="card-overlay">
                                 <a href="" class="eye rounded-circle bg-orange text-white"><i class="fas fa-eye"></i></a>
-                                <a href="" class="link rounded-circle bg-orange text-white"><i class="fas fa-link"></i></a>
+                                <a href="index.php?page=view-product&&id=<?php echo $data["id_produk"] ?>" class="link rounded-circle bg-orange text-white"><i class="fas fa-link"></i></a>
                             </div>
                             <img class="card-img-top" src="admin/upload/<?php echo explode("-", $data["gambar"])[0]; ?>/gambar/<?php echo explode("-", $data["gambar"])[1]; ?>">
                             <div class="card-body font-weight-bold" style="letter-spacing : -1px">

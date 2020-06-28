@@ -1,5 +1,5 @@
 <?php
-    $id_produk = $_GET['id_produk'];
+    $id_produk = $_GET['id'];
     $select = mysqli_query($connection, "select * from produk where id_produk=$id_produk");
     while($data = mysqli_fetch_array($select)){
         $nama_produk = $data["nama_produk"];

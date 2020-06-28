@@ -83,7 +83,29 @@
             </div>
         </div>
     </div>
-    <div class="row mt-4">
+    <div class="row mt-4 mb-5">
         <h3>Related Product</h3>
+        <div class="related-product" id="related-produk">
+            <?php 
+                $select = mysqli_query($connection, "select * from produk where kategori='$kategori' and jenis_produk='$jenis_produk'");
+                while($data=mysqli_fetch_array($select)){
+                    ?>
+                    
+                    <div class="related-produk-card">
+                        <img class="img-fluid" src="admin/upload/<?php echo explode("-", $data["gambar"])[0]; ?>/gambar/<?php echo explode("-", $data["gambar"])[1]; ?>">
+                        <h3><a href="index.php?page=view-product&&id=<?php echo $data["id_produk"] ?>"><?php echo $data["nama_produk"] ?></a></h3>
+                        <div class="teks-container">
+                            <div class="teks">
+                                <div>
+                                    <?php include(str_replace("..", "admin", $data["deskripsi"])) ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <?php
+                }
+            ?>
+        </div>
     </div>
 </div>

@@ -21,7 +21,7 @@
     <ol class="breadcrumb">
         <li class="breadcrumb-item font-weight-bold"><a href="index.php">Pindad</a></li>
         <li class="breadcrumb-item font-weight-bold"><a href="">Produk & Jasa</a></li>
-        <li class="breadcrumb-item font-weight-bold"><a href=""><?php echo $jenis_produk ?></a></li>
+        <li class="breadcrumb-item font-weight-bold"><a href="index.php?page=weapon"><?php echo $jenis_produk ?></a></li>
         <li class="breadcrumb-item active" aria-current="page"><?php echo $nama_produk ?></li>
     </ol>
 </nav>
@@ -85,7 +85,7 @@
     </div>
     <div class="row mt-4 mb-5">
         <h3>Related Product</h3>
-        <div class="related-product" id="related-produk">
+        <div class="related-produk" id="related-produk">
             <?php 
                 $select = mysqli_query($connection, "select * from produk where kategori='$kategori' and jenis_produk='$jenis_produk'");
                 while($data=mysqli_fetch_array($select)){

@@ -308,6 +308,6 @@
 
             
         </script>
-        <!-- <script src="js/weapon.js"></script> -->
+        <script src="js/<?php echo $_GET['page'] ?>.js"></script>
     </body>
 </html>

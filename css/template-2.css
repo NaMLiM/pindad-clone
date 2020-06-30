@@ -129,11 +129,11 @@
 }
 
 .card-overlay .panah-up {
-  align-self: end;
+  align-self: center;
   justify-self: center;
   position: absolute;
   color: #ff7e00;
-  transform: translateY(12px);
+  transform: translateY(54px);
 }
 
 .isi p {
@@ -185,11 +185,12 @@
 .related-produk {
   overflow: hidden;
   height: fit-content;
-  display: ruby;
+  display: block;
+  white-space: nowrap;
 }
 
 .related-produk-card {
-  display: block;
+  display: inline-block;
   width: 31%;
   margin-left: 1%;
   margin-right: 1%;
@@ -213,6 +214,7 @@
 }
 
 .teks {
+  white-space: normal;
   font-size: small;
   display: block;
   display: -webkit-box;

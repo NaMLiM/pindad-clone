@@ -94,8 +94,17 @@
   object-fit: cover;
 }
 
+.card-img-top-book {
+  height: 220px;
+  object-fit: cover;
+}
+
 .card:hover > .card-overlay {
   display: flex;
+}
+
+.card:hover > .card-overlay-book {
+  display: flex !important;
 }
 
 .eye,
@@ -128,12 +137,55 @@
   border-bottom: 2.5px solid #ff7e00;
 }
 
+.card-overlay-book {
+  position: absolute;
+  width: 100%;
+  height: 220px;
+  background-color: #ffffffa9;
+  z-index: 2;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2.5px solid #ff7e00;
+}
+
 .card-overlay .panah-up {
   align-self: center;
   justify-self: center;
   position: absolute;
   color: #ff7e00;
   transform: translateY(54px);
+}
+
+.card-overlay-book .panah-up {
+  align-self: center;
+  justify-self: center;
+  position: absolute;
+  color: #ff7e00;
+  transform: translateY(104px);
+}
+
+.nama-produk {
+  line-height: 90%;
+}
+
+.card-desc-book {
+  display: block !important;
+  height: fit-content;
+  max-height: none;
+}
+
+.card-desc-book p:nth-child(3) {
+  font-weight: normal;
+  font-size: small;
+  letter-spacing: normal;
+}
+
+.card-desc-book a {
+  font-size: small;
+  letter-spacing: normal;
+  text-decoration: none;
+  color: #ff7e00;
 }
 
 .isi p {

@@ -108,13 +108,13 @@
                         <option>Kendaraan Khusus</option>
                         <option>Alat Berat</option>
                         <option>Peralatan Industri dan Jasa</option>
-                        <option>Insfratruktur Perhubungan</option>
+                        <option>Infrastruktur Perhubungan</option>
                         <option>Layanan Pertambangan</option>
                         <option>Cyber Security</option>
                         <option>Produk Anak Perusahaan</option>
                         <option>Majalah</option>
                         <option>Katalog dan Brosur</option>
-                        <option>Gallery</option>
+                        <option>GalPlery</option>
                         <option>Annual Report</option>
                         <option>Achievement</option>
                       </select>

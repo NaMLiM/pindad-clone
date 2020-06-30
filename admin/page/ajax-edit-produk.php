@@ -170,7 +170,7 @@
                 <label>Kategori</label>
                 <select class="form-control ml-auto" name="kategori" required>
                     <option <?php if($kategori=="Electric Machines"){echo "selected";} ?> >Electric Machines</option>
-                    <option <?php if($kategori=="Agricultural Equipments"){echo "selected";} ?> >Agricultural Equipments</option>
+                    <option <?php if($kategori=="Agricultural Machines"){echo "selected";} ?> >Agricultural Machines</option>
                 </select>
             </div>
             <?php

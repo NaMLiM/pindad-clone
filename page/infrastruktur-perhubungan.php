@@ -51,7 +51,7 @@
                 <li class="py-1" id="kategori-forging">Forging</a></li>
                 <li class="py-1" id="kategori-casting">Casting</a></li>
                 <li class="py-1" id="kategori-railway">Railway Equipment</a></li>
-                <li class="py-1" id="kategori=ship">Ship Equipment</a></li>
+                <li class="py-1" id="kategori-ship">Ship Equipment</a></li>
             </ul>
         </div>
         <div class="col-md-9 row mb-5" id="produks">

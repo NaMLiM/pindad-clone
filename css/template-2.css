@@ -129,11 +129,11 @@
 }
 
 .card-overlay .panah-up {
-  align-self: end;
+  align-self: center;
   justify-self: center;
   position: absolute;
   color: #ff7e00;
-  transform: translateY(12px);
+  transform: translateY(54px);
 }
 
 .isi p {

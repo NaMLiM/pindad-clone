@@ -147,9 +147,10 @@
                             <a class="dropdown-item" href="index.php?page=weapon">SENJATA</a>
                             <a class="dropdown-item" href="index.php?page=ammunition">MUNISI</a>
                             <a class="dropdown-item" href="index.php?page=special-vehicles">KENDARAAN KHUSUS</a>
-                            <a class="dropdown-item" href="index.php?page=forging-and-casting">TEMPA COR & ALAT PERKERETAAPIAN</a>
                             <a class="dropdown-item" href="index.php?page=alat-berat">ALAT BERAT</a>
-                            <a class="dropdown-item" href="index.php?page=handakom">BAHAN PELEDAK KOMERSIAL</a>
+                            <a class="dropdown-item" href="index.php?page=peralatan-industri-dan-jasa">PERALATAN INDUSTRI DAN JASA</a>
+                            <a class="dropdown-item" href="index.php?page=infrastruktur-perhubungan">INFRASTRUKTUR PERHUBUNGAN</a>
+                            <a class="dropdown-item" href="index.php?page=layanan-pertambangan">LAYANAN PERTAMBANGAN</a>
                             <a class="dropdown-item" href="index.php?page=cyber-security">CYBER SECURITY</a>
                             <a class="dropdown-item" href="index.php?page=anak-perusahaan">ANAK PERUSAHAAN</a>
                             <a class="dropdown-item" href="index.php?page=inquiry-process">PROSEDUR PEMESANAN PRODUK INDUSTRIAL</a>

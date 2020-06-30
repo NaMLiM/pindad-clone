@@ -181,7 +181,7 @@
     <label for="kategori4">Kategori</label>
     <select class="form-control ml-auto" name="kategori" id="kategori4" required>
         <option>Electric Machines</option>
-        <option>Agricultural Equipments</option>
+        <option>Agricultural Machines</option>
     </select>
 </div>
 <div class="form-inline" style="display: none;" id="infrastruktur-perhubungan">

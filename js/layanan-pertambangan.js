@@ -36,7 +36,7 @@ $("#kategori-service").click(function (e) {
 e.preventDefault();
 $(".produks-card").each(function (index, element) {
     // element == this
-    if($(this).attr("data-target")!="Explosive Service"){
+    if($(this).attr("data-target")!="Explosive Services"){
         $(this).hide();
     }else{
         $(this).show();

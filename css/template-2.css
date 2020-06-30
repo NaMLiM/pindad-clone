@@ -214,6 +214,7 @@
 }
 
 .teks {
+  white-space: normal;
   font-size: small;
   display: block;
   display: -webkit-box;

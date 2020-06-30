@@ -1,10 +1,10 @@
-$(".produks-card").hover(function () {
+$(".card-img-top").children().hover(function () {
     // over
-    $(".card-overlay-book").show();
+    $(".card-overlay").show();
     
 }, function () {
     // out
-    $(".card-overlay-book").hide();
+    $(".card-overlay").hide();
 }
 );
 
@@ -18,115 +18,31 @@ $(".produks-card").each(function (index, element) {
 });
 });
 
-$("#kategori-rifles").click(function (e) { 
+$("#kategori-bulletin").click(function (e) { 
 e.preventDefault();
 $(".produks-card").each(function (index, element) {
     // element == this
-    if($(this).attr("data-target")!="Rifles"){
+    if($(this).attr("data-target")!="Bulletin"){
         $(this).hide();
     }else{
         $(this).show();
     }
     $(".kategoris").find(".active").removeClass("active");
-    $("#kategori-rifles").addClass("active");
+    $("#kategori-bulletin").addClass("active");
 });
 });
 
-$("#kategori-sniper-rifles").click(function (e) { 
+$("#kategori-newsletter").click(function (e) { 
 e.preventDefault();
 $(".produks-card").each(function (index, element) {
     // element == this
-    if($(this).attr("data-target")!="Sniper Rifles"){
+    if($(this).attr("data-target")!="Newsletter"){
         $(this).hide();
     }else{
         $(this).show();
     }
     $(".kategoris").find(".active").removeClass("active");
-    $("#kategori-sniper-rifles").addClass("active");
-});
-});
-
-$("#kategori-machine-guns").click(function (e) { 
-e.preventDefault();
-$(".produks-card").each(function (index, element) {
-    // element == this
-    if($(this).attr("data-target")!="Machine Guns"){
-        $(this).hide();
-    }else{
-        $(this).show();
-    }
-    $(".kategoris").find(".active").removeClass("active");
-    $("#kategori-machine-guns").addClass("active");
-});
-});
-
-$("#kategori-grenade-launcher").click(function (e) { 
-e.preventDefault();
-$(".produks-card").each(function (index, element) {
-    // element == this
-    if($(this).attr("data-target")!="Grenade Launcher"){
-        $(this).hide();
-    }else{
-        $(this).show();
-    }
-    $(".kategoris").find(".active").removeClass("active");
-    $("#kategori-grenade-launcher").addClass("active");
-});
-});
-
-$("#kategori-mortir").click(function (e) { 
-e.preventDefault();
-$(".produks-card").each(function (index, element) {
-    // element == this
-    if($(this).attr("data-target")!="Mortir"){
-        $(this).hide();
-    }else{
-        $(this).show();
-    }
-    $(".kategoris").find(".active").removeClass("active");
-    $("#kategori-mortir").addClass("active");
-});
-});
-
-$("#kategori-pistols").click(function (e) { 
-e.preventDefault();
-$(".produks-card").each(function (index, element) {
-    // element == this
-    if($(this).attr("data-target")!="Pistols"){
-        $(this).hide();
-    }else{
-        $(this).show();
-    }
-    $(".kategoris").find(".active").removeClass("active");
-    $("#kategori-pistols").addClass("active");
-});
-});
-
-$("#kategori-shotguns").click(function (e) { 
-e.preventDefault();
-$(".produks-card").each(function (index, element) {
-    // element == this
-    if($(this).attr("data-target")!="Shotguns"){
-        $(this).hide();
-    }else{
-        $(this).show();
-    }
-    $(".kategoris").find(".active").removeClass("active");
-    $("#kategori-shotguns").addClass("active");
-});
-});
-
-$("#kategori-submachine-guns").click(function (e) { 
-e.preventDefault();
-$(".produks-card").each(function (index, element) {
-    // element == this
-    if($(this).attr("data-target")!="Submachine Guns"){
-        $(this).hide();
-    }else{
-        $(this).show();
-    }
-    $(".kategoris").find(".active").removeClass("active");
-    $("#kategori-submachine-guns").addClass("active");
+    $("#kategori-newsletter").addClass("active");
 });
 });
 

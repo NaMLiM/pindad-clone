@@ -114,7 +114,7 @@
                         <option>Produk Anak Perusahaan</option>
                         <option>Majalah</option>
                         <option>Katalog dan Brosur</option>
-                        <option>GalPlery</option>
+                        <option>Gallery</option>
                         <option>Annual Report</option>
                         <option>Achievement</option>
                       </select>

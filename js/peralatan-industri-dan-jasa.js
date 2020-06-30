@@ -36,7 +36,7 @@ $("#kategori-agricultural").click(function (e) {
 e.preventDefault();
 $(".produks-card").each(function (index, element) {
     // element == this
-    if($(this).attr("data-target")!="Agricultural Machines"){
+    if($(this).attr("data-target")!="Agricultural Equipments"){
         $(this).hide();
     }else{
         $(this).show();

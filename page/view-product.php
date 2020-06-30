@@ -21,7 +21,7 @@
     <ol class="breadcrumb">
         <li class="breadcrumb-item font-weight-bold"><a href="index.php">Pindad</a></li>
         <li class="breadcrumb-item font-weight-bold"><a href="">Produk & Jasa</a></li>
-        <li class="breadcrumb-item font-weight-bold"><a href="index.php?page=weapon"><?php echo $jenis_produk ?></a></li>
+        <li class="breadcrumb-item font-weight-bold"><a href="#" onclick="window.history.back()"><?php echo $jenis_produk ?></a></li>
         <li class="breadcrumb-item active" aria-current="page"><?php echo $nama_produk ?></li>
     </ol>
 </nav>

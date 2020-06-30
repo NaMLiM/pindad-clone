@@ -47,7 +47,7 @@
             <ul class="fa-ul list-aside my-3 kategoris">
                 <li class="py-1 active" id="kategori-all">All</a></li>
                 <li class="py-1" id="kategori-electric">Electric Machines</a></li>
-                <li class="py-1" id="kategori-agricultural">Agricultural Machines</a></li>
+                <li class="py-1" id="kategori-agricultural">Agricultural Equipments</a></li>
             </ul>
         </div>
         <div class="col-md-9 row mb-5" id="produks">

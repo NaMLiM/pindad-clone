@@ -107,8 +107,8 @@
                         <option>Munisi</option>
                         <option>Kendaraan Khusus</option>
                         <option>Alat Berat</option>
-                        <option>Peralatan Industi dan Jasa</option>
-                        <option>Insfrastruktur Perhubungan</option>
+                        <option>Peralatan Industri dan Jasa</option>
+                        <option>Insfratruktur Perhubungan</option>
                         <option>Layanan Pertambangan</option>
                         <option>Cyber Security</option>
                         <option>Produk Anak Perusahaan</option>

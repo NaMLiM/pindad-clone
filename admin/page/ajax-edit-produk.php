@@ -164,7 +164,7 @@
             add_deskripsi();
             break;
 
-        case 'Peralatan Industi dan Jasa':
+        case 'Peralatan Industri dan Jasa':
             ?>
             <div class="form-inline">
                 <label>Kategori</label>
@@ -178,7 +178,7 @@
             add_deskripsi();
             break;
         
-        case "Insfrastruktur Perhubungan":
+        case "Infrastruktur Perhubungan":
             ?>
             <div class="form-inline">
                 <label>Kategori</label>

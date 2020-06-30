@@ -127,7 +127,7 @@ $("#jenis select").change(function (e) {
             $("#form-download").html("");
             break;
         
-        case "Peralatan Industi dan Jasa":
+        case "Peralatan Industri dan Jasa":
             $("#kategori-form").html($("#peralatan-industri-dan-jasa").html());
             add_gambar_multi();
             $("#form-video").html("");
@@ -136,7 +136,7 @@ $("#jenis select").change(function (e) {
             $("#form-download").html("");
             break;
 
-        case "Insfrastruktur Perhubungan":
+        case "Infrastruktur Perhubungan":
             $("#kategori-form").html($("#infrastruktur-perhubungan").html());
             add_gambar_multi();
             $("#form-video").html("");

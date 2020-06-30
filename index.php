@@ -228,9 +228,10 @@
                             <a href="index.php?page=weapon" class="col-md-12 p-2">Senjata</a>
                             <a href="index.php?page=ammunition" class="col-md-12 p-2">Munisi</a>
                             <a href="index.php?page=special-vehicles" class="col-md-12 p-2">Kendaraan Khusus</a>
-                            <a href="index.php?page=forging-and-casting" class="col-md-12 p-2">Tempa Cor & Alat Perkeretaapian</a>
                             <a href="index.php?page=alat-berat" class="col-md-12 p-2">Alat Berat</a>
-                            <a href="index.php?page=handakom" class="col-md-12 p-2">Bahan Peledak Komersial</a>
+                            <a href="index.php?page=peralatan-industri-dan-jasa" class="col-md-12 p-2">Peralatan Industri dan Jasa</a>
+                            <a href="index.php?page=infrastruktur-perhubungan" class="col-md-12 p-2">Infrastruktur Perhubungan</a>
+                            <a href="index.php?page=layanan-pertambangan" class="col-md-12 p-2">Layanan Pertambangan</a>
                             <a href="index.php?page=cyber-security" class="col-md-12 p-2">Cyber Security</a>
                             <a href="index.php?page=anak-perusahaan" class="col-md-12 p-2">Anak Perusahaan</a>
                         </div>

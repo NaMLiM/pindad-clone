@@ -83,9 +83,8 @@
             </div>
         </div>
     </div>
-    <div class="row mt-4 mb-5">
+    <div class="row mt-4 mb-5 d-block">
         <h3 class="d-block">Related Product</h3>
-        <br>
         <div class="related-produk" id="related-produk">
             <?php 
                 $select = mysqli_query($connection, "select * from produk where kategori='$kategori' and jenis_produk='$jenis_produk'");

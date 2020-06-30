@@ -129,3 +129,18 @@ $("#kategori-submachine-guns").click(function (e) {
         $("#kategori-submachine-guns").addClass("active");
     });
 });
+
+// search
+$("#search").keyup(function (e) { 
+    e.preventDefault();
+    $(".produks-card").each(function (index, element) {
+        // element == this
+
+        if($(this).find(".nama-produk").html().toLowerCase().indexOf($("#search").val().toLowerCase()) != -1){
+            $(this).show();
+        }else{
+            $(this).hide();
+        }
+    });
+    
+});

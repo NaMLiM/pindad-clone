@@ -42,7 +42,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-3">
-            <input type="text" class="search" name="search" placeholder="Quick Search">
+            <input type="text" class="search" name="search" placeholder="Quick Search" id="search">
             <ul class="fa-ul list-aside my-3 kategoris">
                 <li class="py-1 active" id="kategori-all">All</li>
                 <li class="py-1" id="kategori-rifles">Rifles</li>
@@ -68,8 +68,8 @@
                                 <i class="fas fa-caret-up fa-2x panah-up"></i>
                             </div>
                             <img class="card-img-top" src="admin/upload/<?php echo explode("-", $data["gambar"])[0]; ?>/gambar/<?php echo explode("-", $data["gambar"])[1]; ?>">
-                            <div class="card-body font-weight-bold" style="letter-spacing : -1px">
-                                <p><?php echo $data["nama_produk"]; ?></p>
+                            <div class="card-body font-weight-bold nama-produk">
+                                <?php echo $data["nama_produk"]; ?>
                             </div>
                         </div>
                     </div>

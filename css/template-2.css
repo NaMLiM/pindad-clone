@@ -80,11 +80,13 @@
 
 .card-body {
   background-color: rgb(216, 216, 216);
-  height: 40px;
-}
-
-.card-body p {
-  transform: translateY(-12px);
+  height: fit-content;
+  max-height: 40px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  letter-spacing : -1px;
+  padding: 0.5em;
 }
 
 .card-img-top {

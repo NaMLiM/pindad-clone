@@ -23,4 +23,6 @@ function translate(){
     timeout = setTimeout(translate, 4000);
 }
 
-translate();
+if(count >= 1){
+    translate();
+}

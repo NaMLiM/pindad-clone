@@ -53,14 +53,17 @@
   transform: translateX(-40px);
 }
 
+.list-aside li,
 .list-aside li a {
   text-decoration: none;
   color: #808080;
   transition: all 100ms;
+  cursor: pointer;
 }
 
-.list-aside li a:hover,
-.list-aside li a.active {
+.list-aside li:hover,
+.list-aside li a:active,
+.list-aside .active {
   color: #eaba3a;
 }
 
@@ -117,9 +120,18 @@
   height: 120px;
   background-color: #ffffffa9;
   z-index: 2;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
+  border-bottom: 2.5px solid #ff7e00;
+}
+
+.card-overlay .panah-up {
+  align-self: end;
+  justify-self: center;
+  position: absolute;
+  color: #ff7e00;
+  transform: translateY(12px);
 }
 
 .isi p {

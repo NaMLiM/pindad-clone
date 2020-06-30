@@ -38,32 +38,34 @@
         </div>
     </div>
 </div>
+
 <div class="container">
     <div class="row">
         <div class="col-md-3">
             <input type="text" class="search" name="search" placeholder="Quick Search">
-            <ul class="fa-ul list-aside my-3">
-                <li class="py-1"><a href="#">All</a></li>
-                <li class="py-1"><a href="#">Rifles</a></li>
-                <li class="py-1"><a href="#">Sniper Rifles</a></li>
-                <li class="py-1"><a href="#">Machine Guns</a></li>
-                <li class="py-1"><a href="#">Grenade Launcher</a></li>
-                <li class="py-1"><a href="#">Mortir</a></li>
-                <li class="py-1"><a href="#">Pistols</a></li>
-                <li class="py-1"><a href="#">Shotguns</a></li>
-                <li class="py-1"><a href="#">Submachine Guns</a></li>
+            <ul class="fa-ul list-aside my-3 kategoris">
+                <li class="py-1 active" id="kategori-all">All</li>
+                <li class="py-1" id="kategori-rifles">Rifles</li>
+                <li class="py-1" id="kategori-sniper-rifles">Sniper Rifles</li>
+                <li class="py-1" id="kategori-machine-guns">Machine Guns</li>
+                <li class="py-1" id="kategori-grenade-launcher">Grenade Launcher</li>
+                <li class="py-1" id="kategori-mortir">Mortir</li>
+                <li class="py-1" id="kategori-pistols">Pistols</li>
+                <li class="py-1" id="kategori-shotguns">Shotguns</li>
+                <li class="py-1" id="kategori-submachine-guns">Submachine Guns</li>
             </ul>
         </div>
-        <div class="col-md-9 row">
+        <div class="col-md-9 row mb-5" id="produks">
             <?php
                 $select = mysqli_query($connection, "select * from produk where jenis_produk='Senjata'");
                 while($data = mysqli_fetch_array($select)){
                     ?>
-                    <div class="col-md-3 mb-2 px-2">
+                    <div class="col-md-3 mb-2 px-2 produks-card" data-target="<?php echo $data['kategori'] ?>">
                         <div class="card">
                             <div class="card-overlay">
-                                <a href="" class="eye rounded-circle bg-orange text-white"><i class="fas fa-eye"></i></a>
+                                <a href="admin/upload/<?php echo explode("-", $data["gambar"])[0]; ?>/gambar/<?php echo explode("-", $data["gambar"])[1] ?>" class="eye rounded-circle bg-orange text-white"><i class="fas fa-eye"></i></a>
                                 <a href="index.php?page=view-product&&id=<?php echo $data["id_produk"] ?>" class="link rounded-circle bg-orange text-white"><i class="fas fa-link"></i></a>
+                                <i class="fas fa-caret-up fa-2x panah-up"></i>
                             </div>
                             <img class="card-img-top" src="admin/upload/<?php echo explode("-", $data["gambar"])[0]; ?>/gambar/<?php echo explode("-", $data["gambar"])[1]; ?>">
                             <div class="card-body font-weight-bold" style="letter-spacing : -1px">

@@ -46,7 +46,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-3">
-            <input type="text" class="search" name="search" placeholder="Quick Search">
+            <input type="text" class="search" name="search" placeholder="Quick Search" id="search">
         </div>
         <div class="col-md-9 row mb-5" id="produks">
             <?php

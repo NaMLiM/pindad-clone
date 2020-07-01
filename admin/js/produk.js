@@ -158,9 +158,9 @@ $("#jenis select").change(function (e) {
             $("#kategori-form").html("");
             $("#form-gambar").html($("#gambar-form").html());
             $("#form-video").html("");
-            $("#form-specification").html("");
+            add_specification();
             add_deskripsi();
-            add_download();
+            $("#form-download").html("");
             break;
     
         case "Produk Anak Perusahaan":

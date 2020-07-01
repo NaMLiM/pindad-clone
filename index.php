@@ -180,7 +180,7 @@
                             <i class="fa fa-caret-down text-warning caret-link" aria-hidden="true"></i>
                         </a>
                         <div class="dropdown-menu text-center" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">E_PROCUREMENT</a>
+                            <a class="dropdown-item" href="https://eproc.pindad.com/">E_PROCUREMENT</a>
                             <a class="dropdown-item" href="index.php?page=procurement-info">INFORMASI PENGADAAN</a>
                         </div>
                     </li>
@@ -272,7 +272,7 @@
 
         <a href="#" class="to-top bg-info"><i class="fa fa-angle-up text-light" aria-hidden="true"></i></a>
         
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/7b59756246.js" crossorigin="anonymous"></script>
@@ -310,6 +310,19 @@
 
             
         </script>
+        <?php
+            if($_GET["page"]=="news" || $_GET["page"]=="press-release" || $_GET["page"]=="pindad-in-news" || $_GET["page"]=="informasi-serta-merta" || $_GET["page"]=="procurement-info" || $_GET["page"]=="new-innovations") {
+                ?>
+                <script src="js/news-list.js"></script>
+                <script>
+                    if(typeof hal == "undefined" || hal==null){
+                        var hal = 8;
+                    }
+                    ajax(hal);
+                </script>
+                <?php
+            }
+        ?>
         <script src="js/<?php echo $_GET['page'] ?>.js"></script>
     </body>
 </html>

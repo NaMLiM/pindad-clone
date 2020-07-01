@@ -40,7 +40,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-3">
-            <input type="text" class="search" name="search" placeholder="Quick Search">
+            <input type="text" class="search" name="search" placeholder="Quick Search" id="search">
             <ul class="fa-ul list-aside my-3 kategoris">
                 <li class="py-1 active" id="kategori-all">All</a></li>
                 <li class="py-1" id="kategori-small">Small Caliber</a></li>

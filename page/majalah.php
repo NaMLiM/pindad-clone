@@ -52,8 +52,7 @@
                     <div class="col-md-3 mb-2 px-2 produks-card" data-target="<?php echo $data['kategori'] ?>">
                         <div class="card">
                             <div class="card-overlay-book">
-                                <a href="admin/upload/<?php echo explode("-", $data["gambar"])[0]; ?>/gambar/<?php echo explode("-", $data["gambar"])[1] ?>" class="eye rounded-circle bg-orange text-white"><i class="fas fa-eye"></i></a>
-                                <a href="index.php?page=view-product&&id=<?php echo $data["id_produk"] ?>" class="link rounded-circle bg-orange text-white"><i class="fas fa-link"></i></a>
+                                <a href="admin/<?php echo str_replace("../", "", $data["gambar"]); ?>" class="eye rounded-circle bg-orange text-white"><i class="fas fa-eye"></i></a>
                                 <i class="fas fa-caret-up fa-2x panah-up"></i>
                             </div>
                             <img class="card-img-top-book" src="admin/<?php echo str_replace("../", "", $data["gambar"]); ?>">

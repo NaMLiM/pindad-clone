@@ -45,20 +45,27 @@
 <div class="container">
     <div class="row">
         <div class="col-md-3">
-            <input type="text" class="search" name="search" placeholder="Quick Search">
+            <input type="text" class="search" name="search" placeholder="Quick Search" id="search">
         </div>
-        <div class="col-md-9 row">
+        <div class="col-md-9 row mb-5" id="produks">
             <?php
-                $select = mysqli_query($connection, "select * from produk where jenis_produk='Senjata'");
+                $select = mysqli_query($connection, "select * from produk where jenis_produk='Cyber Security'");
                 while($data = mysqli_fetch_array($select)){
-                    echo "<div class='col-md-3 mb-4'>";
-                    echo "<div class='card'>";
-                    echo "<img class='card-img-top' src='admin/upload/".explode("-", $data["gambar"])[0]."/gambar/".explode("-", $data["gambar"])[1]."'>";
-                    echo "<div class='card-body font-weight-bold'>";
-                    echo "<p>".$data["nama_produk"]."</p>";
-                    echo "</div>";
-                    echo "</div>";
-                    echo "</div>";
+                    ?>
+                    <div class="col-md-3 mb-2 px-2 produks-card" data-target="<?php echo $data['kategori'] ?>">
+                        <div class="card">
+                            <div class="card-overlay">
+                                <a href="admin/upload/<?php echo explode("-", $data["gambar"])[0]; ?>/gambar/<?php echo explode("-", $data["gambar"])[1] ?>" class="eye rounded-circle bg-orange text-white"><i class="fas fa-eye"></i></a>
+                                <a href="index.php?page=view-product&&id=<?php echo $data["id_produk"] ?>" class="link rounded-circle bg-orange text-white"><i class="fas fa-link"></i></a>
+                                <i class="fas fa-caret-up fa-2x panah-up"></i>
+                            </div>
+                            <img class="card-img-top" src="admin/upload/<?php echo explode("-", $data["gambar"])[0]; ?>/gambar/<?php echo explode("-", $data["gambar"])[1]; ?>">
+                            <div class="card-body font-weight-bold nama-produk">
+                                <?php echo $data["nama_produk"]; ?>
+                            </div>
+                        </div>
+                    </div>
+                    <?php
                 }
             ?>
         </div>

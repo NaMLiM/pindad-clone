@@ -97,3 +97,55 @@
   color: #eaba3a;
   transition: 200ms;
 }
+
+.page-number {
+  text-align: center;
+}
+
+.number {
+  text-decoration: none;
+  display: inline-flex;
+  color: #1e1e1e;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+}
+
+.number:hover,
+.number.active {
+  background-color: #eaba3a;
+  color: white;
+  text-decoration: none;
+}
+
+.last-page {
+  text-decoration: none;
+  display: block;
+  float: left;
+  height: 40px;
+  font-weight: bold;
+  color: #1e1e1e;
+  border: none;
+  background-color: transparent;
+}
+
+.next-page {
+  text-decoration: none;
+  display: block;
+  float: right;
+  height: 40px;
+  font-weight: bold;
+  color: #1e1e1e;
+  border: none;
+  background-color: transparent;
+}
+
+.next-page:hover,
+.last-page:hover {
+  color: #eaba3a;
+  text-decoration: none;
+}

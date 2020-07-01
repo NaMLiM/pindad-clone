@@ -222,7 +222,7 @@
 <div class="container-fluid bg-white py-4">
     <article class="container">
         <div class="row">
-            <div class="col-md-12 text-primary"><h1><dt>Berita</dt></h1></div>
+            <div class="col-md-12 text-primary text-left"><h1><dt>Berita</dt></h1></div>
             <div class="col-md-6 row">
 
                 <?php
@@ -244,14 +244,15 @@
                     <div class="col-md-12 row">
                         <div class="b_gambar col-md-4 p-2">
                             <div class="berita-tanggal">
-                                
+                                <div class=""><?php echo date("M", strtotime($data[2])) ?></div>
+                                <div class="font-weight-bold"><?php echo date("d", strtotime($data[2])) ?></div>
                             </div>
-                            <img class="" src="<?php echo $thumbnail ?>" alt="">
+                            <a href="index.php?page=view-news&id=<?php echo $data[0] ?>"><img class="" src="<?php echo $thumbnail ?>" alt=""></a>
                         </div>
                         <div class="col-md-8 p-2">
-                            <div class="b_judul">
+                            <a class="b_judul" href="index.php?page=view-news&id=<?php echo $data[0] ?>">
                                 <b><?php echo $data[1] ?></b>
-                            </div>
+                            </a>
                             <div class="b_isi">
                                 <div>
                                     <?php include(str_replace("../../", "", $data[3])) ?>
@@ -269,8 +270,11 @@
                 
             </div>
             <div class="col-md-6 text-center ">
-                <video class="img-fluid" src="video/a.mp4" controls></video>
-                <a href="#" class="text-warning"><h3></h3>Video Lainnya</a>
+                <div class="video-berita">
+                    <button class="play-button"><i class="fa fa-play-circle-o" aria-hidden="true"></i></button>
+                    <img src="img/about_image_1.png" alt="" class="img-fluid">
+                </div>
+                <a href="#" class="text-warning"><h4>Video Lainnya</h4></a>
             </div>
         </div>
     </article>

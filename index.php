@@ -113,7 +113,7 @@
         </div>
 
         <nav class="navbar navbar-expand-sm fixed-top bg-custom">
-            <a class="navbar-brand" href="#"><img src="img/navicon.png" class="img-fluid" alt=""></a>
+            <a class="navbar-brand" href="index.php"><img src="img/navicon.png" class="img-fluid" alt=""></a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation"></button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">

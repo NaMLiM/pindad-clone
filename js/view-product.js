@@ -8,13 +8,13 @@ function translate(){
         
     });
     if(count>0){
-        translateX -= 110;
+        translateX -= 108;
         count -= 1;
         if(count==0){
             count = -count_stop;
         }
     }else{
-        translateX += 110;
+        translateX += 108;
         count += 1;
         if(count==0){
             count = count_stop;

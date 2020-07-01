@@ -241,8 +241,8 @@
                             <h5 class=" font-weight-bold">LINK</h5>
                         </div>
                         <div class="row">
-                            <a href="" class="col-md-12"><img src="img/bumn-button2.jpg" alt="" class="img-fluid"></a>
-                            <a href="" class="col-md-12"><img src="img/untuknegeri5.png" alt="" class="img-fluid"></a>
+                            <a href="http://www.bumn.go.id/pindad" class="col-md-12"><img src="img/bumn-button2.jpg" alt="" class="img-fluid"></a>
+                            <a href="https://untukindonesia.bumn.go.id/" class="col-md-12"><img src="img/untuknegeri5.png" alt="" class="img-fluid"></a>
                         </div>
                         <div class="row">
                             <a href="https://www.facebook.com/ptpindad?fref=ts" class="col-md-3"><i class="fab fa-facebook-f fa-sm fa-fw"></i></a>

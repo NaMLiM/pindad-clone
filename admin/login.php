@@ -19,7 +19,7 @@
                 <h1 class="mb-0 welcome">Welcome to</h1>
                 <h1 class="font-weight-bold text-white">pindadAdmin</h1>
                 <p class="text-white">pindadAdmin adalah halaman untuk mengatur dan mengelola database pada halaman pindad.com</p>
-                <a href="#" class="btn btn-success rounded-pill">visit pindad.com</a>
+                <a href="../index.php" class="btn btn-success rounded-pill">visit pindad.com</a>
             </div>
             <div class="col-md-4 col-sm-12" id="content">
                 
@@ -39,7 +39,7 @@
     <div id="content-hubungi" style="display: none;">
         <img src="img/logo.svg" alt="">
         <h1 class="text-primary text-left">keluhan</h1>
-        <form class="form-row justify-content-center" action="system/login-proses.php" method="POST">
+        <form class="form-row justify-content-center" action="system/kirim-keluhan.php" method="POST">
             <input type="text" name="nama" class="form-control my-2" placeholder="nama">
             <input type="email" name="email" class="form-control my-2" placeholder="email">
             <input type="tel" name="notlp" class="form-control my-2" placeholder="telepon">

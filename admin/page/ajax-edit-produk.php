@@ -163,7 +163,7 @@
             ?>
             <div>
                 <label for="video">Video</label>
-                <input type="text" name="video" value="<?php echo $video ?>" class="form-control ml-auto" required>
+                <input type="text" name="video" value="<?php echo $video ?>" class="form-control ml-auto">
             </div>
             <?php
             add_spesifikasi();

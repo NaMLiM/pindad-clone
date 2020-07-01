@@ -311,7 +311,7 @@
             
         </script>
         <?php
-            if($_GET["page"]=="news" || $_GET["page"]=="press-release" || $_GET["page"]=="pindad-in-news" || $_GET["page"]=="informasi-serta-merta" || $_GET["page"]=="procurement-info" || $_GET["page"]=="new-innovations") {
+            if($_GET["page"]=="news" || $_GET["page"]=="press-release" || $_GET["page"]=="pindad-in-news" || $_GET["page"]=="informasi-serta-merta" || $_GET["page"]=="procurement-info" || $_GET["page"]=="new-innovations" || $_GET["page"]=="career-info") {
                 ?>
                 <script src="js/news-list.js"></script>
                 <script>

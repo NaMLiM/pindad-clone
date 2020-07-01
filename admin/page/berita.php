@@ -83,6 +83,7 @@
                             <option value="procurement-info">Informasi Pengadaan</option>
                             <option value="informasi-serta-merta">Informasi Serta Merta</option>
                             <option value="new-innovation">Inovasi Baru</option>
+                            <option value="career-info">Informasi Karir</option>
                         </select>
                         
                         <div class='row' id='gambar-form-multi'>

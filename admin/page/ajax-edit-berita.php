@@ -19,6 +19,7 @@ class="form-control" name="judul_berita" id="judul_berita1" value="<?php echo $d
     <option value="procurement-info" <?php if($data['kategori']=="procurement-info"){echo "selected";} ?> >Informasi Pengadaan</option>
     <option value="informasi-serta-merta" <?php if($data['kategori']=="informasi-serta-merta"){echo "selected";} ?> >Informasi Serta Merta</option>
     <option value="new-innovation" <?php if($data['kategori']=="new-innovation"){echo "selected";} ?> >Inovasi Baru</option>
+    <option value="career-info" <?php if($data['kategori']=="career-info"){echo "selected";} ?> >Informasi Karir</option>
 </select>
 
 <label for="toolbar-container2">Isi Berita</label>

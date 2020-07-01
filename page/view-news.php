@@ -43,6 +43,14 @@
             </div>
             
             <?php include(str_replace("../../", "", $isi)) ?>
+
+            <div class="share mb-5">
+                <b class="mr-4">SHARE</b>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <a href=""><i class="fab fa-google-plus-g"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+            </div>
             
         </div>
 

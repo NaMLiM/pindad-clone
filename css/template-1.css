@@ -149,3 +149,31 @@
   color: #eaba3a;
   text-decoration: none;
 }
+
+.share {
+  margin-top: 2em;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.share a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5em;
+  height: 2.5em;
+  margin-right: 4px;
+  color: #eaba3a;
+}
+
+.share a:hover {
+  text-decoration: none;
+  background-color: #eaba3a;
+  color: white;
+}
+
+.share a i:hover {
+  transform: translate(0);
+  color: white;
+}

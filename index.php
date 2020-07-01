@@ -244,11 +244,11 @@
                             <a href="http://www.bumn.go.id/pindad" class="col-md-12"><img src="img/bumn-button2.jpg" alt="" class="img-fluid"></a>
                             <a href="https://untukindonesia.bumn.go.id/" class="col-md-12"><img src="img/untuknegeri5.png" alt="" class="img-fluid"></a>
                         </div>
-                        <div class="row">
-                            <a href="https://www.facebook.com/ptpindad?fref=ts" class="col-md-3"><i class="fab fa-facebook-f fa-sm fa-fw"></i></a>
-                            <a href="https://twitter.com/PT_Pindad" class="col-md-3"><i class="fab fa-twitter fa-sm fa-fw"></i></a>
-                            <a href="https://www.youtube.com/channel/UCLqhC4mRKpK30xDSJhnt0FA" class="col-md-3"><i class="fab fa-youtube fa-sm fa-fw"></i></a>
-                            <a href="https://instagram.com/pt_pindad" class="col-md-3"><i class="fab fa-instagram fa-sm fa-fw"></i></a>
+                        <div class="sosmed">
+                            <a href="https://www.facebook.com/ptpindad?fref=ts"><i class="fab fa-facebook-f fa-sm fa-fw"></i></a>
+                            <a href="https://twitter.com/PT_Pindad"><i class="fab fa-twitter fa-sm fa-fw"></i></a>
+                            <a href="https://www.youtube.com/channel/UCLqhC4mRKpK30xDSJhnt0FA"><i class="fab fa-youtube fa-sm fa-fw"></i></a>
+                            <a href="https://instagram.com/pt_pindad"><i class="fab fa-instagram fa-sm fa-fw"></i></a>
                         </div>
                     </div>
                 </div>

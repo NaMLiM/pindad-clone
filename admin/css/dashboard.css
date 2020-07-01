@@ -67,6 +67,7 @@ body {
   border: 1px solid rgb(172, 172, 172);
   border-radius: 5px;
   margin-bottom: 10px;
+  display: block;
 }
 
 .search::placeholder {

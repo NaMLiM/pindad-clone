@@ -6,40 +6,43 @@
     <input type="search" placeholder="Search" id="search" name="search" class="search ml-auto float-right">
 </div>
 
-<table class="table" id="tabel">
-    <thead>
-        <th style="background-color: #204a87ff; text-align: center;">ID</th>
-        <th style="background-color: #204a87ff; text-align: center;">Nama Produk</th>
-        <th style="background-color: #204a87ff; text-align: center;">Jenis Produk</th>
-        <th style="background-color: #204a87ff; text-align: center;">Kategori</th>
-        <th style="background-color: #204a87ff; text-align: center;">Gambar</th>
-        <th style="background-color: #204a87ff; text-align: center;">Video</th>
-        <th style="background-color: #204a87ff; text-align: center;">Spek</th>
-        <th style="background-color: #204a87ff; text-align: center;">Deskripsi</th>
-        <th style="background-color: #204a87ff; text-align: center;">Download</th>
-    </thead>
-    <tbody id="tbody">
-        <?php
-            $select = mysqli_query($connection, "select * from produk");
-            while($data = mysqli_fetch_array($select)){
-                echo "
-                    <tr data-toggle='modal' data-target='#modelId'>
-                        <td class='text-center'>".$data["id_produk"]."</td>
-                        <td class='text-center'>".$data["nama_produk"]."</td>
-                        <td class='text-center'>".$data["jenis_produk"]."</td>
-                        <td class='text-center'>".$data["kategori"]."</td>
-                        <td class='text-center'>".$data["gambar"]."</td>
-                        <td class='text-center'>".$data["video"]."</td>
-                        <td class='text-center'>".$data["spek"]."</td>
-                        <td class='text-center'>".$data["deskripsi"]."</td>
-                        <td class='text-center'>".$data["download"]."</td>
-                    </tr>
-                ";
-            }
-        ?>
-    </tbody>
+<div style="overflow-y: scroll; height: 80vh; width: 100%;" class="d-block">
+    <table class="table" id="tabel">
+        <thead class="sticky-top">
+            <th style="background-color: #204a87ff; text-align: center;">ID</th>
+            <th style="background-color: #204a87ff; text-align: center;">Nama Produk</th>
+            <th style="background-color: #204a87ff; text-align: center;">Jenis Produk</th>
+            <th style="background-color: #204a87ff; text-align: center;">Kategori</th>
+            <th style="background-color: #204a87ff; text-align: center;">Gambar</th>
+            <th style="background-color: #204a87ff; text-align: center;">Video</th>
+            <th style="background-color: #204a87ff; text-align: center;">Spek</th>
+            <th style="background-color: #204a87ff; text-align: center;">Deskripsi</th>
+            <th style="background-color: #204a87ff; text-align: center;">Download</th>
+        </thead>
+        <tbody id="tbody">
+            <?php
+                $select = mysqli_query($connection, "select * from produk");
+                while($data = mysqli_fetch_array($select)){
+                    echo "
+                        <tr data-toggle='modal' data-target='#modelId'>
+                            <td class='text-center'>".$data["id_produk"]."</td>
+                            <td class='text-center'>".$data["nama_produk"]."</td>
+                            <td class='text-center'>".$data["jenis_produk"]."</td>
+                            <td class='text-center'>".$data["kategori"]."</td>
+                            <td class='text-center'>".$data["gambar"]."</td>
+                            <td class='text-center'>".$data["video"]."</td>
+                            <td class='text-center'>".$data["spek"]."</td>
+                            <td class='text-center'>".$data["deskripsi"]."</td>
+                            <td class='text-center'>".$data["download"]."</td>
+                        </tr>
+                    ";
+                }
+            ?>
+        </tbody>
 
-</table>
+    </table>
+</div>
+
 
 <a href="#" class="create" data-toggle="modal" data-target="#addData"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
 

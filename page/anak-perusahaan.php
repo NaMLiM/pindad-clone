@@ -2,7 +2,7 @@
 
 <div class="header-blog text-center" style="background-image: url(img/banner/oePE9lU-plain-desktop-backgrounds.png);">
     <span class="garis"></span>
-    <h1 class="display-5 text-light"><dt><b>>PRODUK ANAK PERUSAHAAN</b></dt></h1>
+    <h1 class="display-5 text-light"><dt><b>PRODUK ANAK PERUSAHAAN</b></dt></h1>
 </div>
 
 <!---->

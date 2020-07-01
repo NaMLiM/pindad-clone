@@ -93,6 +93,11 @@
   object-fit: cover;
 }
 
+.judul-berita {
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
 .judul-berita:hover {
   color: #eaba3a;
   transition: 200ms;

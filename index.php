@@ -197,18 +197,18 @@
         ?>
         <!-- -------------- -->
 
-        <footer class="container-fluid grayLink footer1 p-2">
+        <footer class="container-fluid grayLink footer1 py-4 ">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="col-md-12 p-3">
                             <img class="img-fluid" src="img/footer-logo.png" alt="">
                         </div>
                         <div class="col-md-12 grayColor">
-                            PT. Pindad (Persero) adalah BUMN yang memiliki visi untuk menjadi produsen peralatan pertahanan dan keamanan terkemuka di Asia pada tahun 2023, melalui upaya inovasi produk dan kemitraan strategik.
+                            Pindad melebarkan sayap melalui berbagai inovasi dan kerjasama strategis dengan melahirkan produk pertahanan keamanan serta produk industrial dan jasa yang berkualitas untuk memenuhi visi menjadi perusahaan global terkemuka di bidang pertahanan, keamanan serta produk industrial pada tahun 2026.
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <div class="text-white my-4">
                             <h5 class=" font-weight-bold">QUICK LINKS</h5>
                         </div>

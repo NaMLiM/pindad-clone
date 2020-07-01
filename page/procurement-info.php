@@ -21,13 +21,8 @@
             <div class="pb-5">
                 <h5><dt><b>RUANG PUBLIK</b></dt></h5>
                 <ul class="fa-ul list-aside my-3">
-                    <li><span class="fa-li"><i class="fas fa-angle-right"></i></span><a href="index.php?page=news">BERITA</a></li>
-                    <li><span class="fa-li"><i class="fas fa-angle-right"></i></span><a href="index.php?page=press-release">SIARAN PERS</a></li>
-                    <li><span class="fa-li"><i class="fas fa-angle-right"></i></span><a href="index.php?page=pindad-in-news">PINDAD DALAM BERITA</a></li>
-                    <li><span class="fa-li"><i class="fas fa-angle-right"></i></span><a href="index.php?page=majalah">MAJALAH</a></li>
-                    <li><span class="fa-li"><i class="fas fa-angle-right"></i></span><a href="index.php?page=catalog-and-brochures">KATALOG DAN BROSUR</a></li>
-                    <li><span class="fa-li"><i class="fas fa-angle-right"></i></span><a href="index.php?page=gallery">GALLERY</a></li>
-                    <li><span class="fa-li"><i class="fas fa-angle-right"></i></span><a href="index.php?page=video">VIDEO</a></li>
+                    <li><span class="fa-li"><i class="fas fa-angle-right"></i></span><a href="https://eproc.pindad.com">E-PROCUREMENT</a></li>
+                    <li><span class="fa-li"><i class="fas fa-angle-right"></i></span><a href="index.php?page=procurement-info">INFORMASI PENGADAAN</a></li>
                 </ul>
             </div>
 

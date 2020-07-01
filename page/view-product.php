@@ -15,7 +15,7 @@
 
 <div class="full text-center">
     <span class="garis"></span>
-    <h1 class="display-5 text-light"><dt><b><?php echo $nama_produk; ?></b></dt></h1>
+    <h1 class="display-5 text-light" style="text-transform: uppercase;"><dt><b><?php echo $nama_produk; ?></b></dt></h1>
 </div>
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">

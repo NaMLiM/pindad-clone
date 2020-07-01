@@ -281,7 +281,7 @@
                     <button class="play-button"><i class="fa fa-play-circle-o" aria-hidden="true"></i></button>
                     <img src="img/about_image_1.png" alt="" class="img-fluid">
                 </div>
-                <a href="#" class="text-warning"><h4>Video Lainnya</h4></a>
+                <a href="#" class="text-warning" style="text-decoration: none;"><h4 class="font-weight-bold">Video Lainnya</h4></a>
             </div>
         </div>
     </article>

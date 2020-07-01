@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <h5 class="font-weight-bolder mb-4">
+                    <h5 class="font-weight-bolder mb-4" style="text-transform: uppercase;">
                         <a href="index.php?page=view-news&id=<?php echo $data[0] ?>"><?php echo $data[1] ?></a>
                     </h5>
                     <div class="deskripsi">

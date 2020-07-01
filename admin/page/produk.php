@@ -231,7 +231,7 @@
 </div>
 <div id="video-form" style="display: none;">
     <label for="video">Video</label>
-    <input type="file" name="video" id="video" class="form-control-file ml-auto" required>
+    <input type="text" name="video" id="video" class="form-control ml-auto" required>
 </div>
 <!-- <div class="row" id="gambar-form-multi" style="display: none;">
     <div class="col-md-10">

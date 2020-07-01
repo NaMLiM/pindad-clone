@@ -34,6 +34,7 @@
         deleteDir("../upload/".explode("-", $data['gambar'])[0]."/gambar");
         deleteDir("../upload/".explode("-", $data['gambar'])[0]."/spek");
         deleteDir("../upload/".explode("-", $data['gambar'])[0]."/deskripsi");
+        deleteDir("../upload/".explode("-", $data['gambar'])[0]."/download");
         deleteDir("../upload/".explode("-", $data['gambar'])[0]);
         ?>
         <script>

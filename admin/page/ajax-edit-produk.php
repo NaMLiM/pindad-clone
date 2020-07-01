@@ -160,6 +160,12 @@
             break;
 
         case 'Alat Berat':
+            ?>
+            <div>
+                <label for="video">Video</label>
+                <input type="text" name="video" value="<?php echo $video ?>" class="form-control ml-auto" required>
+            </div>
+            <?php
             add_spesifikasi();
             add_deskripsi();
             break;

@@ -51,18 +51,8 @@
         $gambar = null;
     }
 
-    if(isset($_FILES["video"])){
-        mkdir("../upload/".$id."/video");
-        $target = $id.".".strtolower(pathinfo(basename($_FILES["video"]["name"]),PATHINFO_EXTENSION));
-        $target_dir = "../upload/".$id."/video/";
-        $target_file = $target_dir . $target;
-        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-        
-        if (move_uploaded_file($_FILES["video"]["tmp_name"], $target_file)) {
-        $video = $target_dir.$target;
-        } else {
-        echo "Sorry, there was an error uploading your file.";
-        }
+    if(isset($_POST["video"])){
+        $video = $_POST["video"];
     }
     else{
         $video = null;

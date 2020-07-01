@@ -69,7 +69,14 @@
         <div class="col-md-12">
             <ul class="nav nav-tabs tab-spec border-0">
                 <li><a class="active px-2" data-toggle="tab" href="#specification">SPECIFICATION</a></li>
-                <li><a class="px-2" data-toggle="tab" href="#video">VIDEO</a></li>
+                
+                <?php 
+                if($video != "" || $video != null){
+                    ?>
+                    <li><a class="px-2" data-toggle="tab" href="#video">VIDEO</a></li>
+                    <?php
+                } 
+                ?>
             </ul>
         </div>
     </div>
@@ -78,9 +85,17 @@
             <div id="specification" class="tab-pane active">
                 <?php include(str_replace("../","admin/", $spek));?>
             </div>
-            <div id="video" class="tab-pane fade">
-                <h3>VIDEO DI SINI</h3>
-            </div>
+            <?php 
+            if($video != "" || $video != null){
+                ?>
+                <div id="video" class="tab-pane fade">
+                    <iframe src="<?php echo str_replace("https://youtu.be/", "https://www.youtube.com/embed/", $video) ?>" frameborder="0" width="700" height="415"></iframe>
+                </div>
+                <?php
+            } 
+            ?>
+
+            
         </div>
     </div>
     <div class="row mt-4 mb-5 d-block">

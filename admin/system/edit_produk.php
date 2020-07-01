@@ -12,10 +12,16 @@
     $select = mysqli_query($connection, "select * from produk where id_produk=$id_produk");
     $data=mysqli_fetch_array($select);
     $gambar = $data["gambar"];
-    $video = $data["video"];
     $download = $data["download"];
 
     $id = explode("-", $data["gambar"])[0];
+    
+    if(isset($_POST["video"])){
+        $video = $_POST["video"];
+    }
+    else{
+        $video = $data["video"];
+    }
 
     if(isset($_POST["spek"])){
         $myfile = fopen("../upload/".$id."/spek/".$id.".html", "w") or die("Unable to open file!");

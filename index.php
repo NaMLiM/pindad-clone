@@ -278,6 +278,8 @@
         <script src="https://kit.fontawesome.com/7b59756246.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
         <script>
+            $("html, body").animate({scrollTop: 0}, 0);
+
             $(window).scroll(function() {
                 $(".caret-link").css({
                     transition : "all 700ms"

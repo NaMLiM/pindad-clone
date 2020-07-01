@@ -6,46 +6,15 @@
 
 <div class="container mt-5">
     <div class="row">
-        <div class="col-md-8">
-
-            <?php
-                $select = mysqli_query($connection, "select * from berita where kategori='pindad-in-news'");
-                while($data = mysqli_fetch_array($select)){
-                    if($data[4]==null || $data[4]==""){
-                        $thumbnail = "#";
-                    }else{
-                        $thumbnail = "news/".explode("-", $data[4])[0]."/gambar/".explode("-", $data[4])[1];
-                    }
-                    ?>
-
-                    <div class="row article-berita mb-5 pb-5">
-                        <div class="col-md-2 text-center">
-                            <div class="tanggal-group float-right">
-                                <div class="hari"><?php echo date("d", strtotime($data[2])) ?></div>
-                                <div class="tanggal"><?php echo date("M", strtotime($data[2])) ?></div>
-                                <div class="tanggal"><?php echo date("Y", strtotime($data[2])) ?></div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <h5 class="font-weight-bolder mb-4">
-                                <a href="index.php?page=view-news&id=<?php echo $data[0] ?>"><?php echo $data[1] ?></a>
-                            </h5>
-                            <div class="deskripsi">
-                                <div class="hide">
-                                    <?php include(str_replace("../../", "", $data[3])) ?>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <a href="index.php?page=view-news&id=<?php echo $data[0] ?>"><img src="<?php echo $thumbnail ?>" class="img-fluid" alt=""></a>
-                        </div>
-                    </div>
-
-                    <?php
+        <div class="col-md-8" id="beritas">
+            <script>
+                var select_berita = "select * from berita where kategori='pindad-in-news' ORDER BY tanggal DESC";
+                function ajax(x){
+                    $("#beritas").load("page/ajax-berita.php", {query:select_berita, hal:x}, function (response, status, request) {
+                        this; // dom element
+                    });
                 }
-            ?>
-
-            
+            </script>
         </div>
 
         <div class="col-md-4">

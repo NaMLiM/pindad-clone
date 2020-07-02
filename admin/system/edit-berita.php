@@ -63,7 +63,7 @@
         $isi_berita = null;
     }
 
-    $edit = mysqli_query($connection, "update berita set judul_berita='$judul_berita', isi='$isi_berita', kategori='$kategori' where id_berita=$id_berita");
+    $edit = mysqli_query($connection, "update berita set judul_berita='$judul_berita', isi='$isi_berita', kategori='$kategori', gambar='$gambar' where id_berita=$id_berita");
 
     if($edit){
         echo "

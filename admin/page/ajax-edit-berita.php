@@ -21,6 +21,18 @@ class="form-control" name="judul_berita" id="judul_berita1" value="<?php echo $d
     <option value="new-innovation" <?php if($data['kategori']=="new-innovation"){echo "selected";} ?> >Inovasi Baru</option>
     <option value="career-info" <?php if($data['kategori']=="career-info"){echo "selected";} ?> >Informasi Karir</option>
 </select>
+<div class='row' id='gambar-form-multi'>
+    <div class='col-md-10'>
+        <label for='gambar-multi'>Gambar</label>
+        <div id='gambar-grup'>
+            <input type='file' name='gambar1' id='gambar-multi' class='form-control-file ml-auto'>
+        </div>
+    </div>
+    <div class='col-md-2'>
+        <button type='button' class='btn btn-primary' id='tambah-image' onclick='tambah_image()'><i class='fas fa-plus'></i></button>
+    </div>
+</div>
+<input type='hidden' name='jumlah_gambar' id='jumlah_gambar' value=1>
 
 <label for="toolbar-container2">Isi Berita</label>
 <div id="toolbar-container2"></div>

@@ -30,9 +30,12 @@
     $select = mysqli_query($connection, "select * from berita where id_berita=$id_berita");
     $data=mysqli_fetch_array($select);
 
-    $id = explode("-", $data["gambar"])[0];
+    $id = explode("/", $data["isi"])[3];
 
-    if(isset($_FILES["gambar1"])){
+    if(!isset($_FILES['gambar1']) || $_FILES['gambar1']['error'] == UPLOAD_ERR_NO_FILE){
+        $gambar = $data["gambar"];
+    }
+    else{
         deleteDir("../../news/".explode("-", $data['gambar'])[0]."/gambar");
         mkdir("../../news/".$id."/gambar");
         $gambar = $id;
@@ -45,12 +48,9 @@
             if (move_uploaded_file($_FILES["gambar".$i]["tmp_name"], $target_file)) {
                 $gambar = $gambar."-".$i.".".$imageFileType;
             } else {
-                $gambar = null;
+                $gambar = $data["gambar"];
             }
         }
-    }
-    else{
-        $gambar = $data["gambar"];
     }
 
     if(isset($_POST["isi_berita"])){

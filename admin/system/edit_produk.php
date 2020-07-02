@@ -41,44 +41,27 @@
         $kategori = $data["kategori"];
     }
 
-    $id = explode("-", $data["gambar"])[0];
+    $id = explode("/", $data["spek"])[2];
 
-    if(isset($_FILES["gambar"]) || isset($_POST["jumlah_gambar"])){
-        if(isset($_FILES["gambar"])){
-            deleteDir("../upload/".explode("-", $data['gambar'])[0]."/gambar");
-            mkdir("../upload/".$id."/gambar");
-            $target = "1.".strtolower(pathinfo(basename($_FILES["gambar"]["name"]),PATHINFO_EXTENSION));
+    if(!isset($_FILES['gambar1']) || $_FILES['gambar1']['error'] == UPLOAD_ERR_NO_FILE){
+        $gambar = $data["gambar"];
+    }
+    else{
+        deleteDir("../upload/".$id."/gambar");
+        mkdir("../upload/".$id."/gambar");
+        $gambar = $id;
+        for($i=1; $i <= (int)$_POST["jumlah_gambar"]; $i++){
+            $target = $i.".".strtolower(pathinfo(basename($_FILES["gambar".$i]["name"]),PATHINFO_EXTENSION));
             $target_dir = "../upload/".$id."/gambar/";
             $target_file = $target_dir . $target;
             $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
             
-            if (move_uploaded_file($_FILES["gambar"]["tmp_name"], $target_file)) {
-            $gambar = $id."-1".".".$imageFileType;
+            if (move_uploaded_file($_FILES["gambar".$i]["tmp_name"], $target_file)) {
+                $gambar = $gambar."-".$i.".".$imageFileType;
             } else {
             echo "Sorry, there was an error uploading your file.";
             }
         }
-        else{
-            deleteDir("../upload/".explode("-", $data['gambar'])[0]."/gambar");
-            mkdir("../upload/".$id."/gambar");
-            $gambar = $id;
-            for($i=1; $i <= (int)$_POST["jumlah_gambar"]; $i++){
-                $target = $i.".".strtolower(pathinfo(basename($_FILES["gambar".$i]["name"]),PATHINFO_EXTENSION));
-                $target_dir = "../upload/".$id."/gambar/";
-                $target_file = $target_dir . $target;
-                $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-                
-                if (move_uploaded_file($_FILES["gambar".$i]["tmp_name"], $target_file)) {
-                    $gambar = $gambar."-".$i.".".$imageFileType;
-                } else {
-                echo "Sorry, there was an error uploading your file.";
-                }
-            }
-        }
-    }
-    else{
-        
-    $gambar = $data["gambar"];
     }
     
     if(isset($_POST["video"])){

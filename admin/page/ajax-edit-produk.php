@@ -27,7 +27,7 @@
         <div id='editor2' class='border-gray'>
             <?php include($spek) ?>
         </div>
-        <input type='hidden' name='spek' id='specification2' value="<?php include($spek) ?>">
+        <textarea name="spek" id="specification2" style="display: none;"><?php include($spek) ?></textarea>
         <script>
             DecoupledEditor
                 .create( document.querySelector( '#editor2' ) )
@@ -59,7 +59,7 @@
         <div id='editor4' class='border-gray'>
             <?php include($deskripsi); ?>
         </div>
-        <input type='hidden' name='deskripsi' id='deskripsi2' value="<?php include($deskripsi) ?>">
+        <textarea name="deskripsi" id="deskripsi2" style="display: none;"><?php include($deskripsi) ?></textarea>
         <script>
             DecoupledEditor
                 .create( document.querySelector( '#editor4' ) )

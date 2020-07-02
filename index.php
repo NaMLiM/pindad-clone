@@ -180,7 +180,7 @@
                             <i class="fa fa-caret-down text-warning caret-link" aria-hidden="true"></i>
                         </a>
                         <div class="dropdown-menu text-center" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="https://eproc.pindad.com/">E_PROCUREMENT</a>
+                            <a class="dropdown-item" href="https://eproc.pindad.com/">E-PROCUREMENT</a>
                             <a class="dropdown-item" href="index.php?page=procurement-info">INFORMASI PENGADAAN</a>
                         </div>
                     </li>

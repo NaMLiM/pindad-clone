@@ -55,7 +55,7 @@
         </div>
         <div class="col-md-6 text-dark">
             <div class="mb-5">
-                <h3><?php echo $nama_produk ?></h3>
+                <h3 class="mb-4"><?php echo $nama_produk ?></h3>
                 <?php include(str_replace("../","admin/", $deskripsi)) ?>
             </div>
             <div class="text-dark mt-5">

@@ -171,7 +171,7 @@ html {
 }
 
 .sosmed a:hover > i,
-i:hover {
+.sosmed a i:hover {
   transform: translateY(2px);
   color: black;
 }

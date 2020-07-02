@@ -168,7 +168,7 @@
 .nama-produk {
   line-height: 90%;
   height: fit-content;
-  max-height: none;
+  max-height: 70px;
   text-transform: uppercase;
 }
 

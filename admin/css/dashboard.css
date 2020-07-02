@@ -161,3 +161,8 @@ body {
   font-family: URW Gothic L;
   src: url(urw_gothic_l_book.ttf);
 }
+
+.modal-dialog {
+  max-width: none;
+  width: 98%;
+}

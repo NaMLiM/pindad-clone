@@ -96,51 +96,36 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
             </div>
-            <div class="modal-body">
-                <form action="system/insert-produk.php" method="post" class="form-group" enctype="multipart/form-data">
-                    <div class="form-inline">
-                        <label for="nama_produk1">Nama Produk</label>
-                        <input type="text" name="nama_produk" id="nama_produk1" placeholder="Nama Produk" class="form-control ml-auto" required>
+            <form action="system/insert-produk.php" method="post" class="form-group" enctype="multipart/form-data">
+                <div class="modal-body">
+                    <label for="nama_produk1">Nama Produk</label>
+                    <input type="text" name="nama_produk" id="nama_produk1" placeholder="Nama Produk" class="form-control ml-auto" required>
+                    <div id="jenis">
+                        <label for="jenis_produk2">Jenis Produk</label>
+                        <select class="form-control ml-auto" name="jenis_produk" id="jenis_produk2"  required>
+                            <option disabled selected>--Pilih--</option>
+                            <option>Senjata</option>
+                            <option>Munisi</option>
+                            <option>Kendaraan Khusus</option>
+                            <option>Alat Berat</option>
+                            <option>Peralatan Industri dan Jasa</option>
+                            <option>Infrastruktur Perhubungan</option>
+                            <option>Layanan Pertambangan</option>
+                            <option>Cyber Security</option>
+                            <option>Produk Anak Perusahaan</option>
+                            <option>Majalah</option>
+                            <option>Katalog dan Brosur</option>
+                            <option>Gallery</option>
+                            <option>Annual Report</option>
+                            <option>Achievement</option>
+                        </select>
                     </div>
-                    <div class="form-inline" id="jenis">
-                      <label for="jenis_produk2">Jenis Produk</label>
-                      <select class="form-control ml-auto" name="jenis_produk" id="jenis_produk2"  required>
-                        <option disabled selected>--Pilih--</option>
-                        <option>Senjata</option>
-                        <option>Munisi</option>
-                        <option>Kendaraan Khusus</option>
-                        <option>Alat Berat</option>
-                        <option>Peralatan Industri dan Jasa</option>
-                        <option>Infrastruktur Perhubungan</option>
-                        <option>Layanan Pertambangan</option>
-                        <option>Cyber Security</option>
-                        <option>Produk Anak Perusahaan</option>
-                        <option>Majalah</option>
-                        <option>Katalog dan Brosur</option>
-                        <option>Gallery</option>
-                        <option>Annual Report</option>
-                        <option>Achievement</option>
-                      </select>
-                    </div>
-                    <div class="form-inline" id="kategori-form">
-
-                    </div>
-                    <div id="form-gambar" >
-
-                    </div>
-                    <div id="form-video">
-
-                    </div>
-                    <div id="form-specification">
-
-                    </div>
-                    <div id="form-deskripsi">
-                        
-                    </div>
-                    <div id="form-download">
-                        
-                    </div>
-                
+                    <div id="kategori-form"></div>
+                    <div id="form-gambar"></div>
+                    <div id="form-video"></div>
+                    <div id="form-specification"></div>
+                    <div id="form-deskripsi"></div>
+                    <div id="form-download"></div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

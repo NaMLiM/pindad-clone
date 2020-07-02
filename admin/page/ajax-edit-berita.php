@@ -9,8 +9,7 @@
 
 ?>
 <label for="judul_berita2">Judul Berita</label>
-<input type="text"
-class="form-control" name="judul_berita" id="judul_berita1" value="<?php echo $data['judul_berita']; ?>" aria-describedby="helpId" placeholder="Judul" required>
+<input type="text" class="form-control" name="judul_berita" id="judul_berita1" value="<?php echo $data['judul_berita']; ?>" aria-describedby="helpId" placeholder="Judul" required>
 
 <label for="kategori2">Kategori</label>
 <select class="form-control" name="kategori" id="kategori2" aria-describedby="helpId" placeholder="Kategori" required>
@@ -22,13 +21,13 @@ class="form-control" name="judul_berita" id="judul_berita1" value="<?php echo $d
     <option value="career-info" <?php if($data['kategori']=="career-info"){echo "selected";} ?> >Informasi Karir</option>
 </select>
 <div class='row' id='gambar-form-multi'>
-    <div class='col-md-10'>
+    <div class='col-md-4'>
         <label for='gambar-multi'>Gambar</label>
         <div id='gambar-grup'>
             <input type='file' name='gambar1' id='gambar-multi' class='form-control-file ml-auto'>
         </div>
     </div>
-    <div class='col-md-2'>
+    <div class='col-md-8'>
         <button type='button' class='btn btn-primary' id='tambah-image' onclick='tambah_image()'><i class='fas fa-plus'></i></button>
     </div>
 </div>

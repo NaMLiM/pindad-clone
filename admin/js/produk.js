@@ -36,7 +36,7 @@ function close_btn(elem) {
 }
 
 function add_gambar_multi(){
-    $("#form-gambar").html("<div class='row' id='gambar-form-multi'><div class='col-md-10'><label for='gambar-multi'>Gambar</label><div id='gambar-grup'><input type='file' name='gambar1' id='gambar-multi' class='form-control-file ml-auto' required></div></div><div class='col-md-2'><button type='button' class='btn btn-primary' id='tambah-image' onclick='tambah_image()'><i class='fas fa-plus'></i></button></div></div><input type='hidden' name='jumlah_gambar' id='jumlah_gambar' value=1>");
+    $("#form-gambar").html("<div class='row' id='gambar-form-multi'><div class='col-md-4'><label for='gambar-multi'>Gambar</label><div id='gambar-grup'><input type='file' name='gambar1' id='gambar-multi' class='form-control-file ml-auto' required></div></div><div class='col-md-8'><button type='button' class='btn btn-primary' id='tambah-image' onclick='tambah_image()'><i class='fas fa-plus'></i></button></div></div><input type='hidden' name='jumlah_gambar' id='jumlah_gambar' value=1>");
     multiple_gambar = 1;
 }
 

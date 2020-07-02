@@ -56,7 +56,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
             </div>
-            <form class="form-group" action="" method="POST" id="form_edit">
+            <form class="form-group" action="" method="POST" id="form_edit" enctype="multipart/form-data">
                 <div class="modal-body" id="edit-modal">
                         <label for="id">ID</label>
                         <input type="text"

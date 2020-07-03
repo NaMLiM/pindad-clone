@@ -14,7 +14,7 @@
         <li class="breadcrumb-item active" aria-current="page">Achievement</li>
     </ol>
 </nav>
-<div class="container mt-4">
+<div class="container mt-5">
     <div class="row">
         <div class="col-md-3">
             <div class="pb-5">
@@ -33,49 +33,29 @@
 <div class="container">
     <div class="row">
         <div class="col-md-3">
-            <input type="text" class="search" name="search" placeholder="Quick Search">
+            <input type="text" class="search" name="search" placeholder="Quick Search" id="search">
         </div>
-        <div class="col-md-9 row">
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
-                    <div class="card-body font-weight-bold">
-                        <p>SPR-4</p>
+        <div class="col-md-9 row mb-5" id="produks">
+            <?php
+                $select = mysqli_query($connection, "select * from produk where jenis_produk='Achievement'");
+                while($data = mysqli_fetch_array($select)){
+                    ?>
+                    <div class="col-md-3 mb-2 px-2 produks-card" data-target="<?php echo $data['kategori'] ?>">
+                        <div class="card">
+                            <div class="card-overlay-book">
+                                <a href="admin/upload/<?php echo explode("-", $data["gambar"])[0].'/gambar/'.explode("-", $data["gambar"])[1] ?>" class="eye rounded-circle bg-orange text-white"><i class="fas fa-eye"></i></a>
+                                <i class="fas fa-caret-up fa-2x panah-up"></i>
+                            </div>
+                            <img class="card-img-top-book" src="admin/upload/<?php echo explode("-", $data["gambar"])[0].'/gambar/'.explode("-", $data["gambar"])[1] ?>">
+                            <div class="card-body font-weight-bold nama-produk card-desc-book">
+                                <p><?php echo $data["nama_produk"]; ?></p>
+                                <p><?php include(str_replace("..", "admin", $data["deskripsi"])) ?></p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
-                    <div class="card-body font-weight-bold">
-                        <p>SPR-4</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
-                    <div class="card-body font-weight-bold">
-                        <p>SPR-4</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
-                    <div class="card-body font-weight-bold">
-                        <p>SPR-4</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/senjata/SPR_4.jpeg">
-                    <div class="card-body font-weight-bold">
-                        <p>SPR-4</p>
-                    </div>
-                </div>
-            </div>
+                    <?php
+                }
+            ?>
         </div>
     </div>
 </div>

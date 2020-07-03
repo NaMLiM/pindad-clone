@@ -1,4 +1,6 @@
 <?php
+    include("admin/system/connection.php");
+
     if(!$_GET["page"]){
         header("location:index.php?page=home");
     }
@@ -111,7 +113,7 @@
         </div>
 
         <nav class="navbar navbar-expand-sm fixed-top bg-custom">
-            <a class="navbar-brand" href="#"><img src="img/navicon.png" class="img-fluid" alt=""></a>
+            <a class="navbar-brand" href="index.php"><img src="img/navicon.png" class="img-fluid" alt=""></a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation"></button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -145,9 +147,10 @@
                             <a class="dropdown-item" href="index.php?page=weapon">SENJATA</a>
                             <a class="dropdown-item" href="index.php?page=ammunition">MUNISI</a>
                             <a class="dropdown-item" href="index.php?page=special-vehicles">KENDARAAN KHUSUS</a>
-                            <a class="dropdown-item" href="index.php?page=forging-and-casting">TEMPA COR & ALAT PERKERETAAPIAN</a>
                             <a class="dropdown-item" href="index.php?page=alat-berat">ALAT BERAT</a>
-                            <a class="dropdown-item" href="index.php?page=handakom">BAHAN PELEDAK KOMERSIAL</a>
+                            <a class="dropdown-item" href="index.php?page=peralatan-industri-dan-jasa">PERALATAN INDUSTRI DAN JASA</a>
+                            <a class="dropdown-item" href="index.php?page=infrastruktur-perhubungan">INFRASTRUKTUR PERHUBUNGAN</a>
+                            <a class="dropdown-item" href="index.php?page=layanan-pertambangan">LAYANAN PERTAMBANGAN</a>
                             <a class="dropdown-item" href="index.php?page=cyber-security">CYBER SECURITY</a>
                             <a class="dropdown-item" href="index.php?page=anak-perusahaan">ANAK PERUSAHAAN</a>
                             <a class="dropdown-item" href="index.php?page=inquiry-process">PROSEDUR PEMESANAN PRODUK INDUSTRIAL</a>
@@ -177,7 +180,7 @@
                             <i class="fa fa-caret-down text-warning caret-link" aria-hidden="true"></i>
                         </a>
                         <div class="dropdown-menu text-center" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">E_PROCUREMENT</a>
+                            <a class="dropdown-item" href="https://eproc.pindad.com/">E-PROCUREMENT</a>
                             <a class="dropdown-item" href="index.php?page=procurement-info">INFORMASI PENGADAAN</a>
                         </div>
                     </li>
@@ -194,18 +197,18 @@
         ?>
         <!-- -------------- -->
 
-        <footer class="container-fluid grayLink footer1 p-2">
+        <footer class="container-fluid grayLink footer1 py-4 ">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="col-md-12 p-3">
                             <img class="img-fluid" src="img/footer-logo.png" alt="">
                         </div>
                         <div class="col-md-12 grayColor">
-                            PT. Pindad (Persero) adalah BUMN yang memiliki visi untuk menjadi produsen peralatan pertahanan dan keamanan terkemuka di Asia pada tahun 2023, melalui upaya inovasi produk dan kemitraan strategik.
+                            Pindad melebarkan sayap melalui berbagai inovasi dan kerjasama strategis dengan melahirkan produk pertahanan keamanan serta produk industrial dan jasa yang berkualitas untuk memenuhi visi menjadi perusahaan global terkemuka di bidang pertahanan, keamanan serta produk industrial pada tahun 2026.
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <div class="text-white my-4">
                             <h5 class=" font-weight-bold">QUICK LINKS</h5>
                         </div>
@@ -225,9 +228,10 @@
                             <a href="index.php?page=weapon" class="col-md-12 p-2">Senjata</a>
                             <a href="index.php?page=ammunition" class="col-md-12 p-2">Munisi</a>
                             <a href="index.php?page=special-vehicles" class="col-md-12 p-2">Kendaraan Khusus</a>
-                            <a href="index.php?page=forging-and-casting" class="col-md-12 p-2">Tempa Cor & Alat Perkeretaapian</a>
                             <a href="index.php?page=alat-berat" class="col-md-12 p-2">Alat Berat</a>
-                            <a href="index.php?page=handakom" class="col-md-12 p-2">Bahan Peledak Komersial</a>
+                            <a href="index.php?page=peralatan-industri-dan-jasa" class="col-md-12 p-2">Peralatan Industri dan Jasa</a>
+                            <a href="index.php?page=infrastruktur-perhubungan" class="col-md-12 p-2">Infrastruktur Perhubungan</a>
+                            <a href="index.php?page=layanan-pertambangan" class="col-md-12 p-2">Layanan Pertambangan</a>
                             <a href="index.php?page=cyber-security" class="col-md-12 p-2">Cyber Security</a>
                             <a href="index.php?page=anak-perusahaan" class="col-md-12 p-2">Anak Perusahaan</a>
                         </div>
@@ -237,14 +241,14 @@
                             <h5 class=" font-weight-bold">LINK</h5>
                         </div>
                         <div class="row">
-                            <a href="" class="col-md-12"><img src="img/bumn-button2.jpg" alt="" class="img-fluid"></a>
-                            <a href="" class="col-md-12"><img src="img/untuknegeri5.jpg" alt="" class="img-fluid"></a>
+                            <a href="http://www.bumn.go.id/pindad" class="col-md-12"><img src="img/bumn-button2.jpg" alt="" class="img-fluid"></a>
+                            <a href="https://untukindonesia.bumn.go.id/" class="col-md-12"><img src="img/untuknegeri5.png" alt="" class="img-fluid"></a>
                         </div>
-                        <div class="row">
-                            <a href="https://www.facebook.com/ptpindad?fref=ts" class="col-md-3"><i class="fab fa-facebook-f fa-sm fa-fw"></i></a>
-                            <a href="https://twitter.com/PT_Pindad" class="col-md-3"><i class="fab fa-twitter fa-sm fa-fw"></i></a>
-                            <a href="https://www.youtube.com/channel/UCLqhC4mRKpK30xDSJhnt0FA" class="col-md-3"><i class="fab fa-youtube fa-sm fa-fw"></i></a>
-                            <a href="https://instagram.com/pt_pindad" class="col-md-3"><i class="fab fa-instagram fa-sm fa-fw"></i></a>
+                        <div class="sosmed">
+                            <a href="https://www.facebook.com/ptpindad?fref=ts"><i class="fab fa-facebook-f fa-sm fa-fw"></i></a>
+                            <a href="https://twitter.com/PT_Pindad"><i class="fab fa-twitter fa-sm fa-fw"></i></a>
+                            <a href="https://www.youtube.com/channel/UCLqhC4mRKpK30xDSJhnt0FA"><i class="fab fa-youtube fa-sm fa-fw"></i></a>
+                            <a href="https://instagram.com/pt_pindad"><i class="fab fa-instagram fa-sm fa-fw"></i></a>
                         </div>
                     </div>
                 </div>
@@ -268,12 +272,14 @@
 
         <a href="#" class="to-top bg-info"><i class="fa fa-angle-up text-light" aria-hidden="true"></i></a>
         
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/7b59756246.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
         <script>
+            $("html, body").animate({scrollTop: 0}, 0);
+
             $(window).scroll(function() {
                 $(".caret-link").css({
                     transition : "all 700ms"
@@ -306,6 +312,19 @@
 
             
         </script>
-        <!-- <script src="js/home.js"></script> -->
+        <?php
+            if($_GET["page"]=="news" || $_GET["page"]=="press-release" || $_GET["page"]=="pindad-in-news" || $_GET["page"]=="informasi-serta-merta" || $_GET["page"]=="procurement-info" || $_GET["page"]=="new-innovations" || $_GET["page"]=="career-info") {
+                ?>
+                <script src="js/news-list.js"></script>
+                <script>
+                    if(typeof hal == "undefined" || hal==null){
+                        var hal = 8;
+                    }
+                    ajax(hal);
+                </script>
+                <?php
+            }
+        ?>
+        <script src="js/<?php echo $_GET['page'] ?>.js"></script>
     </body>
 </html>

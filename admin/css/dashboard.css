@@ -1,0 +1,168 @@
+html,
+body {
+  font-family: "URW Gothic L" !important;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.border-gray {
+  border: 1px solid lightgray !important;
+}
+
+.text-primary {
+  color: #204a87ff !important;
+}
+
+.container-fluid {
+  background-image: linear-gradient(to top right, #29669eff, #3bc884ff);
+}
+
+.sidebar {
+  height: 100%;
+  padding: 0;
+}
+
+.user {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  width: 80%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.user i {
+  font-size: 75px;
+}
+
+.user-info {
+  padding: 10px;
+}
+
+.list-group-item {
+  border: none;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  padding-right: 0;
+}
+
+.list-group-item:hover {
+  background-color: rgba(255, 255, 255, 0.336);
+  color: white;
+  text-decoration: none;
+}
+
+.list-group-item.active {
+  background-color: white;
+  color: black;
+}
+
+.search {
+  border: 1px solid rgb(172, 172, 172);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.search::placeholder {
+  text-align: center;
+}
+
+.content {
+  background: white url(../img/logo_gray.png);
+  background-repeat: no-repeat;
+  background-size: 60%, 60%;
+  background-position: center;
+}
+
+.table th {
+  color: white;
+}
+
+.table tbody tr a,
+.table tbody tr {
+  cursor: pointer;
+}
+
+.table th,
+.table tbody tr td {
+  white-space: nowrap;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table tr:hover {
+  background-color: rgba(142, 172, 255, 0.329);
+}
+
+.pop {
+  background-color: rgba(0, 0, 0, 0.199);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  transition: all 200ms;
+}
+
+#pop-up {
+  background-color: white;
+  padding: 20px;
+  width: 500px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.create {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 50px;
+}
+
+.create:hover > i {
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: all 300ms ease-in-out;
+}
+
+/* Edit form */
+.delete-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  border: none;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  font-size: larger;
+  background-color: red;
+  color: white;
+  transition: 300ms;
+  justify-content: center;
+  align-content: center;
+}
+
+.delete-image:hover {
+  opacity: 0.5;
+}
+
+/* Font Face */
+@font-face {
+  font-family: URW Gothic L;
+  src: url(urw_gothic_l_book.ttf);
+}
+
+.modal-dialog {
+  max-width: none;
+  width: 98%;
+}

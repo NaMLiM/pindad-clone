@@ -13,7 +13,7 @@
         <li class="breadcrumb-item active" aria-current="page">Sistem Manajemen Mutu dan Komitmen Terhadap Lingkungan</li>
     </ol>
 </nav>
-<div class="container mt-4">
+<div class="container mt-5">
     <div class="row">
         <div class="col-md-3">
             <div class="pb-5">

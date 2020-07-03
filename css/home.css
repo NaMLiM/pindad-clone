@@ -87,3 +87,73 @@
   font-size: 18px;
   padding: 10px;
 }
+
+.b_judul {
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #484848;
+}
+
+.b_judul:hover {
+  color: #5d5fa9;
+  text-decoration: none;
+}
+
+.b_isi {
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: smaller;
+  color: #757575;
+}
+
+.b_gambar {
+  width: 100%;
+}
+
+.b_gambar img {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.berita-tanggal {
+  position: absolute;
+  background-color: #2e3190;
+  right: 20px;
+  width: 40px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.video-berita {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-button {
+  position: absolute;
+  font-size: 5em;
+  border: none;
+  background-color: transparent;
+  color: white;
+  transform-origin: center;
+}
+
+.play-button:hover {
+  transform: rotate(-120deg);
+  transition: 300ms;
+  color: #eaba3a;
+}

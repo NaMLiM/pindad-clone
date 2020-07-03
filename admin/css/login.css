@@ -1,0 +1,121 @@
+.text-primary {
+  color: #204a87ff !important;
+}
+
+body,
+html {
+  font-family: "URW Gothic L" !important;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.container-fluid {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#29669eff), to(#3bc884ff));
+  background-image: linear-gradient(to top right, #29669eff, #3bc884ff);
+  height: 100vh;
+}
+
+.container-fluid .row {
+  height: 100%;
+}
+
+.container-fluid .row div:nth-child(1) {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.container-fluid .row div:nth-child(1) .btns-login {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+}
+
+.container-fluid .row div:nth-child(1) .btns-login button {
+  display: block;
+  color: white;
+  padding: 0.5em 1em;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  text-align: right;
+  float: right;
+  border: none;
+  background-color: transparent;
+  width: 12em;
+  border-bottom-left-radius: 1.2em;
+  border-top-left-radius: 1.2em;
+}
+
+.container-fluid .row div:nth-child(1) .btns-login button:focus {
+  border: none;
+  outline: none;
+}
+
+.container-fluid .row div:nth-child(1) h1,
+.container-fluid .row div:nth-child(1) p,
+.container-fluid .row div:nth-child(1) a {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.container-fluid .row div:nth-child(1) a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.container-fluid .row div:nth-child(2) {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  background-color: white;
+  padding: 4em;
+}
+
+.container-fluid .row div:nth-child(2) .form-row input[type=text],
+.container-fluid .row div:nth-child(2) .form-row input[type=password],
+.container-fluid .row div:nth-child(2) .form-row input[type=email],
+.container-fluid .row div:nth-child(2) .form-row input[type=tel],
+.container-fluid .row div:nth-child(2) .form-row textarea {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #729fcfff;
+}
+
+.container-fluid .row div:nth-child(2) .form-row input[type=text]:focus,
+.container-fluid .row div:nth-child(2) .form-row input[type=password]:focus,
+.container-fluid .row div:nth-child(2) .form-row input[type=email]:focus,
+.container-fluid .row div:nth-child(2) .form-row input[type=tel]:focus,
+.container-fluid .row div:nth-child(2) .form-row textarea {
+  -webkit-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+}
+
+.container-fluid .row div:nth-child(2) img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1em;
+  width: 150px;
+  height: auto;
+}
+
+.container-fluid .welcome {
+  color: #d3d7cfff;
+}
+
+.on {
+  color: #2e3436ff !important;
+  background-color: white !important;
+}
+/*# sourceMappingURL=login.css.map */
+
+/* Font Face */
+@font-face {
+  font-family: URW Gothic L;
+  src: url(urw_gothic_l_book.ttf);
+}

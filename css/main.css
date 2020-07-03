@@ -5,6 +5,7 @@ html {
   width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  font-family: sans-serif;
 }
 
 .head {
@@ -108,22 +109,22 @@ html {
 .footer1 {
   background-color: #03153e;
 }
-  
+
 .footer2 {
   background-color: #020e28;
 }
-  
+
 .grayLink a,
 .grayLink a:visited {
   text-decoration: none;
   color: gray;
 }
-  
+
 .grayLink a:hover {
   color: #bcbcbc;
   text-decoration: none;
 }
-  
+
 .grayColor {
   color: gray;
 }
@@ -144,4 +145,33 @@ html {
 
 .to-top:hover {
   background-color: #1c8596;
+}
+
+.sosmed {
+  display: flex;
+  justify-content: start;
+  margin-top: 0.3em;
+}
+
+.sosmed a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 1.4em;
+  background-color: #eaba3a;
+  margin-left: 0.5em;
+  color: black;
+}
+
+.sosmed:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.sosmed a:hover > i,
+.sosmed a i:hover {
+  transform: translateY(2px);
+  color: black;
 }

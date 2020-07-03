@@ -13,7 +13,7 @@
         <li class="breadcrumb-item active" aria-current="page">Tata Kelola Perusahaan & Manajemen Risiko</li>
     </ol>
 </nav>
-<div class="container mt-4">
+<div class="container mt-5">
     <div class="row">
         <div class="col-md-3">
             <div class="pb-5">
@@ -27,15 +27,15 @@
             <div class="pb-5">
                 <h5 class="font-weight-bold text-dark">Download</h5>
                 <ul class="fa-ul list-aside my-3">
-                    <li class="py-1"><a href="index.php?page=organization-structure" class="active">Kebijakan Penerapan GCG</a></li>
-                    <li class="py-1"><a href="index.php?page=dewan-komisaris">Kode Eetik Perusahaan</a></li>
-                    <li class="py-1"><a href="index.php?page=komite-audit">Pedoman Tata Kelola Perusahaan Yang Baik</a></li>
-                    <li class="py-1"><a href="index.php?page=komite-audit">Ketentuan Pengendalian Gratifikasi</a></li>
-                    <li class="py-1"><a href="index.php?page=komite-audit">Sistem Pelaporan Atas Dugaan Penyimpangan Atau Pelanggaran</a></li>
-                    <li class="py-1"><a href="index.php?page=komite-audit">Dokumen Pengawasan Internal</a></li>
-                    <li class="py-1"><a href="index.php?page=komite-audit">Pedoman Penerapan Manajemen Risiko</a></li>
-                    <li class="py-1"><a href="index.php?page=komite-audit">Board Manual Pindad</a></li>
-                    <li class="py-1"><a href="index.php?page=komite-audit">Ketentuan Pengadaan Barang Atau Jasa</a></li>
+                    <li class="py-1"><a href="img/good-corporate-governance-and-risk-management/SKEP.3_.P_.BD_.X_.2017_Kebijakan_Penerapan_GCG_.pdf">Kebijakan Penerapan GCG</a></li>
+                    <li class="py-1"><a href="img/good-corporate-governance-and-risk-management/SKEP.15_.P_.BD_.XII_.2016_Pedoman_Perilaku_Etika_Pindad_.pdf">Kode Eetik Perusahaan</a></li>
+                    <li class="py-1"><a href="img/good-corporate-governance-and-risk-management/SKEP.22_.P_.BD_.XII_.2018_Pedoman_Tata_Kelola_Perusahaan_Yang_Baik_.pdf">Pedoman Tata Kelola Perusahaan Yang Baik</a></li>
+                    <li class="py-1"><a href="img/good-corporate-governance-and-risk-management/SKEP.10_.P_.BD_.I_.2020_Ketentuan_Pengendalian_Gratifikasi_.pdf">Ketentuan Pengendalian Gratifikasi</a></li>
+                    <li class="py-1"><a href="img/good-corporate-governance-and-risk-management/SKEP.13_.P_.BD_.XII_.2016_Kebijakan_Penerapan_Sistem_Pelaporan_Pelanggaran_WBS_.pdf">Sistem Pelaporan Atas Dugaan Penyimpangan Atau Pelanggaran</a></li>
+                    <li class="py-1"><a href="img/good-corporate-governance-and-risk-management/SKEP.26_.P_.BD_.VI_.2015_Piagam_Pengawasan_Intern_.pdf">Dokumen Pengawasan Internal</a></li>
+                    <li class="py-1"><a href="img/good-corporate-governance-and-risk-management/SKEP.16_.P_.BD_.II_.2019_Pedoman_Penerapan_Manajemen_Risiko_.pdf">Pedoman Penerapan Manajemen Risiko</a></li>
+                    <li class="py-1"><a href="img/good-corporate-governance-and-risk-management/SKEP.21_.P_.BD_.XII_.2018_Board_Manual_Pindad_.pdf">Board Manual Pindad</a></li>
+                    <li class="py-1"><a href="img/good-corporate-governance-and-risk-management/SKEP.34_.P_.BD_.I_.2019_Ketentuan_Pengadaan_Barang_Atau_Jasa_.pdf">Ketentuan Pengadaan Barang Atau Jasa</a></li>
                 </ul>
             </div>
         </div>

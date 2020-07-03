@@ -6,47 +6,15 @@
 
 <div class="container mt-5">
     <div class="row">
-        <div class="col-md-8">
-            <div class="row article-berita mb-5 pb-5">
-                <div class="col-md-2 text-center">
-                    <div class="tanggal-group float-right">
-                        <div class="hari">21</div>
-                        <div class="tanggal">apr</div>
-                        <div class="tanggal">2017</div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <h5 class="font-weight-bolder mb-4">
-                        <a href="">Ketua DPD RI Kunjungi Pindad Tinjau Ventilator Dan produk Lainnya Untuk Memerangi Covid-19</a>
-                    </h5>
-                    <div class="deskripsi">
-                        PT Pindad (Persero) memperkenalkan ventilator dan produk-produk lainnya untuk memerangi Covid-19 pada kunjungan kerja Ketua Dewan Perwakilan Daerah RI (DPD), AA La Nyalla Mahmud Mattalitti (20/4). Direktur Utama, Abraham Mose beserta jajaran Direksi menerima kunjungan Ketua DPD dalam rangka menduk...
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <a href=""><img src="img/berita/1._Penandatanganan_Kontrak_Tank_Boat_2_.jpg" class="img-fluid" alt=""></a>
-                </div>
-            </div>
-            <div class="row article-berita mb-5 pb-5">
-                <div class="col-md-2 text-center">
-                    <div class="tanggal-group float-right">
-                        <div class="hari">21</div>
-                        <div class="tanggal">apr</div>
-                        <div class="tanggal">2017</div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <h5 class="font-weight-bolder mb-4">
-                        <a href="">Ketua DPD RI Kunjungi Pindad Tinjau Ventilator Dan produk Lainnya Untuk Memerangi Covid-19</a>
-                    </h5>
-                    <div class="deskripsi">
-                        PT Pindad (Persero) memperkenalkan ventilator dan produk-produk lainnya untuk memerangi Covid-19 pada kunjungan kerja Ketua Dewan Perwakilan Daerah RI (DPD), AA La Nyalla Mahmud Mattalitti (20/4). Direktur Utama, Abraham Mose beserta jajaran Direksi menerima kunjungan Ketua DPD dalam rangka menduk...
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <a href=""><img src="img/berita/1._Penandatanganan_Kontrak_Tank_Boat_2_.jpg" class="img-fluid" alt=""></a>
-                </div>
-            </div>
+        <div class="col-md-8" id="beritas">
+            <script>
+                var select_berita = "select * from berita ORDER BY tanggal DESC";
+                function ajax(x){
+                    $("#beritas").load("page/ajax-berita.php", {query:select_berita, hal:x}, function (response, status, request) {
+                        this; // dom element
+                    });
+                }
+            </script>
         </div>
 
         <div class="col-md-4">
@@ -65,25 +33,46 @@
 
             <div class="pb-5">
                 <h5><dt><b>POPULAR POST</b></dt></h5>
-                <div class="row popular-post my-4">
-                    <div class="col-md-3">
-                        <a href=""><img src="img/berita/1._Penandatanganan_Kontrak_Tank_Boat_2_.jpg" class="img-fluid img-berita" alt=""></a>
+
+                <?php
+
+                $popular_post = mysqli_query($connection, "select * from berita order by tanggal desc");
+                $i = 0;
+                while($data = mysqli_fetch_array($popular_post)){
+                    if($i == 4){
+                        break;
+                    }
+                    if($data[4]==null || $data[4]==""){
+                        $thumbnail = "#";
+                    }else{
+                        $thumbnail = "news/".explode("-", $data[4])[0]."/gambar/".explode("-", $data[4])[1];
+                    }
+                    ?>
+
+                    <div class="row popular-post my-4">
+                        <div class="col-md-3">
+                            <a href="index.php?page=view-news&id=<?php echo $data[0] ?>"><img src="<?php echo $thumbnail ?>" alt=""></a>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="text-warning font-weight-bold tanggal"><?php echo date("d M, Y", strtotime($data[2])) ?></div>
+                            <a href="index.php?page=view-news&id=<?php echo $data[0] ?>" class="font-weight-bold judul"><?php echo $data[1] ?></a>
+                        </div>
                     </div>
-                    <div class="col-md-9">
-                        <div class="text-warning font-weight-bold tanggal">Tanggal</div>
-                        <a href="" class="font-weight-bold judul">Pindad Resmikan Lini Baru Fasilitas Produksi Sistem Senjata</a>
-                    </div>
-                </div>
-                <div class="row popular-post my-4">
-                    <div class="col-md-3">
-                        <a href=""><img src="img/berita/1._Penandatanganan_Kontrak_Tank_Boat_2_.jpg" class="img-fluid img-berita" alt=""></a>
-                    </div>
-                    <div class="col-md-9">
-                        <div class="text-warning font-weight-bold tanggal">Tanggal</div>
-                        <a href="" class="font-weight-bold judul">Pindad Resmikan Lini Baru Fasilitas Produksi Sistem Senjata</a>
-                    </div>
-                </div>
+
+                    <?php
+                    $i++;
+                }
+
+                ?>
+                
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    var elemt = document.getElementsByClassName("hide");
+    for(var i=0; i < elemt.length; i++){
+        elemt[i].innerHTML = elemt[i].getElementsByTagName("p")[0].innerHTML;
+    }
+</script>
